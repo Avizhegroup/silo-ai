@@ -5,7 +5,8 @@ namespace SiloAI.Application.Api.Features;
 
 public class RagChatSendCommandHandler(
     ChatAgentService agentService,
-    IRagSearchService search) : IRequestHandler<RagChatSendCommand, RagChatResponse>
+    IRagSearchService search,
+    IMediator mediator) : IRequestHandler<RagChatSendCommand, RagChatResponse>
 {
     public async Task<RagChatResponse> Handle(RagChatSendCommand request, CancellationToken cancellationToken)
     {
@@ -18,8 +19,14 @@ public class RagChatSendCommandHandler(
         var hits = await search.SearchAsync(
             request.Message, topK, request.DocType.ToString(), request.Key, cancellationToken);
 
+        var instructions = await mediator.Send(new GetAllRagInstructionsQuery
+        {
+            DocType = request.DocType,
+            IsActive = true
+        }, cancellationToken);
+
         var augmentedMessage = BuildAugmentedMessage(
-            request.Message, hits, request.IsMainChat, request.AugmentedMessageTemplate);
+            request.Message, hits, instructions, request.IsMainChat, request.AugmentedMessageTemplate);
 
         var query = new CopilotMessageRequest
         {
@@ -57,6 +64,7 @@ public class RagChatSendCommandHandler(
     private static string BuildAugmentedMessage(
         string userQuestion,
         IReadOnlyList<RagSearchHit> hits,
+        List<RagInstructionDto> instructions,
         bool isMainChat,
         string augmentedMessageTemplate)
     {
@@ -80,7 +88,14 @@ public class RagChatSendCommandHandler(
             chunksText = sb.ToString().TrimEnd();
         }
 
+        var docTypeInstructionsText = instructions is null || instructions.Count == 0
+            ? string.Empty
+            : string.Join("\n---\n", instructions
+                .OrderBy(i => i.CreateDateTime)
+                .Select(i => i.Content));
+
         return augmentedMessageTemplate
+            .Replace("{DOCTYPE_INSTRUCTIONS}", docTypeInstructionsText)
             .Replace("{CHUNKS}", chunksText)
             .Replace("{QUESTION}", userQuestion);
     }

@@ -8,6 +8,7 @@ public class AiApiContext(DbContextOptions<AiApiContext> options) : DbContext(op
     public DbSet<AiConversation> AiConversations { get; set; }
     public DbSet<RagDocument> RagDocuments { get; set; }
     public DbSet<RagDocumentChunk> RagDocumentChunks { get; set; }
+    public DbSet<RagInstruction> RagInstructions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -31,6 +32,14 @@ public class AiApiContext(DbContextOptions<AiApiContext> options) : DbContext(op
                 .OnDelete(DeleteBehavior.Cascade);
             b.HasIndex(x => x.DocumentId).HasDatabaseName("IX_tbl_RagDocumentChunks_fld_DocumentId");
             b.HasIndex(x => x.ChunkIndex).HasDatabaseName("IX_tbl_RagDocumentChunks_fld_ChunkIndex");
+        });
+
+        modelBuilder.Entity<RagInstruction>(b =>
+        {
+            b.HasKey(x => x.Id);
+            b.Property(x => x.DocType).HasDefaultValue("GeneralChat");
+            b.HasIndex(x => x.DocType).HasDatabaseName("IX_tbl_RagInstructions_fld_DocType");
+            b.HasIndex(x => x.Category).HasDatabaseName("IX_tbl_RagInstructions_fld_Category");
         });
 
         modelBuilder.Entity<Customer>(entity =>

@@ -15,7 +15,11 @@
 4) پاسخ‌ها را به زبان فارسی و خلاصه ارائه بده.
 
 ### SECTION: AugmentedMessageTemplate ###
+{DOCTYPE_INSTRUCTIONS}
 === قطعات بازیابی‌شده از پایگاه دانش ===
 {CHUNKS}
 
 سوال کاربر: {QUESTION}
+
+### SECTION: DocTypeInstructions ###
+{DOCTYPE_INSTRUCTIONS}
