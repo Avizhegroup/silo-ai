@@ -3,74 +3,8 @@
 @using Microsoft.AspNetCore.Components.Forms
 @using Telerik.Blazor.Components
 
-<PageTitle>دستورالعمل‌های RAG — پنل مدیریت هوش مصنوعی سیلو</PageTitle>
+<PageTitle>دستورالعمل‌ها — پنل مدیریت هوش مصنوعی سیلو</PageTitle>
 
-<div class="card-ai mb-4">
-    <div class="card-ai-header">
-        <span><i class="bi bi-card-checklist me-2"></i>@(_editingId is null ? "افزودن دستورالعمل جدید" : "ویرایش دستورالعمل")</span>
-        @if (_editingId is not null)
-        {
-            <button class="btn btn-sm btn-outline-secondary" @onclick="ResetForm">
-                <i class="bi bi-x me-1"></i>انصراف از ویرایش
-            </button>
-        }
-    </div>
-    <div class="p-4">
-        <div class="row g-3 align-items-end">
-            <div class="col-md-3">
-                <label class="form-label fw-semibold">نوع سند</label>
-                <select class="form-select" @bind="_docType">
-                    @foreach (var type in Enum.GetValues<RagDocType>())
-                    {
-                        <option value="@type">@type.ToDisplay()</option>
-                    }
-                </select>
-            </div>
-            <div class="col-md-3">
-                <label class="form-label fw-semibold">کلید (اختیاری)</label>
-                <input type="text" class="form-control" placeholder="مثلاً: hr-policy-2025" @bind="_key" />
-            </div>
-            <div class="col-md-3">
-                <label class="form-label fw-semibold">دسته‌بندی</label>
-                <input type="text" class="form-control" placeholder="مثلاً: قوانین احراز هویت" @bind="_category" />
-            </div>
-            <div class="col-md-3">
-                <label class="form-label fw-semibold">برچسب‌ها (اختیاری)</label>
-                <input type="text" class="form-control" placeholder="مثلاً: auth,security" @bind="_tags" />
-            </div>
-            <div class="col-md-12">
-                <label class="form-label fw-semibold">بارگذاری فایل متنی (اختیاری)</label>
-                <InputFile OnChange="OnFileSelected" class="form-control" accept=".txt,.md,.markdown" />
-            </div>
-            <div class="col-md-12">
-                <label class="form-label fw-semibold">محتوای دستورالعمل</label>
-                <TelerikEditor @bind-Value="_content" Height="300px"></TelerikEditor>
-            </div>
-            @if (_editingId is not null)
-            {
-                <div class="col-md-12">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="isActiveCheck" @bind="_isActive" />
-                        <label class="form-check-label fw-semibold" for="isActiveCheck">فعال</label>
-                    </div>
-                </div>
-            }
-        </div>
-        <div class="mt-3 d-flex gap-2 align-items-center">
-            <button class="btn btn-primary" @onclick="SaveAsync" disabled="@(_isSaving || string.IsNullOrWhiteSpace(_content))">
-                @if (_isSaving)
-                {
-                    <span class="spinner-border spinner-border-sm me-1"></span>
-                }
-                else
-                {
-                    <i class="bi bi-check2 me-1"></i>
-                }
-                @(_editingId is null ? "ذخیره" : "به‌روزرسانی")
-            </button>
-        </div>
-    </div>
-</div>
 
 <div class="card-ai">
     <div class="card-ai-header">
@@ -144,3 +78,70 @@
         </div>
     }
 </div>
+<div class="card-ai mb-4">
+    <div class="card-ai-header">
+        <span><i class="bi bi-card-checklist me-2"></i>@(_editingId is null ? "افزودن دستورالعمل جدید" : "ویرایش دستورالعمل")</span>
+        @if (_editingId is not null)
+        {
+            <button class="btn btn-sm btn-outline-secondary" @onclick="ResetForm">
+                <i class="bi bi-x me-1"></i>انصراف از ویرایش
+            </button>
+        }
+    </div>
+    <div class="p-4">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">نوع سند</label>
+                <select class="form-select" @bind="_docType">
+                    @foreach (var type in Enum.GetValues<RagDocType>())
+                    {
+                        <option value="@type">@type.ToDisplay()</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">کلید (اختیاری)</label>
+                <input type="text" class="form-control" placeholder="مثلاً: hr-policy-2025" @bind="_key" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">دسته‌بندی</label>
+                <input type="text" class="form-control" placeholder="مثلاً: قوانین احراز هویت" @bind="_category" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">برچسب‌ها (اختیاری)</label>
+                <input type="text" class="form-control" placeholder="مثلاً: auth,security" @bind="_tags" />
+            </div>
+            <div class="col-md-12">
+                <label class="form-label fw-semibold">بارگذاری فایل متنی (اختیاری)</label>
+                <InputFile OnChange="OnFileSelected" class="form-control" accept=".txt,.md,.markdown" />
+            </div>
+            <div class="col-md-12">
+                <label class="form-label fw-semibold">محتوای دستورالعمل</label>
+                <TelerikEditor @bind-Value="_content" Height="300px"></TelerikEditor>
+            </div>
+            @if (_editingId is not null)
+            {
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="isActiveCheck" @bind="_isActive" />
+                        <label class="form-check-label fw-semibold" for="isActiveCheck">فعال</label>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="mt-3 d-flex gap-2 align-items-center">
+            <button class="btn btn-primary" @onclick="SaveAsync" disabled="@(_isSaving || string.IsNullOrWhiteSpace(_content))">
+                @if (_isSaving)
+                {
+                    <span class="spinner-border spinner-border-sm me-1"></span>
+                }
+                else
+                {
+                    <i class="bi bi-check2 me-1"></i>
+                }
+                @(_editingId is null ? "ذخیره" : "به‌روزرسانی")
+            </button>
+        </div>
+    </div>
+</div>
+
