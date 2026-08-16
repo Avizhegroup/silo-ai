@@ -1,0 +1,75 @@
+@using Telerik.Blazor.Components
+@using SiloAI.UI.Components
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+@inject IAiAuthenticationService AuthService
+
+<TelerikRootComponent EnableRtl="true">
+    <CascadingValue Value="Notification">
+        <div class="page">
+            <nav class="sidebar">
+                <div class="sidebar-brand">
+                    <h5><i class="bi bi-robot me-2"></i>سیلو</h5>
+                    <small>پنل مدیریت هوش مصنوعی</small>
+                </div>
+                <AuthorizeView>
+                    <Authorized>
+                        <div class="sidebar-nav">
+                            <NavLink class="nav-item-ai" href="/" Match="NavLinkMatch.All">
+                                <i class="bi bi-house-door"></i> خانه
+                            </NavLink>
+                            <NavLink class="nav-item-ai" href="/customers">
+                                <i class="bi bi-people"></i> مشتریان
+                            </NavLink>
+                            <NavLink class="nav-item-ai" href="/knowledge">
+                                <i class="bi bi-collection"></i> پایگاه دانش
+                            </NavLink>
+                            <NavLink class="nav-item-ai" href="/chat">
+                                <i class="bi bi-chat-dots"></i> گفتگو با اسناد
+                            </NavLink>
+                        </div>
+                        <div class="sidebar-footer">
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span><i class="bi bi-person-circle me-1"></i> @context.User.Identity?.Name</span>
+                                <button class="btn btn-sm btn-link text-danger p-0" @onclick="Logout">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </Authorized>
+                </AuthorizeView>
+            </nav>
+            <div class="main-content">
+                <div class="topbar">
+                    <span class="topbar-title">پنل مدیریت هوش مصنوعی سیلو</span>
+                </div>
+                <div class="page-body">
+                    <main>
+                        <article class="content">
+                            <AppErrorBoundary>
+                                @Body
+                            </AppErrorBoundary>
+                        </article>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <TelerikNotification @ref="Notification"
+                             HorizontalPosition="@NotificationHorizontalPosition.Right"
+                             VerticalPosition="@NotificationVerticalPosition.Bottom">
+        </TelerikNotification>
+    </CascadingValue>
+</TelerikRootComponent>
+
+@code {
+    public TelerikNotification Notification { get; set; }
+
+    private async Task Logout()
+    {
+        await AuthService.Logout();
+        NavigationManager.NavigateTo("/account/login", forceLoad: true);
+    }
+}

@@ -1,0 +1,33 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/" />
+  <Folder Name="/src/Core/Applications/">
+    <Project Path="SiloAI.Application.Api/SiloAI.Application.Api.csproj" />
+    <Project Path="SiloAI.Application.Shared/SiloAI.Application.Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/Domains/">
+    <Project Path="SiloAI.Domains/SiloAI.Domains.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/Infrastructure/" />
+  <Folder Name="/src/Core/Infrastructure/Agent/">
+    <Project Path="SiloAI.Agent/SiloAI.Agent.csproj" />
+  </Folder>
+  <Folder Name="/src/Identity/">
+    <Project Path="SiloAI.Identity.Client/SiloAI.Identity.Client.csproj" Id="ebcb4cf2-184b-42c1-a985-a14ed250ea0a" />
+    <Project Path="SiloAI.Identity.Server/SiloAI.Identity.Server.csproj" Id="016be1dd-e51a-41a1-b9dc-8442e1599665" />
+  </Folder>
+  <Folder Name="/src/Presentation/" />
+  <Folder Name="/src/Presentation/Api/">
+    <Project Path="SiloAI.Api/SiloAI.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Presentation/UI/">
+    <Project Path="SiloAI.UI/SiloAI.UI.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="SiloAI.Shared/SiloAI.Shared.csproj" />
+  </Folder>
+</Solution>

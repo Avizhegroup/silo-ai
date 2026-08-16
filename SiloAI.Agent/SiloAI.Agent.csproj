@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="OpenAI" />
+        <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+        <PackageReference Include="Microsoft.Extensions.AI" />
+        <PackageReference Include="Microsoft.Agents.AI" />
+        <PackageReference Include="Markdig" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SiloAI.Application.Shared\SiloAI.Application.Shared.csproj" />
+      <ProjectReference Include="..\SiloAI.Domains\SiloAI.Domains.csproj" />
+      <ProjectReference Include="..\SiloAI.Shared\SiloAI.Shared.csproj" />
+	</ItemGroup>
+
+    <ItemGroup>
+      <None Update="Chat\chtbot-instructions-add-product.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-exit-report-builder.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-inventory-conflict.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-location.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-main.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-nationalcard.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-plaque.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-product-report-builder.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-report-query.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-report.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-reports-truckcross.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Chat\chtbot-instructions-truckcross.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\wms-documentation.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\product-specifications.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\rfid-technology.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\warehouse-procedures.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\faq.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Knowledge\system-config.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

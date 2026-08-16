@@ -1,0 +1,4632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APP_StringKeys_View_Account_Add" xml:space="preserve">
+    <value>کاربر جدید</value>
+  </data>
+  <data name="APP_StringKeys_View_Account_Index" xml:space="preserve">
+    <value>تعریف کاربران</value>
+  </data>
+  <data name="APP_StringKeys_Account_Login" xml:space="preserve">
+    <value>اطلاعات کاربری را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Add" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="APP_StringKeys_Alert_Fail" xml:space="preserve">
+    <value>در انجام عملیات مشکلی بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Alert_Success" xml:space="preserve">
+    <value>عملیات با موفقیت به انجام شد</value>
+  </data>
+  <data name="APP_StringKeys_AppName" xml:space="preserve">
+    <value>مدیریت انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_AppName_Dashboard" xml:space="preserve">
+    <value>داشبورد مدیریت انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_AppVersion" xml:space="preserve">
+    <value>1.0.0</value>
+  </data>
+  <data name="APP_StringKeys_Attention" xml:space="preserve">
+    <value>توجه</value>
+  </data>
+  <data name="APP_StringKeys_BackPage" xml:space="preserve">
+    <value>صفحه قبل</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Destination" xml:space="preserve">
+    <value>ظرفیت مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Free" xml:space="preserve">
+    <value>ظرفیت آزاد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_From" xml:space="preserve">
+    <value>ظرفیت مبدا</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Occupied" xml:space="preserve">
+    <value>ظرفیت اشغال شده</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Pl" xml:space="preserve">
+    <value>خط</value>
+  </data>
+  <data name="APP_StringKeys_Chart_ProductCode" xml:space="preserve">
+    <value>کد محصول</value>
+  </data>
+  <data name="APP_StringKeys_Chart_ProductDate" xml:space="preserve">
+    <value>تاریخ تولید</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Qc" xml:space="preserve">
+    <value>درجه کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_Sort_Asc" xml:space="preserve">
+    <value>صعودی</value>
+  </data>
+  <data name="APP_StringKeys_Sort_Desc" xml:space="preserve">
+    <value>نزولی</value>
+  </data>
+  <data name="APP_StringKeys_Sorting" xml:space="preserve">
+    <value>جهت ترتیب</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Regcode" xml:space="preserve">
+    <value>کد فنی</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Shift" xml:space="preserve">
+    <value>شیفت</value>
+  </data>
+  <data name="APP_StringKeys_Clear" xml:space="preserve">
+    <value>پاک کردن</value>
+  </data>
+  <data name="APP_StringKeys_Close" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="APP_StringKeys_Code" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="APP_StringKeys_Compeletable_Edit" xml:space="preserve">
+    <value>ویرایش {0}</value>
+  </data>
+  <data name="APP_StringKeys_Compeletable_ReportOn" xml:space="preserve">
+    <value>گزارش تجمعی بر روی فیلد {0}</value>
+  </data>
+  <data name="APP_StringKeys_Confirm" xml:space="preserve">
+    <value>تائید</value>
+  </data>
+  <data name="APP_StringKeys_Contradiction" xml:space="preserve">
+    <value>لطفا مغایرت اطلاعات را رفع و دوباره امتحان کنید</value>
+  </data>
+  <data name="APP_StringKeys_Count_Rfid" xml:space="preserve">
+    <value>موجودی Rfid</value>
+  </data>
+  <data name="APP_StringKeys_Date" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_Description" xml:space="preserve">
+    <value>توضیحات</value>
+  </data>
+  <data name="APP_StringKeys_DetailInfo" xml:space="preserve">
+    <value>نمایش ریز اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Details" xml:space="preserve">
+    <value>جزئیات</value>
+  </data>
+  <data name="APP_StringKeys_Detination" xml:space="preserve">
+    <value>مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Disconfirm" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="APP_StringKeys_Doc" xml:space="preserve">
+    <value>سند</value>
+  </data>
+  <data name="APP_StringKeys_DocCode" xml:space="preserve">
+    <value>شماره سند</value>
+  </data>
+  <data name="APP_StringKeys_DriverName" xml:space="preserve">
+    <value>نام راننده</value>
+  </data>
+  <data name="APP_StringKeys_Edit" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="APP_StringKeys_Enter" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="APP_StringKeys_EnterDate" xml:space="preserve">
+    <value>تاریخ ورود</value>
+  </data>
+  <data name="APP_StringKeys_EnterTime" xml:space="preserve">
+    <value>زمان ورود</value>
+  </data>
+  <data name="APP_StringKeys_ExitTime" xml:space="preserve">
+    <value>زمان خروج</value>
+  </data>
+  <data name="APP_StringKeys_ExportChart" xml:space="preserve">
+    <value>دریافت نمودار</value>
+  </data>
+  <data name="APP_StringKeys_ExportExcel" xml:space="preserve">
+    <value>دریافت اکسل</value>
+  </data>
+  <data name="APP_StringKeys_Finished" xml:space="preserve">
+    <value>اتمام رسیده</value>
+  </data>
+  <data name="APP_StringKeys_FirstEnterDate" xml:space="preserve">
+    <value>تاریخ اولین ورود</value>
+  </data>
+  <data name="APP_StringKeys_From" xml:space="preserve">
+    <value>مبدا</value>
+  </data>
+  <data name="APP_StringKeys_FromDate" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_FromTime" xml:space="preserve">
+    <value>از ساعت</value>
+  </data>
+  <data name="APP_StringKeys_GateOpCode" xml:space="preserve">
+    <value>کد عملیات گیت</value>
+  </data>
+  <data name="APP_StringKeys_Gates" xml:space="preserve">
+    <value>گیت ها</value>
+  </data>
+  <data name="APP_StringKeys_View_Security_Index" xml:space="preserve">
+    <value>ثبت جابجایی کالا از طریق گیت</value>
+  </data>
+  <data name="APP_StringKeys_GoToToday" xml:space="preserve">
+    <value>برو به امروز</value>
+  </data>
+  <data name="APP_StringKeys_History" xml:space="preserve">
+    <value>تاریخچه</value>
+  </data>
+  <data name="APP_StringKeys_View_Home_Index" xml:space="preserve">
+    <value>صفحه اصلی</value>
+  </data>
+  <data name="APP_StringKeys_View_Home_Stats" xml:space="preserve">
+    <value>داشبورد تولید</value>
+  </data>
+  <data name="APP_StringKeys_IConfirm" xml:space="preserve">
+    <value>تائید می کنم</value>
+  </data>
+  <data name="APP_StringKeys_Ignore" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="APP_StringKeys_Ignored" xml:space="preserve">
+    <value>لغو شده</value>
+  </data>
+  <data name="APP_StringKeys_Inquiry" xml:space="preserve">
+    <value>استعلام</value>
+  </data>
+  <data name="APP_StringKeys_LastEnterDate" xml:space="preserve">
+    <value>تاریخ آخرین ورود</value>
+  </data>
+  <data name="APP_StringKeys_Line" xml:space="preserve">
+    <value>خط تولید</value>
+  </data>
+  <data name="APP_StringKeys_Loading" xml:space="preserve">
+    <value>در حال بارگذاری ..</value>
+  </data>
+  <data name="APP_StringKeys_View_Account_Login" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="APP_StringKeys_Logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="APP_StringKeys_Modal_Inquiry" xml:space="preserve">
+    <value>استعلام موجودی کالا</value>
+  </data>
+  <data name="APP_StringKeys_Modal_Range_Title" xml:space="preserve">
+    <value>انتخاب بازه زمانی</value>
+  </data>
+  <data name="APP_StringKeys_Name" xml:space="preserve">
+    <value>نام فارسی</value>
+  </data>
+  <data name="APP_StringKeys_NextPage" xml:space="preserve">
+    <value>صفحه بعد</value>
+  </data>
+  <data name="APP_StringKeys_Operation" xml:space="preserve">
+    <value>عملیات</value>
+  </data>
+  <data name="APP_StringKeys_OperationCode" xml:space="preserve">
+    <value>کد عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Order_IgnoreMessage" xml:space="preserve">
+    <value>آیا از لغو عملیات جایگذاری اطمینان دارید؟</value>
+  </data>
+  <data name="APP_StringKeys_Password" xml:space="preserve">
+    <value>کلمه عبور</value>
+  </data>
+  <data name="APP_StringKeys_Pdf" xml:space="preserve">
+    <value>دریافت PDF</value>
+  </data>
+  <data name="APP_StringKeys_Percent" xml:space="preserve">
+    <value>درصد</value>
+  </data>
+  <data name="APP_StringKeys_Phone" xml:space="preserve">
+    <value>شماره تلفن</value>
+  </data>
+  <data name="APP_StringKeys_Placeholder_Password" xml:space="preserve">
+    <value>[بدون تغییر]</value>
+  </data>
+  <data name="APP_StringKeys_Plaque" xml:space="preserve">
+    <value>پلاک</value>
+  </data>
+  <data name="APP_StringKeys_Position" xml:space="preserve">
+    <value>جانمایی</value>
+  </data>
+  <data name="APP_StringKeys_View_Position_Index" xml:space="preserve">
+    <value>گزارش جانمایی محصول</value>
+  </data>
+  <data name="APP_StringKeys_View_Position_Order" xml:space="preserve">
+    <value>تعریف برنامه جانمایی کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Position_Place" xml:space="preserve">
+    <value>ثبت جابجایی مستقیم کالا</value>
+  </data>
+  <data name="APP_StringKeys_Print" xml:space="preserve">
+    <value>چاپ</value>
+  </data>
+  <data name="APP_StringKeys_Product" xml:space="preserve">
+    <value>تولید</value>
+  </data>
+  <data name="APP_StringKeys_ProductCount" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+  <data name="APP_StringKeys_ProductName" xml:space="preserve">
+    <value>نام محصول</value>
+  </data>
+  <data name="APP_StringKeys_ProductSerial" xml:space="preserve">
+    <value>سریال</value>
+  </data>
+  <data name="APP_StringKeys_ProductType" xml:space="preserve">
+    <value>نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Size" xml:space="preserve">
+    <value>سایز کالا</value>
+  </data>
+  <data name="APP_StringKeys_Recalculate" xml:space="preserve">
+    <value>محاسبه مجدد</value>
+  </data>
+  <data name="APP_StringKeys_RecordsCount" xml:space="preserve">
+    <value>تعداد رکورد های نمایش داده شده</value>
+  </data>
+  <data name="APP_StringKeys_Reload" xml:space="preserve">
+    <value>بارگذاری مجدد</value>
+  </data>
+  <data name="APP_StringKeys_Remain" xml:space="preserve">
+    <value>باقی مانده</value>
+  </data>
+  <data name="APP_StringKeys_Remove" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="APP_StringKeys_Reports" xml:space="preserve">
+    <value>گزارشات</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_AverageExit" xml:space="preserve">
+    <value>میانگین فروش</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_Destination" xml:space="preserve">
+    <value>تفکیک مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_Pl" xml:space="preserve">
+    <value>تفکیک خط تولید</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_ProductCode" xml:space="preserve">
+    <value>تفکیک کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_ProductDate" xml:space="preserve">
+    <value>تفکیک تاریخ تولید</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_ProductSize" xml:space="preserve">
+    <value>تفکیک سایز محصول</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_ProductType" xml:space="preserve">
+    <value>تفکیک طرح محصول</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_ProductType_6_Top" xml:space="preserve">
+    <value>6 طرح با بیشترین موجودی</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_Qc" xml:space="preserve">
+    <value>تفکیک درجه کیفی</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_Regcode" xml:space="preserve">
+    <value>تفکیک کدفنی</value>
+  </data>
+  <data name="APP_StringKeys_Report_Diff_Shift" xml:space="preserve">
+    <value>تفکیک شیفت تولید</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Enter" xml:space="preserve">
+    <value>گزارش ورود کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Exit" xml:space="preserve">
+    <value>گزارش عملیات های خروج کالا</value>
+  </data>
+  <data name="APP_StringKeys_Report_Product" xml:space="preserve">
+    <value>گزارش تولید</value>
+  </data>
+  <data name="APP_StringKeys_Report_Product_AgeAnalysis" xml:space="preserve">
+    <value>آنالیز سنی کالاهای فروخته شده</value>
+  </data>
+  <data name="APP_StringKeys_Report_Sales" xml:space="preserve">
+    <value>گزارش فروش</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Store" xml:space="preserve">
+    <value>گزارش موجودی انبارها</value>
+  </data>
+  <data name="APP_StringKeys_Report_Warehouse_10_Top" xml:space="preserve">
+    <value>محصولات با بیشترین موجودی</value>
+  </data>
+  <data name="APP_StringKeys_Report_Warehouse_AgeAnalysis" xml:space="preserve">
+    <value>آنالیز سنی موجودی انبار</value>
+  </data>
+  <data name="APP_StringKeys_Report_Warehouse_ZoneCode" xml:space="preserve">
+    <value>سهم انبارک ها در موجودی</value>
+  </data>
+  <data name="APP_StringKeys_Role" xml:space="preserve">
+    <value>سطح دسترسی</value>
+  </data>
+  <data name="APP_StringKeys_Route_Nothing" xml:space="preserve">
+    <value>آدرس مورد نظر یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Row" xml:space="preserve">
+    <value>ردیف</value>
+  </data>
+  <data name="APP_StringKeys_Sales" xml:space="preserve">
+    <value>فروش</value>
+  </data>
+  <data name="APP_StringKeys_Sales_AvgRegisterDate" xml:space="preserve">
+    <value>میانگین سنی فروش</value>
+  </data>
+  <data name="APP_StringKeys_Save" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="APP_StringKeys_Search" xml:space="preserve">
+    <value>جستجو</value>
+  </data>
+  <data name="APP_StringKeys_SearchFilter" xml:space="preserve">
+    <value>فیلتر های جستجو</value>
+  </data>
+  <data name="APP_StringKeys_Search_Product" xml:space="preserve">
+    <value>جستجوی محصول</value>
+  </data>
+  <data name="APP_StringKeys_Security_GetDataByUhf" xml:space="preserve">
+    <value>دریافت اطلاعات ثبت شده قبلی با کد عملیات</value>
+  </data>
+  <data name="APP_StringKeys_See" xml:space="preserve">
+    <value>مشاهده</value>
+  </data>
+  <data name="APP_StringKeys_Send" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Settings" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="APP_StringKeys_Status" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="APP_StringKeys_Summary_Daily" xml:space="preserve">
+    <value>روزانه</value>
+  </data>
+  <data name="APP_StringKeys_Summary_Monthly" xml:space="preserve">
+    <value>ماهانه</value>
+  </data>
+  <data name="APP_StringKeys_Summary_Seasonly" xml:space="preserve">
+    <value>فصلی</value>
+  </data>
+  <data name="APP_StringKeys_Summary_Weekly" xml:space="preserve">
+    <value>هفتگی</value>
+  </data>
+  <data name="APP_StringKeys_Summary_Yearly" xml:space="preserve">
+    <value>سالانه</value>
+  </data>
+  <data name="APP_StringKeys_Summery_AverageAge" xml:space="preserve">
+    <value>میانگین سنی</value>
+  </data>
+  <data name="APP_StringKeys_Summery_Designs" xml:space="preserve">
+    <value>تنوع طرح</value>
+  </data>
+  <data name="APP_StringKeys_Summery_Deviation" xml:space="preserve">
+    <value>فاصله از میانگین</value>
+  </data>
+  <data name="APP_StringKeys_Summery_Export" xml:space="preserve">
+    <value>سهم صادرات</value>
+  </data>
+  <data name="APP_StringKeys_Summery_FreeLines" xml:space="preserve">
+    <value>لاین های خالی</value>
+  </data>
+  <data name="APP_StringKeys_Summery_InStore_Amount" xml:space="preserve">
+    <value>موجودی مقداری</value>
+  </data>
+  <data name="APP_StringKeys_Summery_InStore_Count" xml:space="preserve">
+    <value>موجودی تعدادی</value>
+  </data>
+  <data name="APP_StringKeys_Summery_Lines" xml:space="preserve">
+    <value>خطوط فعال</value>
+  </data>
+  <data name="APP_StringKeys_Summery_LoadCount" xml:space="preserve">
+    <value>تعداد بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_Summery_LowQualities" xml:space="preserve">
+    <value>تولید درجه D و CG</value>
+  </data>
+  <data name="APP_StringKeys_Summery_MaxDistance" xml:space="preserve">
+    <value>فاصله از حداکثر</value>
+  </data>
+  <data name="APP_StringKeys_Summery_Size" xml:space="preserve">
+    <value>تنوع سایز</value>
+  </data>
+  <data name="APP_StringKeys_Summery_SumCount" xml:space="preserve">
+    <value>جمع متراژ</value>
+  </data>
+  <data name="APP_StringKeys_SumValue" xml:space="preserve">
+    <value>جمع مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Tabstrip_Bar" xml:space="preserve">
+    <value>نمودار میله ای</value>
+  </data>
+  <data name="APP_StringKeys_Tabstrip_Pie" xml:space="preserve">
+    <value>نمودار دایره ای</value>
+  </data>
+  <data name="APP_StringKeys_Tagzone" xml:space="preserve">
+    <value>لوکیشن جایگذاری</value>
+  </data>
+  <data name="APP_StringKeys_TDA" xml:space="preserve">
+    <value>تدبیر داده آویژه</value>
+  </data>
+  <data name="APP_StringKeys_Time" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="APP_StringKeys_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="APP_StringKeys_ToDate" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_ToTime" xml:space="preserve">
+    <value>تاساعت</value>
+  </data>
+  <data name="APP_StringKeys_View_Truck_Index" xml:space="preserve">
+    <value>ماموریت جانمایی</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Modal_Code_Serial" xml:space="preserve">
+    <value>کد یا سریال محصول موردنظر را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Modal_Title" xml:space="preserve">
+    <value>آیا محصول موردنظر در محل مشخص شده قرار گرفت؟</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="APP_StringKeys_Truck_TruckNumber" xml:space="preserve">
+    <value>لیفتراک</value>
+  </data>
+  <data name="APP_StringKeys_User" xml:space="preserve">
+    <value>کاربر</value>
+  </data>
+  <data name="APP_StringKeys_Username" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="APP_StringKeys_View_Account_Edit" xml:space="preserve">
+    <value>ویرایش کاربران</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Empty" xml:space="preserve">
+    <value>فیلد موردنظر را پر کنید</value>
+  </data>
+  <data name="APP_StringKeys_SellType" xml:space="preserve">
+    <value>نوع فروش</value>
+  </data>
+  <data name="APP_StringKeys_Validation_EmptyRows" xml:space="preserve">
+    <value>ردیف های اطلاعاتی {0} خالی است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_LoginFail" xml:space="preserve">
+    <value>مشخصات کاربری یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Product_NotFound" xml:space="preserve">
+    <value>محصول مورد نظر یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Remote" xml:space="preserve">
+    <value>اطلاعات فیلد {0} تکراری است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Required" xml:space="preserve">
+    <value>اطلاعات فیلد {0} الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_TimeRangeRequired" xml:space="preserve">
+    <value>انتخاب بازه زمانی الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Value" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Wait" xml:space="preserve">
+    <value>لطفا چند لحظه صبر کنید</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse" xml:space="preserve">
+    <value>انبار</value>
+  </data>
+  <data name="APP_StringKeys_Year" xml:space="preserve">
+    <value>سال</value>
+  </data>
+  <data name="APP_StringKeys_Zone" xml:space="preserve">
+    <value>لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Zones" xml:space="preserve">
+    <value>لوکیشن ها</value>
+  </data>
+  <data name="APP_StringKeys_Zones_Search_Pure" xml:space="preserve">
+    <value>جستجوی لوکیشن ها</value>
+  </data>
+  <data name="APP_StringKeys_Zone_Code" xml:space="preserve">
+    <value>کد لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Zone_Search" xml:space="preserve">
+    <value>جستجوی لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Report_RangeAge" xml:space="preserve">
+    <value>بازه سنی</value>
+  </data>
+  <data name="APP_StringKeys_Report_Store_Like" xml:space="preserve">
+    <value>یافتن همانند</value>
+  </data>
+  <data name="APP_StringKeys_Report_Exit_Main" xml:space="preserve">
+    <value>گزارش خروج ماشین های حمل</value>
+  </data>
+  <data name="APP_StringKeys_Report_Exit_SumOnProductCode" xml:space="preserve">
+    <value>تجمعی بر روی کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Report_Exit_Full" xml:space="preserve">
+    <value>گزارش ریز کالا</value>
+  </data>
+  <data name="APP_StringKeys_Choose" xml:space="preserve">
+    <value>انتخاب</value>
+  </data>
+  <data name="APP_StringKeys_ExitDate" xml:space="preserve">
+    <value>تاریخ خروج</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Between2040" xml:space="preserve">
+    <value>بین 20 تا 40 درصد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Between4060" xml:space="preserve">
+    <value>بین 40 تا 60 درصد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Between6080" xml:space="preserve">
+    <value>بین 60 تا 80 درصد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Empty" xml:space="preserve">
+    <value>خالی</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_Less20" xml:space="preserve">
+    <value>کمتر از 20 درصد</value>
+  </data>
+  <data name="APP_StringKeys_Capacity_More80" xml:space="preserve">
+    <value>بیش از 80 درصد</value>
+  </data>
+  <data name="APP_StringKeys_ProductCode" xml:space="preserve">
+    <value>کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductSumCountInPack" xml:space="preserve">
+    <value>مقدار واحد دوم</value>
+  </data>
+  <data name="APP_StringKeys_ProductENTitle" xml:space="preserve">
+    <value>عنوان لاتین</value>
+  </data>
+  <data name="APP_StringKeys_ProductPackVolume" xml:space="preserve">
+    <value>حجم محموله</value>
+  </data>
+  <data name="APP_StringKeys_ProductPackWeight" xml:space="preserve">
+    <value>وزن محموله</value>
+  </data>
+  <data name="APP_StringKeys_ProductProperties" xml:space="preserve">
+    <value>مشخصات محموله</value>
+  </data>
+  <data name="APP_StringKeys_ProductRegDateTime" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="APP_StringKeys_ProductTitle" xml:space="preserve">
+    <value>عنوان کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductUnit" xml:space="preserve">
+    <value>واحد کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductValue" xml:space="preserve">
+    <value>مقدار کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Product_Add" xml:space="preserve">
+    <value>افزودن کالا</value>
+  </data>
+  <data name="APP_StringKeys_RegUser" xml:space="preserve">
+    <value>کاربر ثبت</value>
+  </data>
+  <data name="APP_StringKeys_ProductTypeCode" xml:space="preserve">
+    <value>کد نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductTypeTitle" xml:space="preserve">
+    <value>عنوان نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Product_AddProductType" xml:space="preserve">
+    <value>افزودن نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Search_ProductType" xml:space="preserve">
+    <value>جستجو نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Search_Product_Cus" xml:space="preserve">
+    <value>جستجوی کالا در نرم افزار انبار</value>
+  </data>
+  <data name="APP_StringKeys_ProductPropertyA" xml:space="preserve">
+    <value>خط تولید</value>
+  </data>
+  <data name="APP_StringKeys_ProductPropertyB" xml:space="preserve">
+    <value>شیفت تولید</value>
+  </data>
+  <data name="APP_StringKeys_ProductStatus" xml:space="preserve">
+    <value>درجه کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_TagEPC" xml:space="preserve">
+    <value>شناسه RFID</value>
+  </data>
+  <data name="APP_StringKeys_TagStatus" xml:space="preserve">
+    <value>وضعیت محموله</value>
+  </data>
+  <data name="APP_StringKeys_OperationType" xml:space="preserve">
+    <value>نوع عملیات</value>
+  </data>
+  <data name="APP_StringKeys_FromZone" xml:space="preserve">
+    <value>مبدأ</value>
+  </data>
+  <data name="APP_StringKeys_GateType" xml:space="preserve">
+    <value>نوع گیت</value>
+  </data>
+  <data name="APP_StringKeys_ToZone" xml:space="preserve">
+    <value>مقصد</value>
+  </data>
+  <data name="APP_StringKeys_TagAge" xml:space="preserve">
+    <value>سن محموله</value>
+  </data>
+  <data name="APP_StringKeys_TagAgeAnalyse" xml:space="preserve">
+    <value>آنالیز سنی</value>
+  </data>
+  <data name="APP_StringKeys_InventoryInfo" xml:space="preserve">
+    <value>انبارگردانی</value>
+  </data>
+  <data name="APP_StringKeys_PlacementInfo" xml:space="preserve">
+    <value>جانمایی و جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_ReadByGateLog" xml:space="preserve">
+    <value>شناسایی گیت ها</value>
+  </data>
+  <data name="APP_StringKeys_StoreTransactions" xml:space="preserve">
+    <value>تراکنش های انبار</value>
+  </data>
+  <data name="APP_StringKeys_QC" xml:space="preserve">
+    <value>کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_Like" xml:space="preserve">
+    <value>همانند</value>
+  </data>
+  <data name="APP_StringKeys_Zones_Max" xml:space="preserve">
+    <value>حداکثر ظرفیت</value>
+  </data>
+  <data name="APP_StringKeys_Zones_Min" xml:space="preserve">
+    <value>حداقل ظرفیت</value>
+  </data>
+  <data name="APP_StringKeys_Ok" xml:space="preserve">
+    <value>متوجه شدم</value>
+  </data>
+  <data name="APP_StringKeys_ParentCode" xml:space="preserve">
+    <value>کد والد</value>
+  </data>
+  <data name="APP_StringKeys_Resolution" xml:space="preserve">
+    <value>رزولوشن</value>
+  </data>
+  <data name="APP_StringKeys_Treeview" xml:space="preserve">
+    <value>درختواره</value>
+  </data>
+  <data name="APP_StringKeys_View_Zone_Add" xml:space="preserve">
+    <value>افزودن لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_ProductHistory" xml:space="preserve">
+    <value>سابقه تولید</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_TagHistory" xml:space="preserve">
+    <value>گزارش سابقه محموله</value>
+  </data>
+  <data name="APP_StringKeys_SalesHistory" xml:space="preserve">
+    <value>سابقه فروش</value>
+  </data>
+  <data name="APP_StringKeys_TagProperties" xml:space="preserve">
+    <value>مشخصات محموله</value>
+  </data>
+  <data name="APP_StringKeys_View_Notif_Manage" xml:space="preserve">
+    <value>تعریف دستور اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Notif_SendClock" xml:space="preserve">
+    <value>ساعت ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Notif_SendDay" xml:space="preserve">
+    <value>روز ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Notif_SendType" xml:space="preserve">
+    <value>روش اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Notif_TimePeriod" xml:space="preserve">
+    <value>دوره زمانی</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Type" xml:space="preserve">
+    <value>نوع گزارش</value>
+  </data>
+  <data name="APP_StringKeys_Notif_ReportElements" xml:space="preserve">
+    <value>المان های گزارش</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Contacts" xml:space="preserve">
+    <value>مخاطبین</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Content" xml:space="preserve">
+    <value>محتوا</value>
+  </data>
+  <data name="APP_StringKeys_Account_Biometric" xml:space="preserve">
+    <value>ثبت اثر انگشت برای ورود به برنامه</value>
+  </data>
+  <data name="APP_StringKeys_Login_Biometric" xml:space="preserve">
+    <value>ورود با اثر انگشت</value>
+  </data>
+  <data name="APP_StringKeys_Prefrences_Biometric" xml:space="preserve">
+    <value>Biometric_User</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Biometric" xml:space="preserve">
+    <value>اثر انگشت شناسایی نشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Biometric_Registered" xml:space="preserve">
+    <value>ابتدا اثر انگشت خود در برنامه ثبت کنید</value>
+  </data>
+  <data name="APP_StringKeys_Biometeric_Start" xml:space="preserve">
+    <value>شروع شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Load_Data" xml:space="preserve">
+    <value>دریافت اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_DataList" xml:space="preserve">
+    <value>لیست اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_No" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="APP_StringKeys_Remove_CheckBeforeDelete" xml:space="preserve">
+    <value>آیا از حذف مورد، مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Yes" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRules" xml:space="preserve">
+    <value>قواعد کنترلی</value>
+  </data>
+  <data name="APP_StringKeys_View_Rule_Add" xml:space="preserve">
+    <value>تعریف قواعد کنترلی </value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesCommand" xml:space="preserve">
+    <value>دستور کنترلی</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesId" xml:space="preserve">
+    <value>کد قاعده</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesStationCode" xml:space="preserve">
+    <value>ایستگاه اجرایی</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesStatus" xml:space="preserve">
+    <value>وضعیت قاعده</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesTitle" xml:space="preserve">
+    <value>عنوان قاعده</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesType" xml:space="preserve">
+    <value>نوع قاعده</value>
+  </data>
+  <data name="APP_StringKeys_Data_Elements" xml:space="preserve">
+    <value>المان های داده </value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesReturnResultFalse" xml:space="preserve">
+    <value>پیغام در حالت خطا</value>
+  </data>
+  <data name="APP_StringKeys_CheckingRulesReturnResultTrue" xml:space="preserve">
+    <value>پیغام در حالت صحیح</value>
+  </data>
+  <data name="APP_StringKeys_AddElement" xml:space="preserve">
+    <value>افزودن المان</value>
+  </data>
+  <data name="APP_StringKeys_Rule_Add" xml:space="preserve">
+    <value>مشخصات قاعده کنترلی</value>
+  </data>
+  <data name="APP_StringKeys_ResultType" xml:space="preserve">
+    <value>نوع خروجی</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_StoreLocation" xml:space="preserve">
+    <value>گزارش موجودی لوکیشن های انبار</value>
+  </data>
+  <data name="APP_StringKeys_Zones_Capacity_Status" xml:space="preserve">
+    <value>وضعیت ظرفیت</value>
+  </data>
+  <data name="APP_StringKeys_Zones_VarietyOfProduct" xml:space="preserve">
+    <value>تنوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Position_Collect" xml:space="preserve">
+    <value>عملیات جمع آوری کالا</value>
+  </data>
+  <data name="APP_StringKeys_Remove_DeleteSuccess" xml:space="preserve">
+    <value>اطلاعات با موفقیت حذف شد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Recheck" xml:space="preserve">
+    <value>لطفا موارد اعتبار سنجی را برطرف کنید و سپس دوباره تلاش کنید</value>
+  </data>
+  <data name="APP_StringKeys_FirstDate" xml:space="preserve">
+    <value>اولین تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_LastDate" xml:space="preserve">
+    <value>دومین تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_Validation_EmptinessCheck" xml:space="preserve">
+    <value>اطلاعات فرم را پر کنید</value>
+  </data>
+  <data name="APP_StringKeys_Capacity" xml:space="preserve">
+    <value>ظرفیت</value>
+  </data>
+  <data name="APP_StringKeys_AppName_Silo" xml:space="preserve">
+    <value>سیلو</value>
+  </data>
+  <data name="APP_StringKeys_Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_Contradiction_Count" xml:space="preserve">
+    <value>مغایرت در مقدار {0} متر مربع</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_Contradiction_NotInDoc" xml:space="preserve">
+    <value>عدم وجود در سند جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_Contradiction_NotInPlan" xml:space="preserve">
+    <value>عدم وجود در برنامه جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_CountRequest" xml:space="preserve">
+    <value>تعداد درخواستی</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_GetPlan" xml:space="preserve">
+    <value>دریافت برنامه</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_List2" xml:space="preserve">
+    <value>اطلاعات سند جمع آوری کالا</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_PlanRequest" xml:space="preserve">
+    <value>برنامه پیشنهادی جمع آوری کالا</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_SumValueRequest" xml:space="preserve">
+    <value>متراژ درخواستی</value>
+  </data>
+  <data name="APP_StringKeys_Serials" xml:space="preserve">
+    <value>سریال ها</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Choose" xml:space="preserve">
+    <value>انتخاب لیفتراک</value>
+  </data>
+  <data name="APP_StringKeys_Collect_Dock" xml:space="preserve">
+    <value>بارانداز</value>
+  </data>
+  <data name="APP_StringKeys_Truck_AddPlan" xml:space="preserve">
+    <value>افزودن برنامه</value>
+  </data>
+  <data name="APP_StringKeys_Truck_ChooseDock" xml:space="preserve">
+    <value>انتخاب بارانداز</value>
+  </data>
+  <data name="APP_StringKeys_Collect_CollectAgent" xml:space="preserve">
+    <value>مأمور جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Collect_EmptyCode" xml:space="preserve">
+    <value>ابتدا با کد سند، اقدام به دریافت اطلاعات سند و برنامه جمع آوری اقدام کنید</value>
+  </data>
+  <data name="APP_StringKeys_Collect_Save" xml:space="preserve">
+    <value>ثبت مأموریت جمع آوری کالا</value>
+  </data>
+  <data name="APP_StringKeys_Collect_SaveFailureOnCode" xml:space="preserve">
+    <value>در ثبت اطلاعات با کد {0} مشکلی بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Remove_CheckBeforeClear" xml:space="preserve">
+    <value>آیا از پاک شدن صفحه مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Account_Logoff" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="APP_StringKeys_ActivationStatus" xml:space="preserve">
+    <value>وضعیت فعال بودن</value>
+  </data>
+  <data name="APP_StringKeys_Active" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="APP_StringKeys_AllocationHistory" xml:space="preserve">
+    <value>تاریخچه اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_AppName_Brief_Fa" xml:space="preserve">
+    <value>ساده</value>
+  </data>
+  <data name="APP_StringKeys_AppName_Fa" xml:space="preserve">
+    <value>سامانه انبارداری هوشمند</value>
+  </data>
+  <data name="APP_StringKeys_Asset" xml:space="preserve">
+    <value>اموال</value>
+  </data>
+  <data name="APP_StringKeys_AssetSerial" xml:space="preserve">
+    <value>شناسه اموال</value>
+  </data>
+  <data name="APP_StringKeys_Asset_Assign" xml:space="preserve">
+    <value>اختصاص اموال</value>
+  </data>
+  <data name="APP_StringKeys_Asset_Changes" xml:space="preserve">
+    <value>تغییرات اموال</value>
+  </data>
+  <data name="APP_StringKeys_Asset_CreateExists" xml:space="preserve">
+    <value>چاپ برچسب اموال</value>
+  </data>
+  <data name="APP_StringKeys_asset_details" xml:space="preserve">
+    <value>مشخصات و سوابق اموال</value>
+  </data>
+  <data name="APP_StringKeys_Asset_Title" xml:space="preserve">
+    <value>عنوان اموال</value>
+  </data>
+  <data name="APP_StringKeys_Asset_Verify" xml:space="preserve">
+    <value>تائید اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_Asset_VerifyActions" xml:space="preserve">
+    <value>لیست اختصاص های تائید نشده</value>
+  </data>
+  <data name="APP_StringKeys_Back" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="APP_StringKeys_Basic_AddField" xml:space="preserve">
+    <value>افزودن اقلام اطلاعاتی</value>
+  </data>
+  <data name="APP_StringKeys_Basic_Print" xml:space="preserve">
+    <value>چاپ برچسب</value>
+  </data>
+  <data name="APP_StringKeys_Both" xml:space="preserve">
+    <value>هر دو</value>
+  </data>
+  <data name="APP_StringKeys_CcModal_Title" xml:space="preserve">
+    <value>انتخاب مرکز هزینه</value>
+  </data>
+  <data name="APP_StringKeys_Changes_FromTime" xml:space="preserve">
+    <value>از ساعت</value>
+  </data>
+  <data name="APP_StringKeys_Changes_ToTime" xml:space="preserve">
+    <value>تا ساعت</value>
+  </data>
+  <data name="APP_StringKeys_Choose_Compeletable" xml:space="preserve">
+    <value>انتخاب {0}</value>
+  </data>
+  <data name="APP_StringKeys_CostCenter" xml:space="preserve">
+    <value>مرکز هزینه</value>
+  </data>
+  <data name="APP_StringKeys_CostCenterCode" xml:space="preserve">
+    <value>کد مرکزهزینه</value>
+  </data>
+  <data name="APP_StringKeys_Deactive" xml:space="preserve">
+    <value>غیرفعال</value>
+  </data>
+  <data name="APP_StringKeys_DeleteModal_SubTitle" xml:space="preserve">
+    <value>اطلاعات حذف شده غیر قابل بازگشت است</value>
+  </data>
+  <data name="APP_StringKeys_DeleteModal_Title" xml:space="preserve">
+    <value>توجه</value>
+  </data>
+  <data name="APP_StringKeys_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="APP_StringKeys_Enterable_Title" xml:space="preserve">
+    <value>پس از وارد کردن اطلاعات،دکمه Enter را بفشارید</value>
+  </data>
+  <data name="APP_StringKeys_EnterWithExcel" xml:space="preserve">
+    <value>ورود با اکسل</value>
+  </data>
+  <data name="APP_StringKeys_EnterWithoutProperties" xml:space="preserve">
+    <value>ورود بدون مشخصات</value>
+  </data>
+  <data name="APP_StringKeys_Error" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="APP_StringKeys_ExcelFile" xml:space="preserve">
+    <value>فایل اکسل</value>
+  </data>
+  <data name="APP_StringKeys_Farsi" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+  <data name="APP_StringKeys_Field_ChooseAsset" xml:space="preserve">
+    <value>انتخاب اموال</value>
+  </data>
+  <data name="APP_StringKeys_Field_Code" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="APP_StringKeys_Field_Count" xml:space="preserve">
+    <value>تعداد</value>
+  </data>
+  <data name="APP_StringKeys_Field_CurrentLocation" xml:space="preserve">
+    <value>لوکیشن فعلی</value>
+  </data>
+  <data name="APP_StringKeys_Field_Description" xml:space="preserve">
+    <value>توضیحات</value>
+  </data>
+  <data name="APP_StringKeys_Field_Details" xml:space="preserve">
+    <value>جزئیات</value>
+  </data>
+  <data name="APP_StringKeys_Field_DetectedZone" xml:space="preserve">
+    <value>لوکیشن های شناسایی شده</value>
+  </data>
+  <data name="APP_StringKeys_Field_Epc" xml:space="preserve">
+    <value>شناسه تگ</value>
+  </data>
+  <data name="APP_StringKeys_Field_HDate" xml:space="preserve">
+    <value>تاریخ عدم اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_Field_HTime" xml:space="preserve">
+    <value>زمان عدم اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_Field_Id" xml:space="preserve">
+    <value>شناسه</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryAlExistTgCunt" xml:space="preserve">
+    <value>تعداد کل اموال</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryCntCunt" xml:space="preserve">
+    <value>اموال شناسایی شده</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryDate" xml:space="preserve">
+    <value>تاریخ اموال گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryErrCunt" xml:space="preserve">
+    <value>تگ های خطا</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryProductDesc" xml:space="preserve">
+    <value>توضیحات اموال گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryStatus" xml:space="preserve">
+    <value>وضعیت اموال گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryUnCntCunt" xml:space="preserve">
+    <value>اموال شناسایی نشده</value>
+  </data>
+  <data name="APP_StringKeys_Field_InventoryZoneCunt" xml:space="preserve">
+    <value>اماکن اتمام رسیده</value>
+  </data>
+  <data name="APP_StringKeys_Field_Ip" xml:space="preserve">
+    <value>آی پی</value>
+  </data>
+  <data name="APP_StringKeys_Field_LocationCode" xml:space="preserve">
+    <value>کد لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Field_LocationType" xml:space="preserve">
+    <value>نوع لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Field_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="APP_StringKeys_Field_OperationId" xml:space="preserve">
+    <value>شماره عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Field_Operations" xml:space="preserve">
+    <value>عملیات ها</value>
+  </data>
+  <data name="APP_StringKeys_Field_PersonelCode" xml:space="preserve">
+    <value>کد پرسنل</value>
+  </data>
+  <data name="APP_StringKeys_Field_Personel_ParentId" xml:space="preserve">
+    <value>سرپرست</value>
+  </data>
+  <data name="APP_StringKeys_Field_PowerPercent" xml:space="preserve">
+    <value>درصد قدرت</value>
+  </data>
+  <data name="APP_StringKeys_Field_RDate" xml:space="preserve">
+    <value>تاریخ اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_Field_RememberMe" xml:space="preserve">
+    <value>مرا بخاطر بسپار</value>
+  </data>
+  <data name="APP_StringKeys_Field_Role" xml:space="preserve">
+    <value>نوع کاربری</value>
+  </data>
+  <data name="APP_StringKeys_Field_RTime" xml:space="preserve">
+    <value>زمان اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_Field_SaveType" xml:space="preserve">
+    <value>نوع ثبت</value>
+  </data>
+  <data name="APP_StringKeys_Field_Status" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="APP_StringKeys_Field_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="APP_StringKeys_Field_TwoLevelMove" xml:space="preserve">
+    <value>ثبت دو مرحله ای اختصاص اموال</value>
+  </data>
+  <data name="APP_StringKeys_Field_UnDetectedAsset" xml:space="preserve">
+    <value>اموال شناسایی نشده</value>
+  </data>
+  <data name="APP_StringKeys_Field_Username" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="APP_StringKeys_FileName" xml:space="preserve">
+    <value>عنوان فایل</value>
+  </data>
+  <data name="APP_StringKeys_GateNumber" xml:space="preserve">
+    <value>شماره گیت</value>
+  </data>
+  <data name="APP_StringKeys_GetEpc" xml:space="preserve">
+    <value>دریافت شناسه</value>
+  </data>
+  <data name="APP_StringKeys_HolderPersonel" xml:space="preserve">
+    <value>پرسنل نگهدارنده</value>
+  </data>
+  <data name="APP_StringKeys_Id" xml:space="preserve">
+    <value>شناسه یکتا</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_HeaderDetail" xml:space="preserve">
+    <value>اماکن عملیات شماره {0}</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_InventoryStatus" xml:space="preserve">
+    <value>وضعیت شمارش</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_LocationReport" xml:space="preserve">
+    <value>گزارش لوکیشن های کنترل شده</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_Search" xml:space="preserve">
+    <value>جستجوی اموال گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_ZoneDetail" xml:space="preserve">
+    <value>اموال اختصاص یافته به لوکیشن {0}</value>
+  </data>
+  <data name="APP_StringKeys_LearnMore" xml:space="preserve">
+    <value>بیشتر بدانید</value>
+  </data>
+  <data name="APP_StringKeys_ListOf_Compeletable" xml:space="preserve">
+    <value>لیست {0}</value>
+  </data>
+  <data name="APP_StringKeys_Location" xml:space="preserve">
+    <value>لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Location_Assign" xml:space="preserve">
+    <value>اختصاص به لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Location_TypeIn" xml:space="preserve">
+    <value>داخل سازمان</value>
+  </data>
+  <data name="APP_StringKeys_Location_TypeOut" xml:space="preserve">
+    <value>خارج سازمان</value>
+  </data>
+  <data name="APP_StringKeys_LocModal_Title" xml:space="preserve">
+    <value>انتخاب لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_MainPage" xml:space="preserve">
+    <value>صفحه اصلی</value>
+  </data>
+  <data name="APP_StringKeys_ManageFields" xml:space="preserve">
+    <value>مدیریت فیلد ها</value>
+  </data>
+  <data name="APP_StringKeys_MenuTitle_AboutHelp" xml:space="preserve">
+    <value>معرفی و راهنما</value>
+  </data>
+  <data name="APP_StringKeys_MenuTitle_BasicInformation" xml:space="preserve">
+    <value>اطلاعات پایه</value>
+  </data>
+  <data name="APP_StringKeys_MenuTitle_ManageAssets" xml:space="preserve">
+    <value>مدیریت اموال</value>
+  </data>
+  <data name="APP_StringKeys_MenuTitle_Reports" xml:space="preserve">
+    <value>گزارشات</value>
+  </data>
+  <data name="APP_StringKeys_Menu_About" xml:space="preserve">
+    <value>درباره ما</value>
+  </data>
+  <data name="APP_StringKeys_Menu_AboutApp" xml:space="preserve">
+    <value>درباره سامانه</value>
+  </data>
+  <data name="APP_StringKeys_Menu_Help" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewAsset" xml:space="preserve">
+    <value>تعریف اموال</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewCostCenter" xml:space="preserve">
+    <value>مرکز هزینه</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewLocation" xml:space="preserve">
+    <value>اماکن استقرار</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewOrganization" xml:space="preserve">
+    <value>تعریف سازمان</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewPersonnel" xml:space="preserve">
+    <value>مدیریت پرسنل سازمان</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewStatus" xml:space="preserve">
+    <value>وضعیت اموال</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewType" xml:space="preserve">
+    <value>انواع اموال</value>
+  </data>
+  <data name="APP_StringKeys_Menu_NewUser" xml:space="preserve">
+    <value>مدیریت کاربر</value>
+  </data>
+  <data name="APP_StringKeys_Message_CascadeError" xml:space="preserve">
+    <value>به علت اختصاص حداقل یک اموال به آن و یا داشتن زیرمجموعه قابل حذف نیست</value>
+  </data>
+  <data name="APP_StringKeys_Message_ConnectionError" xml:space="preserve">
+    <value>اتصال با سرور ممکن نیست</value>
+  </data>
+  <data name="APP_StringKeys_Message_DeleteText_Part1" xml:space="preserve">
+    <value>از حذف اطلاعات مربوط به</value>
+  </data>
+  <data name="APP_StringKeys_Message_DeleteText_Part2" xml:space="preserve">
+    <value>مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Message_ExcelDuplicate" xml:space="preserve">
+    <value>اطلاعات فایل با عنوان موردنظر قبلا وارد شده است</value>
+  </data>
+  <data name="APP_StringKeys_Message_Failure" xml:space="preserve">
+    <value>در انجام عملیات مورد مشکلی بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Message_FailureTags" xml:space="preserve">
+    <value>اطلاعات تگ های زیر ثبت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Message_NodeCannotEdit" xml:space="preserve">
+    <value>گره موردنظر قابل ویرایش نیست</value>
+  </data>
+  <data name="APP_StringKeys_Message_SerialValidation" xml:space="preserve">
+    <value>لطفا ابتدا سریال موردنظر را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Message_Success" xml:space="preserve">
+    <value>عملیات با موفقیت انجام شد</value>
+  </data>
+  <data name="APP_StringKeys_Message_TagNotFound" xml:space="preserve">
+    <value>اطلاعات تگ مورد نظر یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_MovModal_Title" xml:space="preserve">
+    <value>انتخاب عملیات اختصاص</value>
+  </data>
+  <data name="APP_StringKeys_MovTagsModal_Title" xml:space="preserve">
+    <value>اموال اختصاص یافته با شناسه </value>
+  </data>
+  <data name="APP_StringKeys_NewObject" xml:space="preserve">
+    <value>{0} جدید</value>
+  </data>
+  <data name="APP_StringKeys_NoExcelModal_SubTitle" xml:space="preserve">
+    <value>تعداد اموال موردنظر را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_NoExcelModal_Title" xml:space="preserve">
+    <value>ورود اموال بدون مشخصات</value>
+  </data>
+  <data name="APP_StringKeys_Nullable" xml:space="preserve">
+    <value>[قابل خالی ماندن]</value>
+  </data>
+  <data name="APP_StringKeys_PerModal_Title" xml:space="preserve">
+    <value>انتخاب پرسنل</value>
+  </data>
+  <data name="APP_StringKeys_Personel" xml:space="preserve">
+    <value>پرسنل</value>
+  </data>
+  <data name="APP_StringKeys_Personel_Assign" xml:space="preserve">
+    <value>اختصاص به پرسنل</value>
+  </data>
+  <data name="APP_StringKeys_PreviousPage" xml:space="preserve">
+    <value>صفحه قبلی</value>
+  </data>
+  <data name="APP_StringKeys_PrintAssetLabel" xml:space="preserve">
+    <value>چاپ برچسب اموال</value>
+  </data>
+  <data name="APP_StringKeys_PrinterModal_SubTitle" xml:space="preserve">
+    <value>پرینتر مورد نظر را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_PrinterModal_Title" xml:space="preserve">
+    <value>انتخاب چاپگر</value>
+  </data>
+  <data name="APP_StringKeys_PrintFlag" xml:space="preserve">
+    <value>وضعیت چاپ</value>
+  </data>
+  <data name="APP_StringKeys_Print_PrintAllSelected" xml:space="preserve">
+    <value>چاپ موارد انتخاب شده</value>
+  </data>
+  <data name="APP_StringKeys_Print_Reprint" xml:space="preserve">
+    <value>چاپ شده / بازچاپ</value>
+  </data>
+  <data name="APP_StringKeys_Print_SelectAll" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="APP_StringKeys_ProductStatusCode" xml:space="preserve">
+    <value>کد وضعیت اموال</value>
+  </data>
+  <data name="APP_StringKeys_ReaderSetting" xml:space="preserve">
+    <value>تنظیمات دستگاه</value>
+  </data>
+  <data name="APP_StringKeys_ReadTag" xml:space="preserve">
+    <value>قرائت تگ</value>
+  </data>
+  <data name="APP_StringKeys_ReadTagFromdb" xml:space="preserve">
+    <value>دریافت تگ از دیتابیس</value>
+  </data>
+  <data name="APP_StringKeys_RegisterFlag" xml:space="preserve">
+    <value>وضعیت رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_ReportAlarm_Title" xml:space="preserve">
+    <value>گزارش هشدار های گیت</value>
+  </data>
+  <data name="APP_StringKeys_ReportAsset_Title" xml:space="preserve">
+    <value>گزارش اموال</value>
+  </data>
+  <data name="APP_StringKeys_ReportAssign_Title" xml:space="preserve">
+    <value>گزارش اختصاص اموال</value>
+  </data>
+  <data name="APP_StringKeys_ReportDirectory_Directory" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="APP_StringKeys_ReportDirectory_IsChoosed" xml:space="preserve">
+    <value>انتخاب</value>
+  </data>
+  <data name="APP_StringKeys_ReportDirectory_Size" xml:space="preserve">
+    <value>اندازه</value>
+  </data>
+  <data name="APP_StringKeys_ReportDirectory_SubTitle" xml:space="preserve">
+    <value>فایل گزارش موردنظر خود را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_ReportDirectory_Title" xml:space="preserve">
+    <value>انتخاب گزارش</value>
+  </data>
+  <data name="APP_StringKeys_ReportInventory_Title" xml:space="preserve">
+    <value>گزارش اموال گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Required" xml:space="preserve">
+    <value>اجباری</value>
+  </data>
+  <data name="APP_StringKeys_Return" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="APP_StringKeys_Rfid_DeviceType" xml:space="preserve">
+    <value>نوع دستگاه</value>
+  </data>
+  <data name="APP_StringKeys_Search_FromDate" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_Search_ToDate" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_StModal_Title" xml:space="preserve">
+    <value>انتخاب وضعیت اموال</value>
+  </data>
+  <data name="APP_StringKeys_STRINGFORMAT_Edit" xml:space="preserve">
+    <value>ویرایش {0} </value>
+  </data>
+  <data name="APP_StringKeys_STRINGFORMAT_Save" xml:space="preserve">
+    <value>ثبت {0}</value>
+  </data>
+  <data name="APP_StringKeys_STRINGFORMAT_Treeview" xml:space="preserve">
+    <value>درختواره {0}</value>
+  </data>
+  <data name="APP_StringKeys_STRINGFORMAT_Version" xml:space="preserve">
+    <value>نسخه {0}</value>
+  </data>
+  <data name="APP_StringKeys_TagInputPlaceHolder" xml:space="preserve">
+    <value>[برای قرائت تگ کلیک کنید]</value>
+  </data>
+  <data name="APP_StringKeys_Type" xml:space="preserve">
+    <value>نوع</value>
+  </data>
+  <data name="APP_StringKeys_Type_Compeletable" xml:space="preserve">
+    <value>نوع {0}</value>
+  </data>
+  <data name="APP_StringKeys_Unchanged" xml:space="preserve">
+    <value>[بدون تغییر]</value>
+  </data>
+  <data name="APP_StringKeys_Unchoosed" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_BadFormat" xml:space="preserve">
+    <value>مقدار وارد شده در برای فیلد {0} در فرمت مناسب نیست</value>
+  </data>
+  <data name="APP_StringKeys_Validation_OneFieldRequired" xml:space="preserve">
+    <value>حداقل یکی از دو فیلد {0} و {1} می بایست پر شود</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Range" xml:space="preserve">
+    <value>مقدار وارد شده در فیلد {0} باید بین {1} و {2} باشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Regex" xml:space="preserve">
+    <value>مقدار وارد شده در فرمت درست نیست</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Remote_Uniqueness" xml:space="preserve">
+    <value>اطلاعات فیلد {0}  قبلا وارد شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Required1" xml:space="preserve">
+    <value>پر کردن فیلد {0} الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Stringlength" xml:space="preserve">
+    <value>طول فیلد {0} باید میان {1} و {2} باشد</value>
+  </data>
+  <data name="APP_StringKeys_Version" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_StoreReproduct" xml:space="preserve">
+    <value>گزارش تولید نیمه آماده</value>
+  </data>
+  <data name="APP_StringKeys_NotChoosed" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="APP_StringKeys_Gold_ChooseCom" xml:space="preserve">
+    <value>انتخاب پورت</value>
+  </data>
+  <data name="APP_StringKeys_Gold_Dollar" xml:space="preserve">
+    <value>نرخ دلار</value>
+  </data>
+  <data name="APP_StringKeys_Gold_GoldPrice" xml:space="preserve">
+    <value>نرخ طلا گرمی</value>
+  </data>
+  <data name="APP_StringKeys_Gold_GoldWeight" xml:space="preserve">
+    <value>وزن طلا</value>
+  </data>
+  <data name="APP_StringKeys_Gold_InfoProduct" xml:space="preserve">
+    <value>اطلاعات محصول</value>
+  </data>
+  <data name="APP_StringKeys_Gold_InfoStones" xml:space="preserve">
+    <value>اطلاعات سنگ ها</value>
+  </data>
+  <data name="APP_StringKeys_Gold_Price" xml:space="preserve">
+    <value>قیمت</value>
+  </data>
+  <data name="APP_StringKeys_Gold_PriceFormula" xml:space="preserve">
+    <value>فرمول قیمت</value>
+  </data>
+  <data name="APP_StringKeys_Gold_PriceProduct" xml:space="preserve">
+    <value>قیمت محصول</value>
+  </data>
+  <data name="APP_StringKeys_Gold_Recommend" xml:space="preserve">
+    <value>محصولات پیشنهادی</value>
+  </data>
+  <data name="APP_StringKeys_Gold_TotalWeight" xml:space="preserve">
+    <value>وزن کل</value>
+  </data>
+  <data name="APP_StringKeys_Gold_Type" xml:space="preserve">
+    <value>جنس</value>
+  </data>
+  <data name="APP_StringKeys_Gold_TypeStone" xml:space="preserve">
+    <value>جنس سنگ</value>
+  </data>
+  <data name="APP_StringKeys_Gold_WeightStone" xml:space="preserve">
+    <value>وزن سنگ</value>
+  </data>
+  <data name="APP_StringKeys_Gold_Recommend_Title" xml:space="preserve">
+    <value>مشتریان دیگر انتخاب کرده اند..</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Register" xml:space="preserve">
+    <value>گزارش تولید</value>
+  </data>
+  <data name="APP_StringKeys_Report_NotEnterCount" xml:space="preserve">
+    <value>تعداد وارد نشده به انبار</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_ErrorRegister" xml:space="preserve">
+    <value>گزارش خطاهای رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_Report_ErrorRegister_Title1" xml:space="preserve">
+    <value>کالاهای رجیستر شده که از بسته بندی خارج نشده اند</value>
+  </data>
+  <data name="APP_StringKeys_Report_ErrorRegister_Title2" xml:space="preserve">
+    <value>کالاهای رجیسترشده که تگ ندارد</value>
+  </data>
+  <data name="APP_StringKeys_ExportPdf" xml:space="preserve">
+    <value>دریافت PDF</value>
+  </data>
+  <data name="APP_StringKeys_Field_MissionCode" xml:space="preserve">
+    <value>کدماموریت</value>
+  </data>
+  <data name="APP_StringKeys_Field_MissionDate" xml:space="preserve">
+    <value>زمان ماموریت</value>
+  </data>
+  <data name="APP_StringKeys_Field_MissionStatus" xml:space="preserve">
+    <value>وضعیت ماموریت</value>
+  </data>
+  <data name="APP_StringKeys_Field_MissionType" xml:space="preserve">
+    <value>نوع ماموریت</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Mission" xml:space="preserve">
+    <value>گزارش ماموریت لیفتراک</value>
+  </data>
+  <data name="APP_StringKeys_Claim_AddTo_User" xml:space="preserve">
+    <value>مدیریت دسترسی های کاربر "{0}"</value>
+  </data>
+  <data name="APP_StringKeys_Claim_ListViews" xml:space="preserve">
+    <value>صفحات</value>
+  </data>
+  <data name="APP_StringKeys_View_Account_UserClaim" xml:space="preserve">
+    <value>مدیریت دسترسی</value>
+  </data>
+  <data name="APP_StringKeys_Home_Index" xml:space="preserve">
+    <value>خانه</value>
+  </data>
+  <data name="APP_StringKeys_Message_Access_NotChangable" xml:space="preserve">
+    <value>دسترسی های مربوط به کاربر/سطح دسترسی موردنظر، قابل تغییر نیست</value>
+  </data>
+  <data name="APP_StringKeys_ProductRevokeDateTime" xml:space="preserve">
+    <value>تاریخ ابطال</value>
+  </data>
+  <data name="APP_StringKeys_UserRevoke" xml:space="preserve">
+    <value>کاربر ابطال</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Revoke" xml:space="preserve">
+    <value>گزارش تگ های ابطال شده</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Back" xml:space="preserve">
+    <value>گزارش کالاهای بازگشتی از انبار</value>
+  </data>
+  <data name="APP_StringKeys_ExitDesc" xml:space="preserve">
+    <value>توضیحات خروج</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_InventoryConflicts" xml:space="preserve">
+    <value>گزارش مغایرت های انبارگردانی</value>
+  </data>
+  <data name="APP_StringKeys_GetData_Acounting" xml:space="preserve">
+    <value>بارگذاری اطلاعات از سیستم حسابداری</value>
+  </data>
+  <data name="APP_StringKeys_Count_Accounting" xml:space="preserve">
+    <value>موجودی حسابداری</value>
+  </data>
+  <data name="APP_StringKeys_Count_Conflicts_Shown" xml:space="preserve">
+    <value>فقط نمایش مغایرت ها</value>
+  </data>
+  <data name="APP_StringKeys_Placement" xml:space="preserve">
+    <value>جانمایی</value>
+  </data>
+  <data name="APP_StringKeys_SearchFilter_OperationInfo" xml:space="preserve">
+    <value>فیلترهای اطلاعات عملیات</value>
+  </data>
+  <data name="APP_StringKeys_SearchFilter_ProductInfo" xml:space="preserve">
+    <value>فیلترهای اطلاعات کالا</value>
+  </data>
+  <data name="APP_StringKeys_SumCount_Conflicts" xml:space="preserve">
+    <value>مقدار مغایرت Rfid</value>
+  </data>
+  <data name="APP_StringKeys_Conflict_Accounting" xml:space="preserve">
+    <value>مغایرت حسابداری</value>
+  </data>
+  <data name="APP_StringKeys_Count" xml:space="preserve">
+    <value>تعداد</value>
+  </data>
+  <data name="APP_StringKeys_Report_Exit_Tab2" xml:space="preserve">
+    <value>تجمعی بر روی کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Report_Exit_Tab3" xml:space="preserve">
+    <value>گزارش ریز کالا</value>
+  </data>
+  <data name="APP_StringKeys_Search_Accounting" xml:space="preserve">
+    <value>جستجو در سیستم حسابداری</value>
+  </data>
+  <data name="APP_StringKeys_Search_InLocal" xml:space="preserve">
+    <value>جستجو در محصولات</value>
+  </data>
+  <data name="APP_StringKeys_Error_SelectProduct" xml:space="preserve">
+    <value>ابتدا یک محصول را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_Image" xml:space="preserve">
+    <value>تصویر کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_Properties" xml:space="preserve">
+    <value>مشخصات کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_Tags_Properties" xml:space="preserve">
+    <value>مشخصات محموله کالا</value>
+  </data>
+  <data name="APP_StringKeys_Security_Tags" xml:space="preserve">
+    <value>کالاهای شناسایی شده توسط RFID</value>
+  </data>
+  <data name="APP_StringKeys_Security_Title" xml:space="preserve">
+    <value>ثبت خروج ماشین حمل (خروج محصول)</value>
+  </data>
+  <data name="APP_StringKeys_DownloadSample" xml:space="preserve">
+    <value>دریافت نمونه</value>
+  </data>
+  <data name="APP_StringKeys_Error_RegisteredProductCode" xml:space="preserve">
+    <value>محصول مورد نظر دارای تگ رجیستر شده است و الوکیشن حذف آن وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Upload" xml:space="preserve">
+    <value>بارگذاری</value>
+  </data>
+  <data name="APP_StringKeys_UploadExcel" xml:space="preserve">
+    <value>بارگذاری اکسل</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Choose" xml:space="preserve">
+    <value>ابتدا یک مورد را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Report" xml:space="preserve">
+    <value>گزارش</value>
+  </data>
+  <data name="APP_StringKeys_Destination" xml:space="preserve">
+    <value>مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Capacity" xml:space="preserve">
+    <value>مورد انتخاب شده دارای ظرفیت است. ابتدا ظرفیت را خالی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_HaveChild" xml:space="preserve">
+    <value>مورد انتخاب شده دارای موارد زیرمجموعه است</value>
+  </data>
+  <data name="APP_StringKeys_Views_Account_Access" xml:space="preserve">
+    <value>دسترسی های کاربران</value>
+  </data>
+  <data name="APP_StringKeys_User_Image" xml:space="preserve">
+    <value>تصویر کاربری</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_TechnicalInfo" xml:space="preserve">
+    <value>اطلاعات فنی</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_TechnicalInfoUpload" xml:space="preserve">
+    <value>بارگذاری اکسل اطلاعات فنی</value>
+  </data>
+  <data name="APP_StringKeys_Product_Add_AddProductUpload" xml:space="preserve">
+    <value>افزودن کالا با اکسل</value>
+  </data>
+  <data name="APP_StringKeys_Inspect" xml:space="preserve">
+    <value>بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Elements" xml:space="preserve">
+    <value>تعریف المان های بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_ElementType" xml:space="preserve">
+    <value>نوع المان</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Max" xml:space="preserve">
+    <value>حداکثر مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Min" xml:space="preserve">
+    <value>حداقل مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Prevent" xml:space="preserve">
+    <value>از عبور گیت جلوگیری شود؟</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Type_Checkbox" xml:space="preserve">
+    <value>چندگزینه ای</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Type_Combobox" xml:space="preserve">
+    <value>تک گزینه ای</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Type_Int" xml:space="preserve">
+    <value>مقدار عددی</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Type_String" xml:space="preserve">
+    <value>مقدار حرف و عدد</value>
+  </data>
+  <data name="APP_StringKeys_Default_value" xml:space="preserve">
+    <value>مقدار پیش فرض</value>
+  </data>
+  <data name="APP_StringKeys_Options" xml:space="preserve">
+    <value>گزینه ها</value>
+  </data>
+  <data name="APP_StringKeys_Option_Add" xml:space="preserve">
+    <value>افزودن گزینه</value>
+  </data>
+  <data name="APP_StringKeys_ProductType_Choose" xml:space="preserve">
+    <value>انتخاب نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Options_Add" xml:space="preserve">
+    <value>هیچ گزینه ای افزوده نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ProductType_Add" xml:space="preserve">
+    <value>کد کالای مورد نظر انتخاب نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ElementType" xml:space="preserve">
+    <value>یک نوع المان را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Unverified" xml:space="preserve">
+    <value>مردود</value>
+  </data>
+  <data name="APP_StringKeys_Verified" xml:space="preserve">
+    <value>تائید شده</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Report" xml:space="preserve">
+    <value>گزارش بازرسی - عملیات ها</value>
+  </data>
+  <data name="APP_StringKeys_Result" xml:space="preserve">
+    <value>نتیجه</value>
+  </data>
+  <data name="APP_StringKeys_Default_Value_Question" xml:space="preserve">
+    <value>آیا مورد پیش فرض است؟</value>
+  </data>
+  <data name="APP_StringKeys_Field_Warehouse_Code" xml:space="preserve">
+    <value>کد انبار</value>
+  </data>
+  <data name="APP_StringKeys_Field_Warehouse_Inventory_Type" xml:space="preserve">
+    <value>نوع موجودی انبار</value>
+  </data>
+  <data name="APP_StringKeys_Field_Warehouse_Operational_Type" xml:space="preserve">
+    <value>نوع عملیاتی انبار</value>
+  </data>
+  <data name="APP_StringKeys_Field_Warehouse_Title" xml:space="preserve">
+    <value>عنوان انبار</value>
+  </data>
+  <data name="APP_StringKeys_Loading_Warehouse" xml:space="preserve">
+    <value>انبار بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_Material_Warehouse" xml:space="preserve">
+    <value>انبار مواد اولیه</value>
+  </data>
+  <data name="APP_StringKeys_Physical" xml:space="preserve">
+    <value>حقیقی</value>
+  </data>
+  <data name="APP_StringKeys_Production_Warehouse" xml:space="preserve">
+    <value>انبار تولید</value>
+  </data>
+  <data name="APP_StringKeys_Product_Warehouse" xml:space="preserve">
+    <value>انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Code_Uniqueness" xml:space="preserve">
+    <value>این کد قبلا ثبت شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_EmptyError" xml:space="preserve">
+    <value>نمی تواند خالی باشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Inventory_Type" xml:space="preserve">
+    <value>نوع موجودی را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Operational_Type" xml:space="preserve">
+    <value>نوع عملیاتی انبار را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Virtual" xml:space="preserve">
+    <value>مجازی</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Add" xml:space="preserve">
+    <value>افزودن انبار</value>
+  </data>
+  <data name="APP_StringKeys_Waste_Warehouse" xml:space="preserve">
+    <value>انبار ضایعات</value>
+  </data>
+  <data name="APP_StringKeys_Default" xml:space="preserve">
+    <value>پیش فرض</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Delete_Default_Forbidden" xml:space="preserve">
+    <value>الوکیشن حذف پیش فرض وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Edit_Default_Forbidden" xml:space="preserve">
+    <value>الوکیشن ویرایش پیش فرض وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Date" xml:space="preserve">
+    <value>تاریخ بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceType_Direct" xml:space="preserve">
+    <value>ثبت مستقیم</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceType_Mission" xml:space="preserve">
+    <value>ماموریت جابه جایی</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceProductChooseType" xml:space="preserve">
+    <value>نوع انتخاب کالا</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceProductChooseType_CodeAndCount" xml:space="preserve">
+    <value>انتخاب کالا از طریق مشخص کردن کدکالا و تعداد</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceProductChooseType_Serial" xml:space="preserve">
+    <value>انتخاب کالا از طریق مشخص کردن سریال کالا</value>
+  </data>
+  <data name="APP_StringKeys_Place_PlaceType" xml:space="preserve">
+    <value>نوع ثبت جابه جایی</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Place_ProductChoose_Direct" xml:space="preserve">
+    <value>انتخاب کالا در حالت جابه جایی مستقیم تنها با انتخاب سریال الوکیشن پذیر است</value>
+  </data>
+  <data name="APP_StringKeys_Count_InDestination" xml:space="preserve">
+    <value>موجودی در مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Count_InFrom" xml:space="preserve">
+    <value>موجودی در مبدا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Capacity_Destination" xml:space="preserve">
+    <value>لوکیشن مقصد گنجایش مقدار درخواستی را ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Capacity_From" xml:space="preserve">
+    <value>در لوکیشن مبدا، از محصول درخواستی، موجودی درخواستی وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Capacity_NotFound" xml:space="preserve">
+    <value>محصول درخواستی موجودی درخواستی را ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Error_Duplicated_Serials" xml:space="preserve">
+    <value>سریال های زیر تکراری است</value>
+  </data>
+  <data name="APP_StringKeys_Error_Notfound_Serials" xml:space="preserve">
+    <value>سریال های زیر یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Field_ProductType" xml:space="preserve">
+    <value>نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Login_Timeout" xml:space="preserve">
+    <value>اعتبار لاگین شما اتمام یافته است</value>
+  </data>
+  <data name="APP_StringKeys_Compeletable_StoreLocations" xml:space="preserve">
+    <value>موجودی انبار "{0}" لوکیشن "{1}"</value>
+  </data>
+  <data name="APP_StringKeys_Compeletable_StoreLocations_ProductCode" xml:space="preserve">
+    <value>موجودی انبار "{0}" لوکیشن "{1}" کدکالا "{2}"</value>
+  </data>
+  <data name="APP_StringKeys_Compeletable_StoreLocations_ProductCode_Date" xml:space="preserve">
+    <value>موجودی انبار "{0}" لوکیشن "{1}" کدکالا "{2}" تاریخ "{3}"</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_History" xml:space="preserve">
+    <value>تاریخچه بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Number" xml:space="preserve">
+    <value>شماره لیفتراک</value>
+  </data>
+  <data name="APP_StringKeys_Truck_TruckNumber_Required" xml:space="preserve">
+    <value>وارد کردن شماره لیفتراک الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Confirm_First" xml:space="preserve">
+    <value>آیا قرارگرفتن محموله</value>
+  </data>
+  <data name="APP_StringKeys_Truck_Confirm_Second" xml:space="preserve">
+    <value>را در لوکیشن زیر تائید می کنید؟</value>
+  </data>
+  <data name="APP_StringKeys_Number_Truck" xml:space="preserve">
+    <value>لیفتراک شماره ی</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Cargo_Status" xml:space="preserve">
+    <value>ابتدا وضعیت محموله فعلی را تعیین کنید</value>
+  </data>
+  <data name="APP_StringKeys_Gate_TruckCross" xml:space="preserve">
+    <value>ثبت تردد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Steps_Enter" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Steps_Exit" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Steps_Present" xml:space="preserve">
+    <value>پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_NationalCode" xml:space="preserve">
+    <value>کدملی</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_Cause" xml:space="preserve">
+    <value>علت مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Turn" xml:space="preserve">
+    <value>نوبت پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_TypeTruck" xml:space="preserve">
+    <value>نوع ماشین</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Validation_Step" xml:space="preserve">
+    <value>اطلاعات مرحله {0} هنوز ثبت نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_NotFound" xml:space="preserve">
+    <value>اطلاعات مورد نظر یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_Date" xml:space="preserve">
+    <value>تاریخ پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_WeightTonage" xml:space="preserve">
+    <value>وزن ورود(تن)</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت خروج</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_WeightTonage" xml:space="preserve">
+    <value>وزن خروج(تن)</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_PresentCause_Guest" xml:space="preserve">
+    <value>مهمان</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_PresentCause_RecieveMaterial" xml:space="preserve">
+    <value>تحویل مواد اولیه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_PresentCause_SendProductToCustomer" xml:space="preserve">
+    <value>ارسال کالا به مشتری</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_PresentCause_SendProductToShip" xml:space="preserve">
+    <value>ارسال کالا به باربری</value>
+  </data>
+  <data name="APP_StringKeys_Company" xml:space="preserve">
+    <value>شرکت</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Stringlength_Max" xml:space="preserve">
+    <value>طول فیلد {0} باید حداکثر {1} باشد</value>
+  </data>
+  <data name="APP_StringKeys_Download" xml:space="preserve">
+    <value>دریافت</value>
+  </data>
+  <data name="APP_StringKeys_Gallery_Title" xml:space="preserve">
+    <value>گالری اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Upload_Docs" xml:space="preserve">
+    <value>بارگذاری اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Upload_MultiMedia" xml:space="preserve">
+    <value>بارگذاری چندرسانه ای</value>
+  </data>
+  <data name="APP_StringKeys_Upload_Photos" xml:space="preserve">
+    <value>بارگذاری تصاویر</value>
+  </data>
+  <data name="APP_StringKeys_LicenseCode" xml:space="preserve">
+    <value>شماره گواهینامه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_DocUpload" xml:space="preserve">
+    <value>بارگذاری اسناد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_Date" xml:space="preserve">
+    <value>تاریخ ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_OtherTags" xml:space="preserve">
+    <value>سایر تگ های ماشین</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_Time" xml:space="preserve">
+    <value>ساعت ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_Date" xml:space="preserve">
+    <value>تاریخ خروج</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_Time" xml:space="preserve">
+    <value>ساعت خروج</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_Time" xml:space="preserve">
+    <value>ساعت پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_User" xml:space="preserve">
+    <value>کاربر ثبت مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت</value>
+  </data>
+  <data name="APP_StringKeys_Add_Dynamic_fields" xml:space="preserve">
+    <value>تعریف فیلدهای اطلاعاتی</value>
+  </data>
+  <data name="APP_StringKeys_Dynamic_Field" xml:space="preserve">
+    <value>فیلد داینامیک</value>
+  </data>
+  <data name="APP_StringKeys_OperationInfo" xml:space="preserve">
+    <value>اطلاعات عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Product_Field" xml:space="preserve">
+    <value>اطلاعات اقلام کالا</value>
+  </data>
+  <data name="APP_StringKeys_RelatedTitles" xml:space="preserve">
+    <value>عناوین مرتبط</value>
+  </data>
+  <data name="APP_StringKeys_Systematic_Element" xml:space="preserve">
+    <value>المان سیستمی</value>
+  </data>
+  <data name="APP_StringKeys_Header_Key" xml:space="preserve">
+    <value>کلید سند</value>
+  </data>
+  <data name="APP_StringKeys_FileName_IsExist" xml:space="preserve">
+    <value>یک فایل با این نام قبلا آپلود شده است</value>
+  </data>
+  <data name="APP_StringKeys_Upload_DynamicExce" xml:space="preserve">
+    <value>بارگذاری اکسل داینامیک</value>
+  </data>
+  <data name="APP_StringKeys_RelatedTitle" xml:space="preserve">
+    <value>عنوان مرتبط</value>
+  </data>
+  <data name="APP_StringKeys_Upload_Operational_Docs" xml:space="preserve">
+    <value>بارگذاری اسناد عملیات های انبار</value>
+  </data>
+  <data name="APP_StringKeys_Iran" xml:space="preserve">
+    <value>ایران</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_ChoosePlaque" xml:space="preserve">
+    <value>از این راننده چند ماشین ثبت شده، لطفا یک مورد را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_ContractStatus" xml:space="preserve">
+    <value>سند تولید</value>
+  </data>
+  <data name="APP_StringKeys_Brand" xml:space="preserve">
+    <value>برند</value>
+  </data>
+  <data name="APP_StringKeys_Group" xml:space="preserve">
+    <value>گروه</value>
+  </data>
+  <data name="APP_StringKeys_Sales_Permit" xml:space="preserve">
+    <value>مجوز فروش</value>
+  </data>
+  <data name="APP_StringKeys_Document_Type" xml:space="preserve">
+    <value>نوع سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Document_Type" xml:space="preserve">
+    <value>یک نوع سند انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Error_CascadeDelete" xml:space="preserve">
+    <value>این مورد دارای چند اطلاعات مرتبط است و قابل حذف نیست</value>
+  </data>
+  <data name="APP_StringKeys_Product_Brand" xml:space="preserve">
+    <value>افزودن برند کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Group" xml:space="preserve">
+    <value>افزودن گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Excel_Format" xml:space="preserve">
+    <value>اکسل وارد شده در فرمت مناسب نیست</value>
+  </data>
+  <data name="APP_StringKeys_ProductBrand" xml:space="preserve">
+    <value>برند کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductGroup" xml:space="preserve">
+    <value>گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_AddProducts_UploadAndPreview" xml:space="preserve">
+    <value>بارگذاری فایل و پیش نمایش اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Validation_AnyData" xml:space="preserve">
+    <value>اطلاعاتی برای بارگذاری وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Report_EnterAction_Tab1" xml:space="preserve">
+    <value>گزارش عملیات های ورود انبار</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_EnterAction" xml:space="preserve">
+    <value>گزارش عملیات های ورود کالا</value>
+  </data>
+  <data name="APP_StringKeys_Show_Count" xml:space="preserve">
+    <value>تعداد نمایش</value>
+  </data>
+  <data name="APP_StringKeys_Report_TruckCross" xml:space="preserve">
+    <value>گزارش تردد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_DescTruck" xml:space="preserve">
+    <value>شرح ماشین</value>
+  </data>
+  <data name="APP_StringKeys_Present_Desc" xml:space="preserve">
+    <value>شرح مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_User" xml:space="preserve">
+    <value>کاربر ثبت ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_User" xml:space="preserve">
+    <value>کاربر ثبت خروج</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_LastResult" xml:space="preserve">
+    <value>آخرین بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_Doc" xml:space="preserve">
+    <value>اسناد ورود</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_Doc" xml:space="preserve">
+    <value>اسناد خروج</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_CarDoc" xml:space="preserve">
+    <value>اسناد ماشین</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_DirverDoc" xml:space="preserve">
+    <value>اسناد راننده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_Doc" xml:space="preserve">
+    <value>اسناد پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Products" xml:space="preserve">
+    <value>محموله ها</value>
+  </data>
+  <data name="APP_StringKeys_GateCode" xml:space="preserve">
+    <value>کد گیت</value>
+  </data>
+  <data name="APP_StringKeys_UHF_Log_Id" xml:space="preserve">
+    <value>کد عملیات شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Handheld" xml:space="preserve">
+    <value>هندهلد</value>
+  </data>
+  <data name="APP_StringKeys_Kiosk" xml:space="preserve">
+    <value>کیوسک</value>
+  </data>
+  <data name="APP_StringKeys_Register_Device" xml:space="preserve">
+    <value>دستگاه رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_Inventory" xml:space="preserve">
+    <value>گزارش عملیات انبارگردانی</value>
+  </data>
+  <data name="APP_StringKeys_RegisterDevice" xml:space="preserve">
+    <value>دستگاه رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_Add_Product_Size" xml:space="preserve">
+    <value>افزودن سایز کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Qc" xml:space="preserve">
+    <value>افزودن درجه کیفیت کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Product_ApiUnique" xml:space="preserve">
+    <value>اطلاعات وارد شده منحصر به فرد نیست</value>
+  </data>
+  <data name="APP_StringKeys_Qc_Validation_Choose" xml:space="preserve">
+    <value>لطفا حداقل یک درجه کیفی را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Freeze_Tag" xml:space="preserve">
+    <value>ثبت و رفع فریز محصولات</value>
+  </data>
+  <data name="APP_StringKeys_Status_Freezed" xml:space="preserve">
+    <value>فریز</value>
+  </data>
+  <data name="APP_StringKeys_Status_Not_Freezed" xml:space="preserve">
+    <value>عدم فریز</value>
+  </data>
+  <data name="APP_StringKeys_Freeze_Status" xml:space="preserve">
+    <value>وضعیت فریز</value>
+  </data>
+  <data name="APP_StringKeys_From_Serial" xml:space="preserve">
+    <value>از سریال</value>
+  </data>
+  <data name="APP_StringKeys_To_Serial" xml:space="preserve">
+    <value>تا سریال</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Serials_Add" xml:space="preserve">
+    <value>هیچ سریالی افزوده نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Count_Conflicts" xml:space="preserve">
+    <value>تعداد مغایرت Rfid</value>
+  </data>
+  <data name="APP_StringKeys_SumCount_Rfid" xml:space="preserve">
+    <value>موجودی Rfid(متراژ)</value>
+  </data>
+  <data name="APP_StringKeys_Choose_Serial" xml:space="preserve">
+    <value>انتخاب محموله</value>
+  </data>
+  <data name="APP_StringKeys_Metrage" xml:space="preserve">
+    <value>متراژ</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_And_Freeze" xml:space="preserve">
+    <value>بازرسی و فریز</value>
+  </data>
+  <data name="APP_StringKeys_Report_Freeze" xml:space="preserve">
+    <value>گزارش عملیات های فریز</value>
+  </data>
+  <data name="APP_StringKeys_Line_Code_Salon" xml:space="preserve">
+    <value>کد سالن</value>
+  </data>
+  <data name="APP_StringKeys_Line_Title_Salon" xml:space="preserve">
+    <value>عنوان سالن</value>
+  </data>
+  <data name="APP_StringKeys_PackValue" xml:space="preserve">
+    <value>مقدار محموله</value>
+  </data>
+  <data name="APP_StringKeys_ProductSecondValue" xml:space="preserve">
+    <value>مقدار واحد دوم در محموله</value>
+  </data>
+  <data name="APP_StringKeys_SeconValueInPack" xml:space="preserve">
+    <value>تعداد واحد دوم در محموله</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_ReportProduct" xml:space="preserve">
+    <value>گزارشی بازرسی - طرح و درجه</value>
+  </data>
+  <data name="APP_StringKeys_Accept_Inspect_Count" xml:space="preserve">
+    <value>تعداد تأیید شده</value>
+  </data>
+  <data name="APP_StringKeys_Accept_Inspect_Value" xml:space="preserve">
+    <value>مقدار تأیید شده</value>
+  </data>
+  <data name="APP_StringKeys_Reject_Inspect_Count" xml:space="preserve">
+    <value>تعداد تأیید نشده</value>
+  </data>
+  <data name="APP_StringKeys_Reject_Inspect_Value" xml:space="preserve">
+    <value>مقدار تأیید نشده</value>
+  </data>
+  <data name="APP_StringKeys_Verify_Percent" xml:space="preserve">
+    <value> تائید شده</value>
+  </data>
+  <data name="APP_StringKeys_Setting_ApiSync" xml:space="preserve">
+    <value>ارسال عملیات جابجایی به API</value>
+  </data>
+  <data name="APP_StringKeys_Basic_Document" xml:space="preserve">
+    <value>سند مبنا</value>
+  </data>
+  <data name="APP_StringKeys_Update_ProductCode" xml:space="preserve">
+    <value>اصلاح کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Required_ProductCode" xml:space="preserve">
+    <value>وارد کردن کد کالا الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Document_Aggregate" xml:space="preserve">
+    <value>سند تجمیعی جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Document_Count" xml:space="preserve">
+    <value>تعداد اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Item_Sum" xml:space="preserve">
+    <value>مقدار اقلام</value>
+  </data>
+  <data name="APP_StringKeys_Item_Count" xml:space="preserve">
+    <value>تعداد اقلام</value>
+  </data>
+  <data name="APP_StringKeys_Document_Properties" xml:space="preserve">
+    <value>مشخصات سند</value>
+  </data>
+  <data name="APP_StringKeys_Aggregate_Suggests" xml:space="preserve">
+    <value>پیشنهاد تجمیع اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Add_Document_Aggregate" xml:space="preserve">
+    <value>افزودن تجمیع جدید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_SingleDoc_Remove" xml:space="preserve">
+    <value>الوکیشن حذف تک سند وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Error_Notfound_DocKey" xml:space="preserve">
+    <value>کد سند وارد شده یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_DocKey" xml:space="preserve">
+    <value>کد سند</value>
+  </data>
+  <data name="APP_StringKeys_Search_Doc" xml:space="preserve">
+    <value>جستجوی سند</value>
+  </data>
+  <data name="APP_StringKeys_Approve_Aggregate_Docs" xml:space="preserve">
+    <value>تائید تجمیع اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Aggregate_CheckBeforeApprove" xml:space="preserve">
+    <value>آیا از تجمیع اسناد مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Print_Aggregated_Document" xml:space="preserve">
+    <value>آیا مایل به چاپ اطلاعات سند هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Aggregatable" xml:space="preserve">
+    <value>قابل تجمیع</value>
+  </data>
+  <data name="APP_StringKeys_Aggregated" xml:space="preserve">
+    <value>تجمیع شده</value>
+  </data>
+  <data name="APP_StringKeys_Dynamic_Excel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="APP_StringKeys_Validation_Aggregate_SingleDoc" xml:space="preserve">
+    <value>انتخاب حداقل دو سند برای تجمیع الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Item_Properties" xml:space="preserve">
+    <value>مشخصات اقلام</value>
+  </data>
+  <data name="APP_StringKeys_Security_Index_Doc_required" xml:space="preserve">
+    <value>الزام کنترل کالاها با سند عطف</value>
+  </data>
+  <data name="APP_StringKeys_View_Security_Index_Doc_required" xml:space="preserve">
+    <value>جابجایی از طریق گیت و سند</value>
+  </data>
+  <data name="APP_StringKeys_Alert_MovementAction_Submit" xml:space="preserve">
+    <value>این عملیات با کد جابجایی : {0} ثبت شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Required_OperationCode" xml:space="preserve">
+    <value>اطلاعات کد عملیات را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Doc_Code_Required" xml:space="preserve">
+    <value>اطلاعات کد سند را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Prevent_On_Errors" xml:space="preserve">
+    <value>لطفا خطا ها را رفع و دوباره امتحان کنید</value>
+  </data>
+  <data name="APP_StringKeys_Doc_Cus" xml:space="preserve">
+    <value>اطلاعات سند مجوز خروج کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Gate_Required" xml:space="preserve">
+    <value>ابتدا کد گیت را مشخص کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_TruckCross_Property_Required" xml:space="preserve">
+    <value>مشخصات ماشین حمل خالی است</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Property" xml:space="preserve">
+    <value>مشخصات ماشین حمل</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Status_Accept" xml:space="preserve">
+    <value>بازرسی تایید</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Status_Failed" xml:space="preserve">
+    <value>بازرسی مردود</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Status_Not" xml:space="preserve">
+    <value>بازرسی نشده</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Status" xml:space="preserve">
+    <value>وضعیت بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Account_Profile" xml:space="preserve">
+    <value>پروفایل کاربری</value>
+  </data>
+  <data name="APP_StringKeys_Password_New" xml:space="preserve">
+    <value>کلمه عبور جدید</value>
+  </data>
+  <data name="APP_StringKeys_RePassword" xml:space="preserve">
+    <value>تکرار کلمه عبور</value>
+  </data>
+  <data name="APP_StringKeys_RePassword_New" xml:space="preserve">
+    <value>تکرار کلمه عبور جدید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Equals" xml:space="preserve">
+    <value>مقادیر فیلد {0} و {1} برابر نیست</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Stringlength_Min" xml:space="preserve">
+    <value>طول فیلد {0} باید حداقل {1} باشد</value>
+  </data>
+  <data name="APP_StringKeys_View_Notif_EventBase" xml:space="preserve">
+    <value>رخداد محور</value>
+  </data>
+  <data name="APP_StringKeys_View_Notif_ScheduleBase" xml:space="preserve">
+    <value>برنامه محور</value>
+  </data>
+  <data name="APP_StringKeys_Event_Type" xml:space="preserve">
+    <value>نوع رخداد</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Title" xml:space="preserve">
+    <value>عنوان اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Element" xml:space="preserve">
+    <value>المان</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Plan_Properties" xml:space="preserve">
+    <value>مشخصات برنامه اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Contact_Duplicate" xml:space="preserve">
+    <value>مشخصات تماس قبلا به لیست اضافه شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Contact_Required" xml:space="preserve">
+    <value>لطفا مشخصات تماس را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Elements_Contacts" xml:space="preserve">
+    <value>المان های مخاطبین</value>
+  </data>
+  <data name="APP_StringKeys_Elements" xml:space="preserve">
+    <value>المان ها</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Contacts_Props" xml:space="preserve">
+    <value>مشخصات ارسال و مخاطبین</value>
+  </data>
+  <data name="APP_StringKeys_Notif_Type_Props" xml:space="preserve">
+    <value>مشخصات نوع اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Next_Operation" xml:space="preserve">
+    <value>عملیات بعدی</value>
+  </data>
+  <data name="APP_StringKeys_Previous_Operation" xml:space="preserve">
+    <value>عملیات قبلی</value>
+  </data>
+  <data name="APP_StringKeys_Gate_Operations" xml:space="preserve">
+    <value>عملیات های گیت</value>
+  </data>
+  <data name="APP_StringKeys_Error_Notfound_Operation_Code" xml:space="preserve">
+    <value>کد عملیات یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Document_Ope" xml:space="preserve">
+    <value>سند عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Document_Register" xml:space="preserve">
+    <value>سند تولید</value>
+  </data>
+  <data name="APP_StringKeys_OldSerial" xml:space="preserve">
+    <value>سریال قبلی</value>
+  </data>
+  <data name="APP_StringKeys_Manage_Docs" xml:space="preserve">
+    <value>مدیریت اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Choosed" xml:space="preserve">
+    <value>انتخاب شده</value>
+  </data>
+  <data name="APP_StringKeys_Approve" xml:space="preserve">
+    <value>تایید</value>
+  </data>
+  <data name="APP_StringKeys_Customer_Code" xml:space="preserve">
+    <value>کد مشتری</value>
+  </data>
+  <data name="APP_StringKeys_Customer_Title" xml:space="preserve">
+    <value>عنوان مشتری</value>
+  </data>
+  <data name="APP_StringKeys_Item_Variety" xml:space="preserve">
+    <value>تنوع اقلام</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Choose_One_Document" xml:space="preserve">
+    <value>انتخاب حداقل یک سند الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Cartable" xml:space="preserve">
+    <value>کارتابل</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_Approve_Final" xml:space="preserve">
+    <value>تأیید نهایی سند</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_Approve_First" xml:space="preserve">
+    <value>تأیید اولیه سند</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_Collect_End" xml:space="preserve">
+    <value>ثبت اتمام جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_Collect_Start" xml:space="preserve">
+    <value>ثبت شروع جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_Submit_Send_Doc" xml:space="preserve">
+    <value>ثبت مستندات ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Report_Docs" xml:space="preserve">
+    <value>گزارش اسناد</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Collecting" xml:space="preserve">
+    <value>در حال جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Loading" xml:space="preserve">
+    <value>در حال بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Sended" xml:space="preserve">
+    <value>ارسال شده</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Wating_Approve_Final" xml:space="preserve">
+    <value>در انتظار تایید نهایی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Wating_Approve_First" xml:space="preserve">
+    <value>در انتظار تایید اول</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Wating_Collect" xml:space="preserve">
+    <value>در انتظار جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Wating_Load" xml:space="preserve">
+    <value>در انتظار بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Wating_Send" xml:space="preserve">
+    <value>در انتظار ارسال</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Get_Send_Doc" xml:space="preserve">
+    <value>دریافت مستندات ارسال</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Revoke" xml:space="preserve">
+    <value>باطل شده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_HaveRows" xml:space="preserve">
+    <value>ابتدا ردیف های اطلاعاتی را حذف کنید</value>
+  </data>
+  <data name="APP_StringKeys_International_Plaque" xml:space="preserve">
+    <value>پلاک بین المللی</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Customer" xml:space="preserve">
+    <value>فرستنده / گیرنده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_Acceptor" xml:space="preserve">
+    <value>شخص مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Enter_AcceptPlace" xml:space="preserve">
+    <value>محل مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_CargoOwnerName" xml:space="preserve">
+    <value>نام صاحب بار</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_CargoOwnerPhone" xml:space="preserve">
+    <value>شماره تماس صاحب بار</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_DeliveryAddress" xml:space="preserve">
+    <value>آدرس تحویل</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_PaymentType" xml:space="preserve">
+    <value>نوع پرداخت</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_PureWeightCargo" xml:space="preserve">
+    <value>وزن خالص محموله</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_ShipmentCost" xml:space="preserve">
+    <value>کرایه حمل</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_TotalCost" xml:space="preserve">
+    <value>مبلغ نهایی</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_UnitPrice" xml:space="preserve">
+    <value>قیمت واحد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_WeightBridgeReceiptNumber" xml:space="preserve">
+    <value>شماره قبض باسکول</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Operation_Destination" xml:space="preserve">
+    <value>مقصد عملیات</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Operation_Type" xml:space="preserve">
+    <value>نوع عملیات</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Shipment" xml:space="preserve">
+    <value>باربری</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Shipment_Number" xml:space="preserve">
+    <value>شماره بارنامه</value>
+  </data>
+  <data name="APP_StringKeys_Discharge_Place" xml:space="preserve">
+    <value>محل تخلیه</value>
+  </data>
+  <data name="APP_StringKeys_Loading_Place" xml:space="preserve">
+    <value>محل بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_Payment_ByCompany" xml:space="preserve">
+    <value>با شرکت</value>
+  </data>
+  <data name="APP_StringKeys_Payment_ByReciever" xml:space="preserve">
+    <value>با گیرنده</value>
+  </data>
+  <data name="APP_StringKeys_Payment_BySender" xml:space="preserve">
+    <value>با فرستنده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Entered" xml:space="preserve">
+    <value>وارد شده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exited" xml:space="preserve">
+    <value>خارج شده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_NotExitedCrosses" xml:space="preserve">
+    <value>ماشین های خارج نشده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Presented" xml:space="preserve">
+    <value>پذیرش شده</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Config" xml:space="preserve">
+    <value>اطلاعات پایه</value>
+  </data>
+  <data name="APP_StringKeys_Info_Person" xml:space="preserve">
+    <value>اطلاعات شخص</value>
+  </data>
+  <data name="APP_StringKeys_Info_Present" xml:space="preserve">
+    <value>اطلاعات پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_Info_Truck" xml:space="preserve">
+    <value>اطلاعات ماشین</value>
+  </data>
+  <data name="APP_StringKeys_Security" xml:space="preserve">
+    <value>حراست</value>
+  </data>
+  <data name="APP_StringKeys_Gate_Product_Detection" xml:space="preserve">
+    <value>شناسایی کالا از طریق گیت</value>
+  </data>
+  <data name="APP_StringKeys_Rfid" xml:space="preserve">
+    <value>RFID</value>
+  </data>
+  <data name="APP_StringKeys_NameAndFamily" xml:space="preserve">
+    <value>نام و نام خانوادگی</value>
+  </data>
+  <data name="APP_StringKeys_Phone_Number" xml:space="preserve">
+    <value>شماره تماس</value>
+  </data>
+  <data name="APP_StringKeys_PassportCode" xml:space="preserve">
+    <value>شماره گذرنامه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_Distance" xml:space="preserve">
+    <value>مسافت</value>
+  </data>
+  <data name="APP_StringKeys_InspectElement_Row" xml:space="preserve">
+    <value>ترتیب</value>
+  </data>
+  <data name="APP_StringKeys_ActionType" xml:space="preserve">
+    <value>نوع عملیات</value>
+  </data>
+  <data name="APP_StringKeys_ApiSync_Correct" xml:space="preserve">
+    <value>اصلاح اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_ApiSync_Send" xml:space="preserve">
+    <value>تأیید و ارسال عملیات به API</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Present_Causes" xml:space="preserve">
+    <value>علل مراجعه</value>
+  </data>
+  <data name="APP_StringKeys_Filters" xml:space="preserve">
+    <value>فیلترها</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ChooseOneFieldRequired" xml:space="preserve">
+    <value>انتخاب حداقل یکی از دو فیلد {0} و {1} الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Report_ExitAction_Tab1" xml:space="preserve">
+    <value>گزارش عملیات های خروج</value>
+  </data>
+  <data name="APP_StringKeys_Report_ExitAction_Tab2" xml:space="preserve">
+    <value>تجمعی بر روی کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Report_ExitAction_Tab3" xml:space="preserve">
+    <value>گزارش ریز کالا</value>
+  </data>
+  <data name="APP_StringKeys_View_Report_ExitAction" xml:space="preserve">
+    <value>گزارش عملیات های خروج کالا</value>
+  </data>
+  <data name="APP_StringKeys_From_Warehouse" xml:space="preserve">
+    <value>از انبار</value>
+  </data>
+  <data name="APP_StringKeys_To_Warehouse" xml:space="preserve">
+    <value>به انبار</value>
+  </data>
+  <data name="APP_StringKeys_Product_Description" xml:space="preserve">
+    <value>شرح کالا</value>
+  </data>
+  <data name="APP_StringKeys_Message_Delete" xml:space="preserve">
+    <value>از حذف اطلاعات مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Report_EnterAgg" xml:space="preserve">
+    <value>گزارش تجمعی ورود کالا</value>
+  </data>
+  <data name="APP_StringKeys_FieldType" xml:space="preserve">
+    <value>نوع فیلد</value>
+  </data>
+  <data name="APP_StringKeys_Filters_Type" xml:space="preserve">
+    <value>انتخاب فیلتر</value>
+  </data>
+  <data name="APP_StringKeys_Filters_AddType" xml:space="preserve">
+    <value>عملگر</value>
+  </data>
+  <data name="APP_StringKeys_Filters_AddType_And" xml:space="preserve">
+    <value>AND (&amp;&amp;)</value>
+  </data>
+  <data name="APP_StringKeys_Filters_AddType_Or" xml:space="preserve">
+    <value>OR (||)</value>
+  </data>
+  <data name="APP_StringKeys_Filters_Results" xml:space="preserve">
+    <value>نتایج</value>
+  </data>
+  <data name="APP_StringKeys_Filters_Dynamic" xml:space="preserve">
+    <value>فیلترهای داینامیک</value>
+  </data>
+  <data name="APP_StringKeys_Filters_TechnicalInfo" xml:space="preserve">
+    <value>فیلترهای اطلاعات فنی</value>
+  </data>
+  <data name="APP_StringKeys_ActionType_HasChosen_Validation" xml:space="preserve">
+    <value>یک نوع عملیات مشخص شده است</value>
+  </data>
+  <data name="APP_StringKeys_ActionType_OnlyOne_Validation" xml:space="preserve">
+    <value>اجازه ثبت هم زمان دو نوع عملیات وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Movement_Property" xml:space="preserve">
+    <value>مشخصات جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Average" xml:space="preserve">
+    <value>مقدار میانگین</value>
+  </data>
+  <data name="APP_StringKeys_Max_Count" xml:space="preserve">
+    <value>بیشترین مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Min_Count" xml:space="preserve">
+    <value>کمترین مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Brand_Code" xml:space="preserve">
+    <value>کد برند کالا</value>
+  </data>
+  <data name="APP_StringKeys_Brand_Title" xml:space="preserve">
+    <value>عنوان برند کالا</value>
+  </data>
+  <data name="APP_StringKeys_Columns" xml:space="preserve">
+    <value>ستون ها</value>
+  </data>
+  <data name="APP_StringKeys_Columns_Calculating" xml:space="preserve">
+    <value>ستون های محاسباتی</value>
+  </data>
+  <data name="APP_StringKeys_Columns_Data" xml:space="preserve">
+    <value>ستون های اطلاعاتی</value>
+  </data>
+  <data name="APP_StringKeys_GregorianDate_Full" xml:space="preserve">
+    <value>تاریخ میلادی</value>
+  </data>
+  <data name="APP_StringKeys_GregorianDate_Month" xml:space="preserve">
+    <value>ماه میلادی</value>
+  </data>
+  <data name="APP_StringKeys_GregorianDate_Week" xml:space="preserve">
+    <value>هفته میلادی</value>
+  </data>
+  <data name="APP_StringKeys_GregorianDate_Year" xml:space="preserve">
+    <value>سال میلادی</value>
+  </data>
+  <data name="APP_StringKeys_Group_Code" xml:space="preserve">
+    <value>کد گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Group_Title" xml:space="preserve">
+    <value>عنوان گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_PersianDate_Full" xml:space="preserve">
+    <value>تاریخ شمسی</value>
+  </data>
+  <data name="APP_StringKeys_PersianDate_Month" xml:space="preserve">
+    <value>ماه شمسی</value>
+  </data>
+  <data name="APP_StringKeys_PersianDate_Week" xml:space="preserve">
+    <value>هفته شمسی</value>
+  </data>
+  <data name="APP_StringKeys_PersianDate_Year" xml:space="preserve">
+    <value>سال شمسی</value>
+  </data>
+  <data name="APP_StringKeys_ProductType_Code" xml:space="preserve">
+    <value>کد نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_ProductType_Title" xml:space="preserve">
+    <value>عنوان نوع کالا</value>
+  </data>
+  <data name="APP_StringKeys_Qc_Code" xml:space="preserve">
+    <value>کد درجه کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_Qc_Title" xml:space="preserve">
+    <value>عنوان درجه کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_Size_Code" xml:space="preserve">
+    <value>کد سایز</value>
+  </data>
+  <data name="APP_StringKeys_Size_Title" xml:space="preserve">
+    <value>عنوان سایز</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Dynamic_Column" xml:space="preserve">
+    <value>ابتدا یک ستون اطلاعاتی انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Product_Notfound" xml:space="preserve">
+    <value>اطلاعات کالاهای ماشین حمل یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_MovementActionId_Submited" xml:space="preserve">
+    <value>این کد عملیات قبلا ثبت شده است</value>
+  </data>
+  <data name="APP_StringKeys_Destination_Warehouse" xml:space="preserve">
+    <value>انبار مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Source_Warehouse" xml:space="preserve">
+    <value>انبار مبدا</value>
+  </data>
+  <data name="APP_StringKeys_Chosen_Serials" xml:space="preserve">
+    <value>سریال های انتخاب شده</value>
+  </data>
+  <data name="APP_StringKeys_HandHeld_Operations" xml:space="preserve">
+    <value>عملیات های هندهلد</value>
+  </data>
+  <data name="APP_StringKeys_HandHeld_Code" xml:space="preserve">
+    <value>کد هندهلد</value>
+  </data>
+  <data name="APP_StringKeys_HandHeld_Operation_Code" xml:space="preserve">
+    <value>کد عملیات هندهلد</value>
+  </data>
+  <data name="APP_StringKeys_Barcode" xml:space="preserve">
+    <value>بارکد</value>
+  </data>
+  <data name="APP_StringKeys_Barcode_Reader" xml:space="preserve">
+    <value>بارکدخوان</value>
+  </data>
+  <data name="APP_StringKeys_Detection_Type" xml:space="preserve">
+    <value>نوع شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Gate" xml:space="preserve">
+    <value>گیت</value>
+  </data>
+  <data name="APP_StringKeys_Columns_Pivot" xml:space="preserve">
+    <value>ستون های Pivot</value>
+  </data>
+  <data name="APP_StringKeys_View_DynamicReport_Register" xml:space="preserve">
+    <value>گزارش‌ساز تولید</value>
+  </data>
+  <data name="APP_StringKeys_Dashboard" xml:space="preserve">
+    <value>داشبورد</value>
+  </data>
+  <data name="APP_StringKeys_Freeze" xml:space="preserve">
+    <value>عملیات فریز</value>
+  </data>
+  <data name="APP_StringKeys_Notif" xml:space="preserve">
+    <value>اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Actions" xml:space="preserve">
+    <value>عملیات های انبار</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Collect" xml:space="preserve">
+    <value>جمع آوری کالا</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Enter" xml:space="preserve">
+    <value>گزارشات ورود کالا</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Inventory" xml:space="preserve">
+    <value>گزارشات موجودی</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Order" xml:space="preserve">
+    <value>جانمایی کالا</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Reports" xml:space="preserve">
+    <value>گزارشات انبار</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Place" xml:space="preserve">
+    <value>جانمایی کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Revoke" xml:space="preserve">
+    <value>عملیات ابطال تگ</value>
+  </data>
+  <data name="APP_StringKeys_Revoke" xml:space="preserve">
+    <value>ابطال تگ</value>
+  </data>
+  <data name="APP_StringKeys_Revoke_Confirm" xml:space="preserve">
+    <value>آیا ابطال تگ با سریال {0} را تائید می کنید؟</value>
+  </data>
+  <data name="APP_StringKeys_MovementAction" xml:space="preserve">
+    <value>عملیات جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Settings_ApiSettings" xml:space="preserve">
+    <value>تنظیمات اتصال</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Software" xml:space="preserve">
+    <value>تنظیمات نرم افزاری</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_ReportDynamic" xml:space="preserve">
+    <value>گزارش‌ساز بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Date_Max" xml:space="preserve">
+    <value>آخرین تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_Date_Min" xml:space="preserve">
+    <value>اولین تاریخ</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Time" xml:space="preserve">
+    <value>ساعت بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_User" xml:space="preserve">
+    <value>کاربر بازرس</value>
+  </data>
+  <data name="APP_StringKeys_Register_User" xml:space="preserve">
+    <value>کاربر رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_Location_SecControl" xml:space="preserve">
+    <value>کنترل و خروج کالا از درب حراست</value>
+  </data>
+  <data name="APP_StringKeys_Location_SecExit" xml:space="preserve">
+    <value>خروج کالا از درب حراست</value>
+  </data>
+  <data name="APP_StringKeys_Expiration_Warranty" xml:space="preserve">
+    <value>انقضا-گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_Movement" xml:space="preserve">
+    <value>جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Tag_Cargo" xml:space="preserve">
+    <value>محموله</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Result_Reported_By_Inspector" xml:space="preserve">
+    <value>نتایج گزارش شده توسط بازرس</value>
+  </data>
+  <data name="APP_StringKeys_ReportFormat" xml:space="preserve">
+    <value>فرمت گزارش‌سازی</value>
+  </data>
+  <data name="APP_StringKeys_ReportFormat_Save" xml:space="preserve">
+    <value>ثبت فرمت گزارش‌سازی</value>
+  </data>
+  <data name="APP_StringKeys_ReportFormat_Title_Warning" xml:space="preserve">
+    <value>ابتدا عنوان موردنظر برای فرمت را وارد کنید</value>
+  </data>
+  <data name="APP_StringKeys_Document_Desc" xml:space="preserve">
+    <value>شرح سند</value>
+  </data>
+  <data name="APP_StringKeys_Error_ExcelExtractionException" xml:space="preserve">
+    <value>استخراج اطلاعات از اکسل با مشکل مواجه شد، لطفا فایل را بررسی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Error_MethodNotFoundException" xml:space="preserve">
+    <value>متد با نام '{0}' در کلاس '{1}' یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Error_SerialsNotFound" xml:space="preserve">
+    <value>سریال های مشخص شده یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Error_SqlException" xml:space="preserve">
+    <value>خطا با کد {0} در اجرای کوئری sql server بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Error_SqliteException" xml:space="preserve">
+    <value>خطایی در اجرای کوئری sqlite بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Error_TokenInvalid" xml:space="preserve">
+    <value>توکن کاربری معتبر نیست</value>
+  </data>
+  <data name="APP_StringKeys_Error_TokenRequiredException" xml:space="preserve">
+    <value>توکن یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Error_Unexpected" xml:space="preserve">
+    <value>در انجام عملیات مشکلی بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Error_UserNotFoundException" xml:space="preserve">
+    <value>کاربر با مشخصات ارسال شده یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Message_Token" xml:space="preserve">
+    <value>برای ارتباط نیاز به ارسال توکن هست</value>
+  </data>
+  <data name="APP_StringKeys_Inspect_Elements_Name" xml:space="preserve">
+    <value>المان های بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Info" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Products" xml:space="preserve">
+    <value>محموله ها</value>
+  </data>
+  <data name="APP_StringKeys_Revoke_DocumentStatus" xml:space="preserve">
+    <value>ابطال وضعیت سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Cartable_Submited_Document" xml:space="preserve">
+    <value>تایید سند قبلا انجام شده است</value>
+  </data>
+  <data name="APP_StringKeys_Revoke_Word" xml:space="preserve">
+    <value>ابطال</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus" xml:space="preserve">
+    <value>وضعیت سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_DocumentStatus" xml:space="preserve">
+    <value>یک وضعیت سند انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Get_Aggregate_Suggests" xml:space="preserve">
+    <value>دریافت پیشنهاد تجمیع</value>
+  </data>
+  <data name="APP_StringKeys_Get_Aggregated_Documents" xml:space="preserve">
+    <value>نمایش اسناد تجمیع شده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_AggSuggest_Recieved" xml:space="preserve">
+    <value>پیشنهادات یک بار دریافت شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_GetAggSuggest_First" xml:space="preserve">
+    <value>ابتدا پیشنهادات تجمیع را دریافت کنید</value>
+  </data>
+  <data name="APP_StringKeys_OtherInformation" xml:space="preserve">
+    <value>سایر اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Android" xml:space="preserve">
+    <value>اندروید</value>
+  </data>
+  <data name="APP_StringKeys_Web" xml:space="preserve">
+    <value>وب</value>
+  </data>
+  <data name="APP_StringKeys_Position_Collect_SumValueRequestDesc" xml:space="preserve">
+    <value>شرح تعداد درخواستی</value>
+  </data>
+  <data name="APP_StringKeys_Location_Locate" xml:space="preserve">
+    <value>جانمایی محموله در انبار</value>
+  </data>
+  <data name="APP_StringKeys_Wating_Approve_Only" xml:space="preserve">
+    <value>فقط نمایش اسناد تایید نشده</value>
+  </data>
+  <data name="APP_StringKeys_Report_Freeze_Products" xml:space="preserve">
+    <value>گزارش کالاهای فریز شده</value>
+  </data>
+  <data name="APP_StringKeys_Freeze_Cause" xml:space="preserve">
+    <value>علت فریز</value>
+  </data>
+  <data name="APP_StringKeys_Freeze_User" xml:space="preserve">
+    <value>کاربر فریز</value>
+  </data>
+  <data name="APP_StringKeys_Insert_Batch" xml:space="preserve">
+    <value>بارگذاری تجمعی</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_ExpireStatus" xml:space="preserve">
+    <value>وضعیت انقضا</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_GuaranteeStatus" xml:space="preserve">
+    <value>وضعیت گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Enter" xml:space="preserve">
+    <value>لحظه ورود به انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Exit" xml:space="preserve">
+    <value>لحظه خروج از انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Inspect" xml:space="preserve">
+    <value>لحظه تأیید بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Factory" xml:space="preserve">
+    <value>لحظه خروج از کارخانه</value>
+  </data>
+  <data name="APP_StringKeys_Product_ExpireAndGuarantee" xml:space="preserve">
+    <value>تعیین انقضاء و گارانتی محصولات</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_ExpireDays" xml:space="preserve">
+    <value>مدت اعتبار</value>
+  </data>
+  <data name="APP_StringKeys_Print_Action" xml:space="preserve">
+    <value>آیا مایل به چاپ اطلاعات عملیات هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross" xml:space="preserve">
+    <value>ماشین حمل</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee" xml:space="preserve">
+    <value>انقضاء و گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Empty_Completable" xml:space="preserve">
+    <value>اطلاعات فیلد {0} را پر کنید</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Action" xml:space="preserve">
+    <value>گزارش عملیات ها</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Aggregate" xml:space="preserve">
+    <value>گزارش سند</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_ApiSync" xml:space="preserve">
+    <value>ارسال عملیات جابه جایی</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Collect" xml:space="preserve">
+    <value>برنامه جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Enter" xml:space="preserve">
+    <value>گزارش ورود کالا به انبار</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_EnterAction" xml:space="preserve">
+    <value>گزارش عملیات های ورود انبار</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_EnterActionAgg" xml:space="preserve">
+    <value>گزارش تجمعی عملیات های ورود کالا</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_ExitAction" xml:space="preserve">
+    <value>گزارش عملیات خروج</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Inventory" xml:space="preserve">
+    <value>گزارش انبارگردانی</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_InventoryDetails" xml:space="preserve">
+    <value>گزارش کالاهای انبارگردانی شده</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_Register" xml:space="preserve">
+    <value>گزارش تولید</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_ReportFile" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Print_ReportTitle" xml:space="preserve">
+    <value>عنوان گزارش</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_Code" xml:space="preserve">
+    <value>کد انبار‌گردانی</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_DateTime" xml:space="preserve">
+    <value>تاریخ انبارگردانی</value>
+  </data>
+  <data name="APP_StringKeys_Settings_Convert" xml:space="preserve">
+    <value>تبدیل داده ها</value>
+  </data>
+  <data name="APP_StringKeys_Settings_ConvertJsonDocument" xml:space="preserve">
+    <value>تبدیل Json سندها</value>
+  </data>
+  <data name="APP_StringKeys_Validation_TruckCross_SaveExit" xml:space="preserve">
+    <value>اطلاعات مرحله خروج هنوز ثبت نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Document_Division" xml:space="preserve">
+    <value>تقسیم سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Max_Value" xml:space="preserve">
+    <value>حداکثر مقدار مجاز {0} است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Min_Value" xml:space="preserve">
+    <value>حداقل مقدار مجاز {0} است</value>
+  </data>
+  <data name="APP_StringKeys_Divided_Documents" xml:space="preserve">
+    <value>اسناد تقسیم شده</value>
+  </data>
+  <data name="APP_StringKeys_New_Document_Division" xml:space="preserve">
+    <value>تقسیم جدید سند</value>
+  </data>
+  <data name="APP_StringKeys_Remain_Document" xml:space="preserve">
+    <value>باقیمانده سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Remain_Document" xml:space="preserve">
+    <value>باقیمانده سند نمیتواند خالی باشد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Revoked" xml:space="preserve">
+    <value>ابطال شده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Revoke_TruckCross_Level" xml:space="preserve">
+    <value>ابطال تردد در حالت "پذیرش ثبت شده" امکان پذیر است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Revoke_TruckCross_Present" xml:space="preserve">
+    <value>آیا از ابطال این تردد با مشخصات زیر اطمینان دارید؟</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Set_Status" xml:space="preserve">
+    <value>مقداردهی به فیلد وضعیت ماشین حمل</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Notfound" xml:space="preserve">
+    <value>ماشین حمل یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_TruckCross_Status" xml:space="preserve">
+    <value>امکان تغییر وضعیت تردد با وضعیت "ابطال شده" وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Document_Division_Suggest" xml:space="preserve">
+    <value>پیشنهاد تقسیم سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_InventoryConflicts_OneStatus" xml:space="preserve">
+    <value>سریال های انتخاب شده حتما باید در یک وضعیت باشند</value>
+  </data>
+  <data name="APP_StringKeys_Conflicts_Fix" xml:space="preserve">
+    <value>رفع مغایرت</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_Filter_EnterExit" xml:space="preserve">
+    <value>فیلتر کالاهای وارد و خارج شده</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Count" xml:space="preserve">
+    <value>تعداد وارد شده</value>
+  </data>
+  <data name="APP_StringKeys_Enter_SumCount" xml:space="preserve">
+    <value>مقدار وارد شده</value>
+  </data>
+  <data name="APP_StringKeys_Exit_Count" xml:space="preserve">
+    <value>تعداد خارج شده</value>
+  </data>
+  <data name="APP_StringKeys_Exit_SumCount" xml:space="preserve">
+    <value>مقدار خارج شده</value>
+  </data>
+  <data name="APP_StringKeys_GetData_Acounting_Brief" xml:space="preserve">
+    <value>بارگذاری اکسل حسابداری</value>
+  </data>
+  <data name="APP_StringKeys_Document_Remove_Cartable" xml:space="preserve">
+    <value>کارتابل حذف سند</value>
+  </data>
+  <data name="APP_StringKeys_Gate_Alert" xml:space="preserve">
+    <value>آلارم گیت</value>
+  </data>
+  <data name="APP_StringKeys_Alert_Desc" xml:space="preserve">
+    <value>شرح آلارم</value>
+  </data>
+  <data name="APP_StringKeys_Sales_Info" xml:space="preserve">
+    <value>اطلاعات فروش</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Info" xml:space="preserve">
+    <value>اطلاعات ماشین حمل</value>
+  </data>
+  <data name="APP_StringKeys_TruckCrossId" xml:space="preserve">
+    <value>کد پذیرش</value>
+  </data>
+  <data name="APP_StringKeys_PureWeight" xml:space="preserve">
+    <value>وزن خالص</value>
+  </data>
+  <data name="APP_StringKeys_Divide_Document_Required" xml:space="preserve">
+    <value>حداقل یک سند تقسیم کنید</value>
+  </data>
+  <data name="APP_StringKeys_RemainDocument_Prevent_Print" xml:space="preserve">
+    <value>امکان چاپ سند باقیمانده وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_PlacementOrder_IgnoreMessage" xml:space="preserve">
+    <value>آیا از لغو عملیات جمع آوری اطمینان دارید؟</value>
+  </data>
+  <data name="APP_StringKeys_CollectOrder_Count" xml:space="preserve">
+    <value>تعداد دستور جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Pallet_Count" xml:space="preserve">
+    <value>تعداد پالت</value>
+  </data>
+  <data name="APP_StringKeys_Aggregate" xml:space="preserve">
+    <value>تجمیع</value>
+  </data>
+  <data name="APP_StringKeys_Collect" xml:space="preserve">
+    <value>جمع آوری</value>
+  </data>
+  <data name="APP_StringKeys_Divide" xml:space="preserve">
+    <value>تقسیم</value>
+  </data>
+  <data name="APP_StringKeys_DocumentItem_Weight" xml:space="preserve">
+    <value>وزن اقلام سند</value>
+  </data>
+  <data name="APP_StringKeys_Approve_Question" xml:space="preserve">
+    <value>آیا از تایید موارد زیر مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Check_Before_Remove" xml:space="preserve">
+    <value>آیا از حذف موارد زیر مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Check_Before_Revoke_Aggregate" xml:space="preserve">
+    <value>آیا از ابطال تجمیع سند مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Check_Before_Revoke_Division" xml:space="preserve">
+    <value>آیا از ابطال سند تقسیم شده مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Count_All_Documents" xml:space="preserve">
+    <value>تعداد کل اسناد</value>
+  </data>
+  <data name="APP_StringKeys_SumValue_Items" xml:space="preserve">
+    <value>جمع مقادیر اقلام</value>
+  </data>
+  <data name="APP_StringKeys_Current_ProductCode" xml:space="preserve">
+    <value>کد کالای فعلی</value>
+  </data>
+  <data name="APP_StringKeys_New_ProductCode" xml:space="preserve">
+    <value>کد کالای جدید</value>
+  </data>
+  <data name="APP_StringKeys_Check_Before_UpdateProductCode" xml:space="preserve">
+    <value>آیا از اصلاح کدکالا با اطلاعات زیر مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Current_ProductCode_Count" xml:space="preserve">
+    <value>تعداد کالا با کدکالای فعلی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentItem_Volume" xml:space="preserve">
+    <value>حجم اقلام سند</value>
+  </data>
+  <data name="APP_StringKeys_Gate_Identify_Status" xml:space="preserve">
+    <value>وضعیت شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_Report" xml:space="preserve">
+    <value>گزارش سابقه تغییر وضعیت اسناد</value>
+  </data>
+  <data name="APP_StringKeys_DocumentEvent_Type" xml:space="preserve">
+    <value>نوع تغییر</value>
+  </data>
+  <data name="APP_StringKeys_Document_Description" xml:space="preserve">
+    <value>توضیحات سند</value>
+  </data>
+  <data name="APP_StringKeys_DocumentEvent_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت تغییر</value>
+  </data>
+  <data name="APP_StringKeys_Document_ImportDateTime" xml:space="preserve">
+    <value>تاریخ درج سند</value>
+  </data>
+  <data name="APP_StringKeys_DocumentEvent_User" xml:space="preserve">
+    <value>کاربر تغییر</value>
+  </data>
+  <data name="APP_StringKeys_DocumentEvent_Description" xml:space="preserve">
+    <value>توضیحات تغییر</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_ChangeStatusBackward" xml:space="preserve">
+    <value>ابطال در کارتابل</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_ChangeStatusForward" xml:space="preserve">
+    <value>تایید در کارتابل</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_InsertAggregate" xml:space="preserve">
+    <value>افزودن سند تجمیعی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_InsertDivide" xml:space="preserve">
+    <value>افزودن سند تقسیمی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_InsertDocument" xml:space="preserve">
+    <value>افزودن سند</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_RemoveAggregate" xml:space="preserve">
+    <value>حذف سند تجمیعی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_RemoveDivide" xml:space="preserve">
+    <value>حذف سند تقسیمی</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_RemoveDocument" xml:space="preserve">
+    <value>حذف سند</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_RevokeAggregate" xml:space="preserve">
+    <value>ابطال تجمیع</value>
+  </data>
+  <data name="APP_StringKeys_DocumentLog_RevokeDivide" xml:space="preserve">
+    <value>ابطال تقسیم</value>
+  </data>
+  <data name="APP_StringKeys_Documents" xml:space="preserve">
+    <value>اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Document_Log" xml:space="preserve">
+    <value>سوابق سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_AddEdit" xml:space="preserve">
+    <value>ثبت و ویرایش سند</value>
+  </data>
+  <data name="APP_StringKeys_Check_Before_Submit" xml:space="preserve">
+    <value>آیا از ثبت اطلاعات مطمئن هستید؟</value>
+  </data>
+  <data name="APP_StringKeys_Document_Edit" xml:space="preserve">
+    <value>افزودن و ویرایش اسناد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ActionType_AllowUpdate" xml:space="preserve">
+    <value>از دسترسی به افزودن/ویرایش برای نوع سند مورد نظر جلوگیری شده است</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ActionType_Any" xml:space="preserve">
+    <value>برای این نوع سند، هیچ فیلد اطلاعاتی تعریف نشده است</value>
+  </data>
+  <data name="APP_StringKeys_ProductCountInPack" xml:space="preserve">
+    <value>تعداد واحد دوم</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_ChangeTruckCross" xml:space="preserve">
+    <value>تغییر ماشین حمل</value>
+  </data>
+  <data name="APP_StringKeys_Change_To_Status" xml:space="preserve">
+    <value>تغییر به وضعیت</value>
+  </data>
+  <data name="APP_StringKeys_MinutesUntilNext" xml:space="preserve">
+    <value>مدت زمان اجرا (دقیقه)</value>
+  </data>
+  <data name="APP_StringKeys_Notification_Order_Type" xml:space="preserve">
+    <value>نوع برنامه ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Contact" xml:space="preserve">
+    <value>مخاطب</value>
+  </data>
+  <data name="APP_StringKeys_Notification_Send_Status" xml:space="preserve">
+    <value>وضعیت ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Notification_Report" xml:space="preserve">
+    <value>گزارش اطلاع رسانی</value>
+  </data>
+  <data name="APP_StringKeys_Notification_Status_Sended" xml:space="preserve">
+    <value>ارسال شده</value>
+  </data>
+  <data name="APP_StringKeys_Notification_Status_WatingSend" xml:space="preserve">
+    <value>در انتظار ارسال</value>
+  </data>
+  <data name="APP_StringKeys_Create_ProductClass" xml:space="preserve">
+    <value>تعریف طبقه کالا</value>
+  </data>
+  <data name="APP_StringKeys_SubTitle" xml:space="preserve">
+    <value>عنوان فرعی</value>
+  </data>
+  <data name="APP_StringKeys_Create_Product_SubGroup" xml:space="preserve">
+    <value>تعریف زیر گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_SubGroup" xml:space="preserve">
+    <value>زیر گروه</value>
+  </data>
+  <data name="APP_StringKeys_ProductClass" xml:space="preserve">
+    <value>طبقه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_SubGroup" xml:space="preserve">
+    <value>زیرگروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Calculate" xml:space="preserve">
+    <value>محاسبه کرایه حمل</value>
+  </data>
+  <data name="APP_StringKeys_Aggregated_Document" xml:space="preserve">
+    <value>سند تجمیع شده</value>
+  </data>
+  <data name="APP_StringKeys_Divided_Document" xml:space="preserve">
+    <value>سند تقسیم شده</value>
+  </data>
+  <data name="APP_StringKeys_DocumentEdit_Reset_First" xml:space="preserve">
+    <value>برای ویرایش باید سند را به حالت اولیه بازگردانید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_DocumentEdit" xml:space="preserve">
+    <value>امکان ویرایش {0} وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Cartable_ProductGuarantee" xml:space="preserve">
+    <value>کارتابل وضعیت گارانتی سریال ها</value>
+  </data>
+  <data name="APP_StringKeys_NotStarted" xml:space="preserve">
+    <value>شروع نشده</value>
+  </data>
+  <data name="APP_StringKeys_ExitAction_Date" xml:space="preserve">
+    <value>تاریخ عملیات خروج</value>
+  </data>
+  <data name="APP_StringKeys_ExitAction_DocumentCode" xml:space="preserve">
+    <value>کد سند عملیات خروج</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_EndDate" xml:space="preserve">
+    <value>تاریخ پایان گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_StartDate" xml:space="preserve">
+    <value>تاریخ شروع گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_Copy_Tags_To_ProductGuarantee" xml:space="preserve">
+    <value>جابه جایی اطلاعات فعلی سریال ها به بخش گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_Guarantee_Type" xml:space="preserve">
+    <value>نوع گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_Data_NotFound_Print" xml:space="preserve">
+    <value>اطلاعاتی برای چاپ یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Guarantee" xml:space="preserve">
+    <value>گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_GuaranteeDuration" xml:space="preserve">
+    <value>مدت زمان گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_RemainingDay" xml:space="preserve">
+    <value>مدت روز باقی مانده</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Customer" xml:space="preserve">
+    <value>لحظه کنترل اصالت کالا توسط مصرف کننده</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Date" xml:space="preserve">
+    <value>تاریخ مشخص</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Install" xml:space="preserve">
+    <value>لحظه نصب کالا توسط مأمور نصب</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Type_Sell" xml:space="preserve">
+    <value>لحظه ثبت فروش توسط نمایندگی فروش</value>
+  </data>
+  <data name="APP_StringKeys_Expire_Duration" xml:space="preserve">
+    <value>مدت انقضا</value>
+  </data>
+  <data name="APP_StringKeys_Expire_Type" xml:space="preserve">
+    <value>نوع انقضا</value>
+  </data>
+  <data name="APP_StringKeys_Guarantee_Duration" xml:space="preserve">
+    <value>مدت گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_UHFLog_Report" xml:space="preserve">
+    <value>گزارش شناسایی تگ ها بدون عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Device_Code" xml:space="preserve">
+    <value>کد دستگاه</value>
+  </data>
+  <data name="APP_StringKeys_EndDate" xml:space="preserve">
+    <value>تاریخ پایان</value>
+  </data>
+  <data name="APP_StringKeys_Expire_Start_Type" xml:space="preserve">
+    <value>نوع آغاز انقضا</value>
+  </data>
+  <data name="APP_StringKeys_Guarantee_Start_Type" xml:space="preserve">
+    <value>نوع آغاز گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_StartDate" xml:space="preserve">
+    <value>تاریخ شروع</value>
+  </data>
+  <data name="APP_StringKeys_Expire" xml:space="preserve">
+    <value>انقضا</value>
+  </data>
+  <data name="APP_StringKeys_ExpireAndGuarantee_Check" xml:space="preserve">
+    <value>بررسی اطلاعات انقضا و گارانتی</value>
+  </data>
+  <data name="APP_StringKeys_City" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="APP_StringKeys_Product_Model" xml:space="preserve">
+    <value>مدل کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_Serial" xml:space="preserve">
+    <value>سریال کالا</value>
+  </data>
+  <data name="APP_StringKeys_Province" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="APP_StringKeys_Customer" xml:space="preserve">
+    <value>مصرف کننده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Stringlength_Exact" xml:space="preserve">
+    <value>طول فیلد {0} باید {1} باشد</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_AnnounceStatus_WithDays" xml:space="preserve">
+    <value>گارانتی کالای شما {0} بوده و تا {1} روز دیگر ({2}) اعتبار دارد</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_Exist" xml:space="preserve">
+    <value>کالای شما نزد شرکت {0} دارای اصالت می باشد و این شرکت پیوستن شما به خانواده بزرگ مشتریان خود را مغتنم می شمارد</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_NotExist" xml:space="preserve">
+    <value>اطلاعات وارد شده نامعتبر می باشد، لطفا از صحت اطلاعات اطمینان پیدا کرده و مجدد اقدام نمایید</value>
+  </data>
+  <data name="APP_StringKeys_ProductAuthenticity" xml:space="preserve">
+    <value>اصالت کالا</value>
+  </data>
+  <data name="APP_StringKeys_Search_ProductModel" xml:space="preserve">
+    <value>جستجوی مدل کالا</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_CheckedBefore" xml:space="preserve">
+    <value>کالای موردنظر قبلا توسط فرد دیگری اصالت سنجی شده است</value>
+  </data>
+  <data name="APP_StringKeys_Document_AllCount" xml:space="preserve">
+    <value>مقدار کلی سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_CheckContradictions_DocHeaderRemining" xml:space="preserve">
+    <value>مغایرت: جمع مقدار ردیف های کالا از باقی مانده ردیف های سند بیشتر است</value>
+  </data>
+  <data name="APP_StringKeys_Document_Unused" xml:space="preserve">
+    <value>مقدار قابل استفاده</value>
+  </data>
+  <data name="APP_StringKeys_Document_Used" xml:space="preserve">
+    <value>مقدار استفاده شده</value>
+  </data>
+  <data name="APP_StringKeys_UploadExcel_SaleShop" xml:space="preserve">
+    <value>ورود اطلاعات نمایندگان با اکسل</value>
+  </data>
+  <data name="APP_StringKeys_Direction" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="APP_StringKeys_Manager_Name" xml:space="preserve">
+    <value>نام مدیر</value>
+  </data>
+  <data name="APP_StringKeys_SalesShop_Code" xml:space="preserve">
+    <value>کد نمایندگی</value>
+  </data>
+  <data name="APP_StringKeys_SalesShop_Title" xml:space="preserve">
+    <value>عنوان نمایندگی</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_DateTime" xml:space="preserve">
+    <value>تاریخ و ساعت ثبت اصالت سنجی</value>
+  </data>
+  <data name="APP_StringKeys_ProductAuthenticity_Check" xml:space="preserve">
+    <value>بررسی اصالت سنجی</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_AnnounceStatus" xml:space="preserve">
+    <value>گارانتی کالای شما {0} است</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_Exit_TotalShipingCost" xml:space="preserve">
+    <value>مبلغ نهایی کرایه</value>
+  </data>
+  <data name="APP_StringKeys_TruckCross_FeeConfig" xml:space="preserve">
+    <value>تعریف فی کرایه حمل</value>
+  </data>
+  <data name="APP_StringKeys_Weight" xml:space="preserve">
+    <value>وزن</value>
+  </data>
+  <data name="APP_StringKeys_UploadExcel_SalesInstaller" xml:space="preserve">
+    <value>ورود اطلاعات نصب کنندگان با اکسل</value>
+  </data>
+  <data name="APP_StringKeys_ExcelSample_Install" xml:space="preserve">
+    <value>نمونه اکسل اطلاعات نصب کنندگان</value>
+  </data>
+  <data name="APP_StringKeys_ExcelSample_Shop" xml:space="preserve">
+    <value>نمونه اکسل اطلاعات نمایندگان</value>
+  </data>
+  <data name="APP_StringKeys_Customer_GuaranteeCheck_ActivedNow_WithDays" xml:space="preserve">
+    <value>گارانتی کالای شما هم اکنون فعال شد و تا {0} روز دیگر ({1}) اعتبار دارد</value>
+  </data>
+  <data name="APP_StringKeys_SalesInstaller_Code" xml:space="preserve">
+    <value>کد نصب کننده</value>
+  </data>
+  <data name="APP_StringKeys_SalesInstaller_Name" xml:space="preserve">
+    <value>نام نصب کننده</value>
+  </data>
+  <data name="APP_StringKeys_Serial_ExpireAndGuarantee_Status" xml:space="preserve">
+    <value>وضعیت انقضا و گارانتی سریال ها</value>
+  </data>
+  <data name="APP_StringKeys_Day" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="APP_StringKeys_Month" xml:space="preserve">
+    <value>ماه</value>
+  </data>
+  <data name="APP_StringKeys_RemainingMonth" xml:space="preserve">
+    <value>ماه باقیمانده</value>
+  </data>
+  <data name="APP_StringKeys_Document_RemainCheck" xml:space="preserve">
+    <value>نحوه بررسی مقدار سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_Check_Type" xml:space="preserve">
+    <value>نوع بررسی سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_CheckType_DocumentRemain" xml:space="preserve">
+    <value>کنترل با باقیمانده کل سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_CheckType_Exact" xml:space="preserve">
+    <value>کنترل کامل با سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_CheckType_ProductCodeRemain" xml:space="preserve">
+    <value>کنترل با باقیمانده کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Driver" xml:space="preserve">
+    <value>راننده</value>
+  </data>
+  <data name="APP_StringKeys_View_DynamicReport_ExitAction" xml:space="preserve">
+    <value>گزارش ساز عملیات های خروج</value>
+  </data>
+  <data name="APP_StringKeys_Class_Code" xml:space="preserve">
+    <value>کد طبقه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Class_Title" xml:space="preserve">
+    <value>عنوان طبقه کالا</value>
+  </data>
+  <data name="APP_StringKeys_GregorianDate_Day" xml:space="preserve">
+    <value>روز میلادی</value>
+  </data>
+  <data name="APP_StringKeys_Operation_DocumentCode" xml:space="preserve">
+    <value>کد سند عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Operation_Time" xml:space="preserve">
+    <value>ساعت عملیات</value>
+  </data>
+  <data name="APP_StringKeys_PersianDate_Day" xml:space="preserve">
+    <value>روز شمسی</value>
+  </data>
+  <data name="APP_StringKeys_SubGroup_Code" xml:space="preserve">
+    <value>کد زیر گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_SubGroup_Title" xml:space="preserve">
+    <value>عنوان زیر گروه کالا</value>
+  </data>
+  <data name="APP_StringKeys_Sum_ProductCountInPack" xml:space="preserve">
+    <value>جمع مقدار واحد دوم</value>
+  </data>
+  <data name="APP_StringKeys_Document_Type1" xml:space="preserve">
+    <value>اولین نوع فرعی سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_Type2" xml:space="preserve">
+    <value>دومین نوع فرعی سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_Type_Validation" xml:space="preserve">
+    <value>مقدار {0} و {1} نمیتواند برابر باشد</value>
+  </data>
+  <data name="APP_StringKeys_CreateDateTime" xml:space="preserve">
+    <value>تاریخ و ساعت ایجاد</value>
+  </data>
+  <data name="APP_StringKeys_CreateUser" xml:space="preserve">
+    <value>کاربر ثبت کننده</value>
+  </data>
+  <data name="APP_StringKeys_Error_ProductCodeNotFound" xml:space="preserve">
+    <value>کد کالا یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Station" xml:space="preserve">
+    <value>ایستگاه شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Station_Alert" xml:space="preserve">
+    <value>آلارم ایستگاه شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Convert_Create_UHFRearLogHeader" xml:space="preserve">
+    <value>ساخت رکورد های جدول اطلاعات عملیات شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Bar" xml:space="preserve">
+    <value>نمودار میله ای</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Pie" xml:space="preserve">
+    <value>نمودار دایره ای</value>
+  </data>
+  <data name="APP_StringKeys_ExitAction_Code" xml:space="preserve">
+    <value>کد عملیات خروج</value>
+  </data>
+  <data name="APP_StringKeys_Settings_ReportLinks" xml:space="preserve">
+    <value>تعریف دسترسی های گزارش سازها</value>
+  </data>
+  <data name="APP_StringKeys_Url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="APP_StringKeys_Menu" xml:space="preserve">
+    <value>منو</value>
+  </data>
+  <data name="APP_StringKeys_ReportLink_ChooseCategory" xml:space="preserve">
+    <value>محل افزوده شدن لینک در منو را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ChooseCategory" xml:space="preserve">
+    <value>ابتدا یک دسته بندی در منو را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_Validation_ChooseUser" xml:space="preserve">
+    <value>ابتدا یک کاربر را انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_ReportFormat_MenuLink" xml:space="preserve">
+    <value>تعیین دسترسی به گزارش ساز برای کاربران</value>
+  </data>
+  <data name="APP_StringKeys_ValueType" xml:space="preserve">
+    <value>نوع مقدار</value>
+  </data>
+  <data name="APP_StringKeys_Dropdown" xml:space="preserve">
+    <value>Dropdown</value>
+  </data>
+  <data name="APP_StringKeys_Textbox" xml:space="preserve">
+    <value>Textbox</value>
+  </data>
+  <data name="APP_StringKeys_Search_Document_First" xml:space="preserve">
+    <value>لطفا ابتدا سند را جستجو کنید</value>
+  </data>
+  <data name="APP_StringKeys_Document_HeaderData" xml:space="preserve">
+    <value>اطلاعات داینامیک هدر سند</value>
+  </data>
+  <data name="APP_StringKeys_Document_ItemData" xml:space="preserve">
+    <value>اطلاعات داینامیک اقلام سند</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Choose_One_ValueOption" xml:space="preserve">
+    <value>انتخاب حداقل یک مقدار الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Type" xml:space="preserve">
+    <value>نوع چارت</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Pivot" xml:space="preserve">
+    <value>نمودار pivot</value>
+  </data>
+  <data name="APP_StringKeys_Pivot_Data_NotFound" xml:space="preserve">
+    <value>اطلاعات pivot یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Chart_Line" xml:space="preserve">
+    <value>نمودار خطی</value>
+  </data>
+  <data name="APP_StringKeys_Shift_Code" xml:space="preserve">
+    <value>کد شیفت</value>
+  </data>
+  <data name="APP_StringKeys_Shift_Title" xml:space="preserve">
+    <value>عنوان شیفت</value>
+  </data>
+  <data name="APP_StringKeys_Aggregation" xml:space="preserve">
+    <value>تجمعی</value>
+  </data>
+  <data name="APP_StringKeys_Degree" xml:space="preserve">
+    <value>درجه</value>
+  </data>
+  <data name="APP_StringKeys_Identification" xml:space="preserve">
+    <value>شناسایی</value>
+  </data>
+  <data name="APP_StringKeys_First" xml:space="preserve">
+    <value>ابتدا</value>
+  </data>
+  <data name="APP_StringKeys_Last" xml:space="preserve">
+    <value>انتها</value>
+  </data>
+  <data name="APP_StringKeys_New" xml:space="preserve">
+    <value>جدید</value>
+  </data>
+  <data name="APP_StringKeys_Offline" xml:space="preserve">
+    <value>آفلاین</value>
+  </data>
+  <data name="APP_StringKeys_Online" xml:space="preserve">
+    <value>آنلاین</value>
+  </data>
+  <data name="APP_StringKeys_Pause" xml:space="preserve">
+    <value>توقف</value>
+  </data>
+  <data name="APP_StringKeys_Question" xml:space="preserve">
+    <value>سوال</value>
+  </data>
+  <data name="APP_StringKeys_Register" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="APP_StringKeys_Start" xml:space="preserve">
+    <value>شروع</value>
+  </data>
+  <data name="APP_StringKeys_Today" xml:space="preserve">
+    <value>امروز</value>
+  </data>
+  <data name="APP_StringKeys_Warning" xml:space="preserve">
+    <value>هشدار</value>
+  </data>
+  <data name="APP_StringKeys_Farvardin" xml:space="preserve">
+    <value>فروردين</value>
+  </data>
+  <data name="APP_StringKeys_Ordibehesht" xml:space="preserve">
+    <value>ارديبهشت</value>
+  </data>
+  <data name="APP_StringKeys_Khordad" xml:space="preserve">
+    <value>خرداد</value>
+  </data>
+  <data name="APP_StringKeys_Tir" xml:space="preserve">
+    <value>تير</value>
+  </data>
+  <data name="APP_StringKeys_Mordad" xml:space="preserve">
+    <value>مرداد</value>
+  </data>
+  <data name="APP_StringKeys_Shahrivar" xml:space="preserve">
+    <value>شهريور</value>
+  </data>
+  <data name="APP_StringKeys_Mehr" xml:space="preserve">
+    <value>مهر</value>
+  </data>
+  <data name="APP_StringKeys_Aban" xml:space="preserve">
+    <value>آبان</value>
+  </data>
+  <data name="APP_StringKeys_Azar" xml:space="preserve">
+    <value>آذر</value>
+  </data>
+  <data name="APP_StringKeys_Dey" xml:space="preserve">
+    <value>دي</value>
+  </data>
+  <data name="APP_StringKeys_Bahman" xml:space="preserve">
+    <value>بهمن</value>
+  </data>
+  <data name="APP_StringKeys_Esfand" xml:space="preserve">
+    <value>اسفند</value>
+  </data>
+  <data name="APP_StringKeys_Sunday" xml:space="preserve">
+    <value>يکشنبه</value>
+  </data>
+  <data name="APP_StringKeys_Monday" xml:space="preserve">
+    <value>دوشنبه</value>
+  </data>
+  <data name="APP_StringKeys_Tuesday" xml:space="preserve">
+    <value>سه‌شنبه</value>
+  </data>
+  <data name="APP_StringKeys_Wednesday" xml:space="preserve">
+    <value>چهارشنبه</value>
+  </data>
+  <data name="APP_StringKeys_Thursday" xml:space="preserve">
+    <value>پنج‌شنبه</value>
+  </data>
+  <data name="APP_StringKeys_Friday" xml:space="preserve">
+    <value>جمعه</value>
+  </data>
+  <data name="APP_StringKeys_Saturday" xml:space="preserve">
+    <value>شنبه</value>
+  </data>
+  <data name="APP_StringKeys_Aggregation_Filter" xml:space="preserve">
+    <value>فیلتر تجمعی</value>
+  </data>
+  <data name="APP_StringKeys_Apply_Filter" xml:space="preserve">
+    <value>اعمال فیلتر</value>
+  </data>
+  <data name="APP_StringKeys_Authorization_Document_Code" xml:space="preserve">
+    <value>کد سند مجوز</value>
+  </data>
+  <data name="APP_StringKeys_Barcode_Scanner" xml:space="preserve">
+    <value>بارکد اسکنر</value>
+  </data>
+  <data name="APP_StringKeys_Cancel_Filter" xml:space="preserve">
+    <value>لغو فیلتر</value>
+  </data>
+  <data name="APP_StringKeys_Cargo_Properties" xml:space="preserve">
+    <value>سایر مشخصات محموله</value>
+  </data>
+  <data name="APP_StringKeys_Cargo_Sales_History" xml:space="preserve">
+    <value>سابقه فروش محموله</value>
+  </data>
+  <data name="APP_StringKeys_Change_Serial" xml:space="preserve">
+    <value>تغییر سریال</value>
+  </data>
+  <data name="APP_StringKeys_Chars_Count" xml:space="preserve">
+    <value>تعداد ارقام</value>
+  </data>
+  <data name="APP_StringKeys_Check_Document_In_Movement" xml:space="preserve">
+    <value>چک سند در جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Destination_Title" xml:space="preserve">
+    <value>عنوان مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Destination_Type" xml:space="preserve">
+    <value>نوع مقصد</value>
+  </data>
+  <data name="APP_StringKeys_Device_Power_Setting" xml:space="preserve">
+    <value>تنظیمات دستگاه و پاور دستگاه</value>
+  </data>
+  <data name="APP_StringKeys_Document_Code" xml:space="preserve">
+    <value>سند ثبت</value>
+  </data>
+  <data name="APP_StringKeys_Duplicate_Serial" xml:space="preserve">
+    <value>سریال تکراری</value>
+  </data>
+  <data name="APP_StringKeys_Edit_Product" xml:space="preserve">
+    <value>ویرایش محصول</value>
+  </data>
+  <data name="APP_StringKeys_Move_Shipment_Value" xml:space="preserve">
+    <value>انتقال مقدار محموله</value>
+  </data>
+  <data name="APP_StringKeys_Edit_Tag" xml:space="preserve">
+    <value>ویرایش تگ</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Product_To_Warehouse" xml:space="preserve">
+    <value>ورود محصول به انبار</value>
+  </data>
+  <data name="APP_StringKeys_Tag_List" xml:space="preserve">
+    <value>لیست تگ</value>
+  </data>
+  <data name="APP_StringKeys_Error_In_Tag_Length" xml:space="preserve">
+    <value>خطا در طول تگ</value>
+  </data>
+  <data name="APP_StringKeys_Error_In_Tag_Identification" xml:space="preserve">
+    <value>خطا در شناسایی تگ</value>
+  </data>
+  <data name="APP_StringKeys_Existed_In_Warehouse" xml:space="preserve">
+    <value>موجود در انبار</value>
+  </data>
+  <data name="APP_StringKeys_Hide_Filter" xml:space="preserve">
+    <value>بستن فیلتر</value>
+  </data>
+  <data name="APP_StringKeys_Show_Filter" xml:space="preserve">
+    <value>نمایش فیلتر</value>
+  </data>
+  <data name="APP_StringKeys_Re_Identify" xml:space="preserve">
+    <value>شناسایی مجدد</value>
+  </data>
+  <data name="APP_StringKeys_First_Tag_And_Second_Tag_Mismatch" xml:space="preserve">
+    <value>عدم تطابق مشخصات تگ اول و تگ دوم</value>
+  </data>
+  <data name="APP_StringKeys_Prevent_Movement_Frozen_Goods" xml:space="preserve">
+    <value>جلوگیری از جابجایی کالای فریز شده</value>
+  </data>
+  <data name="APP_StringKeys_Prevent_Movement_Uninspected_Or_Rejected_Goods" xml:space="preserve">
+    <value>جلوگیری از جابجایی کالای بازرسی نشده یا بازرسی مردود</value>
+  </data>
+  <data name="APP_StringKeys_Control_Exists_Serial" xml:space="preserve">
+    <value>کنترل وجود سریال در مبدأ</value>
+  </data>
+  <data name="APP_StringKeys_Not_Exists_At_Origin" xml:space="preserve">
+    <value>عدم وجود در مبدأ</value>
+  </data>
+  <data name="APP_StringKeys_Registration_Relocation_Mission" xml:space="preserve">
+    <value>ثبت مأموریت جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Fill_In_Login_Information" xml:space="preserve">
+    <value>پر کردن اطلاعات لاگین</value>
+  </data>
+  <data name="APP_StringKeys_Show_Product_Info" xml:space="preserve">
+    <value>نمایش مشخصات محصول</value>
+  </data>
+  <data name="APP_StringKeys_Send_Production_Product_Warehouse" xml:space="preserve">
+    <value>ارسال تولید به انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_Show_View_Product_History" xml:space="preserve">
+    <value>نمایش مشاهده سوابق محصول</value>
+  </data>
+  <data name="APP_StringKeys_Tag_Writing" xml:space="preserve">
+    <value>نوشتن تگ</value>
+  </data>
+  <data name="APP_StringKeys_Back_To_Production" xml:space="preserve">
+    <value>برگشت به تولید</value>
+  </data>
+  <data name="APP_StringKeys_Back_To_Product_Warehouse" xml:space="preserve">
+    <value>برگشت به انبار محصول</value>
+  </data>
+  <data name="APP_StringKeys_Send_For_Download" xml:space="preserve">
+    <value>ارسال برای بارگیری</value>
+  </data>
+  <data name="APP_StringKeys_Send_To_Sell" xml:space="preserve">
+    <value>ارسال به فروش</value>
+  </data>
+  <data name="APP_StringKeys_Return_From_Sale" xml:space="preserve">
+    <value>برگشت از فروش</value>
+  </data>
+  <data name="APP_StringKeys_Number_Warehouse_Inventory" xml:space="preserve">
+    <value>انبارگردانی تعدادی</value>
+  </data>
+  <data name="APP_StringKeys_Receive_Tags_On_Other_Devices" xml:space="preserve">
+    <value>دریافت تگ‌های شناسایی شده در دستگاه‌های دیگر</value>
+  </data>
+  <data name="APP_StringKeys_Product_Code_Or_Tag_Id" xml:space="preserve">
+    <value>کد کالا / شناسه تگ</value>
+  </data>
+  <data name="APP_StringKeys_Commodity_Code_Discrepancy" xml:space="preserve">
+    <value>مغایرت کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Value_Discrepancy" xml:space="preserve">
+    <value>مغایرت مقداری</value>
+  </data>
+  <data name="APP_StringKeys_List_Read_Tags" xml:space="preserve">
+    <value>لیست تگ‌های‌ خوانده شده</value>
+  </data>
+  <data name="APP_StringKeys_Select_Bt_Device" xml:space="preserve">
+    <value>انتخاب دستگاه بلوتوث</value>
+  </data>
+  <data name="APP_StringKeys_Get_Log" xml:space="preserve">
+    <value>دریافت Log</value>
+  </data>
+  <data name="APP_StringKeys_Register_Similar_Tag" xml:space="preserve">
+    <value>تعریف تگ معادل</value>
+  </data>
+  <data name="APP_StringKeys_Identification_Send_To_Web" xml:space="preserve">
+    <value>شناسایی محصول و ارسال به وب</value>
+  </data>
+  <data name="APP_StringKeys_Identification_Inventory_Errors" xml:space="preserve">
+    <value>شناسایی خطاهای انبار</value>
+  </data>
+  <data name="APP_StringKeys_Image_Description" xml:space="preserve">
+    <value>توضیحات تصویر</value>
+  </data>
+  <data name="APP_StringKeys_Inspection_Data" xml:space="preserve">
+    <value>اطلاعات بازرسی</value>
+  </data>
+  <data name="APP_StringKeys_Inventories_List" xml:space="preserve">
+    <value>لیست انبارگردانی‌ها</value>
+  </data>
+  <data name="APP_StringKeys_Establishment_Location" xml:space="preserve">
+    <value>مکان استقرار</value>
+  </data>
+  <data name="APP_StringKeys_Movement_Settings" xml:space="preserve">
+    <value>تنظیمات جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_New_Rfid_Code" xml:space="preserve">
+    <value>شناسه RFID جدید</value>
+  </data>
+  <data name="APP_StringKeys_Number_Of_Finds" xml:space="preserve">
+    <value>تعداد یافت شده‌ها</value>
+  </data>
+  <data name="APP_StringKeys_Place_Of_Establishment" xml:space="preserve">
+    <value>مکان استقرار</value>
+  </data>
+  <data name="APP_StringKeys_Without_Placement" xml:space="preserve">
+    <value>بدون جانمایی</value>
+  </data>
+  <data name="APP_StringKeys_Placement_List_Of_Goods_In_Warehouse" xml:space="preserve">
+    <value>لیست جانمایی کالا در انبار</value>
+  </data>
+  <data name="APP_StringKeys_Placement_Status" xml:space="preserve">
+    <value>وضعیت جانمایی</value>
+  </data>
+  <data name="APP_StringKeys_Print_User" xml:space="preserve">
+    <value>کاربر چاپ</value>
+  </data>
+  <data name="APP_StringKeys_Private_Setting" xml:space="preserve">
+    <value>تنظیمات خصوصی</value>
+  </data>
+  <data name="APP_StringKeys_Product_Count" xml:space="preserve">
+    <value>تعداد محموله</value>
+  </data>
+  <data name="APP_StringKeys_Product_Count_In_Cargo" xml:space="preserve">
+    <value>تعداد محصول در محموله</value>
+  </data>
+  <data name="APP_StringKeys_Product_Document" xml:space="preserve">
+    <value>سند کالا</value>
+  </data>
+  <data name="APP_StringKeys_Product_History" xml:space="preserve">
+    <value>سوابق محصول</value>
+  </data>
+  <data name="APP_StringKeys_Product_Properties" xml:space="preserve">
+    <value>سایر مشخصات محصول</value>
+  </data>
+  <data name="APP_StringKeys_Product_Status" xml:space="preserve">
+    <value>وضعیت محصول</value>
+  </data>
+  <data name="APP_StringKeys_Production_Date_Time" xml:space="preserve">
+    <value>تاریخ و ساعت تولید</value>
+  </data>
+  <data name="APP_StringKeys_Production_Time" xml:space="preserve">
+    <value>ساعت تولید</value>
+  </data>
+  <data name="APP_StringKeys_Production_Salon" xml:space="preserve">
+    <value>سالن تولید</value>
+  </data>
+  <data name="APP_StringKeys_Quality_Check_List" xml:space="preserve">
+    <value>لیست کنترل کیفیت</value>
+  </data>
+  <data name="APP_StringKeys_Read_Tag_And_Save_To_File" xml:space="preserve">
+    <value>قرائت تگ و ذخیره در فایل</value>
+  </data>
+  <data name="APP_StringKeys_Register_And_Update_Product" xml:space="preserve">
+    <value>ثبت و ویرایش محصول</value>
+  </data>
+  <data name="APP_StringKeys_Register_By_Defined_Serial" xml:space="preserve">
+    <value>ثبت با سریال تعریف شده</value>
+  </data>
+  <data name="APP_StringKeys_By_Product_Code" xml:space="preserve">
+    <value>با کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Register_By_Product_Code" xml:space="preserve">
+    <value>ثبت با کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Register_By_Product_Code_And_Serial" xml:space="preserve">
+    <value>ثبت با کد کالا و سریال</value>
+  </data>
+  <data name="APP_StringKeys_Register_Enter" xml:space="preserve">
+    <value>ثبت ورود</value>
+  </data>
+  <data name="APP_StringKeys_Register_Locate_Product" xml:space="preserve">
+    <value>ثبت جانمایی محصولات</value>
+  </data>
+  <data name="APP_StringKeys_Register_Product" xml:space="preserve">
+    <value>ثبت محصول</value>
+  </data>
+  <data name="APP_StringKeys_Register_Product_Offline" xml:space="preserve">
+    <value>ثبت آفلاین محصول</value>
+  </data>
+  <data name="APP_StringKeys_Register_Setting" xml:space="preserve">
+    <value>تنظیمات رجیستر</value>
+  </data>
+  <data name="APP_StringKeys_Register_With_Group_Serial" xml:space="preserve">
+    <value>ثبت با سریال گروهی</value>
+  </data>
+  <data name="APP_StringKeys_Save_Failed" xml:space="preserve">
+    <value>عدم موفقیت در ثبت اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Send_Data" xml:space="preserve">
+    <value>ارسال اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_Send_Product_To_Gate" xml:space="preserve">
+    <value>ارسال کالا برای گیت</value>
+  </data>
+  <data name="APP_StringKeys_Send_To_Web" xml:space="preserve">
+    <value>ارسال به وب</value>
+  </data>
+  <data name="APP_StringKeys_Separator_Phrase" xml:space="preserve">
+    <value>عبارت جداکننده</value>
+  </data>
+  <data name="APP_StringKeys_Serial_Barcode_Identification_Type" xml:space="preserve">
+    <value>نوع تشخیص بارکد سریال:</value>
+  </data>
+  <data name="APP_StringKeys_Server_Address" xml:space="preserve">
+    <value>آدرس سرور</value>
+  </data>
+  <data name="APP_StringKeys_Server_Setting" xml:space="preserve">
+    <value>تنظیمات سرور</value>
+  </data>
+  <data name="APP_StringKeys_Show_Information" xml:space="preserve">
+    <value>نمایش مشخصات</value>
+  </data>
+  <data name="APP_StringKeys_Show_Information_Setting" xml:space="preserve">
+    <value>تنظیمات نمایش مشخصات</value>
+  </data>
+  <data name="APP_StringKeys_Show_Product_History" xml:space="preserve">
+    <value>مشاهده سوابق محصول</value>
+  </data>
+  <data name="APP_StringKeys_Show_Serial_List" xml:space="preserve">
+    <value>نمایش لیست سریال‌ها</value>
+  </data>
+  <data name="APP_StringKeys_Single_Power_Percent" xml:space="preserve">
+    <value>درصد پاور تکی</value>
+  </data>
+  <data name="APP_StringKeys_Tag_Status" xml:space="preserve">
+    <value>وضعیت تگ</value>
+  </data>
+  <data name="APP_StringKeys_Transfer_Data_With_Server" xml:space="preserve">
+    <value>در حال تبادل اطلاعات با سرور</value>
+  </data>
+  <data name="APP_StringKeys_Update_Product_Value" xml:space="preserve">
+    <value>ویرایش مقدار محصول</value>
+  </data>
+  <data name="APP_StringKeys_Wait_To_Read_Barcode" xml:space="preserve">
+    <value>منتظر قرائت بارکد</value>
+  </data>
+  <data name="APP_StringKeys_Wait_To_Read_Tag" xml:space="preserve">
+    <value>منتظر قرائت تگ</value>
+  </data>
+  <data name="APP_StringKeys_With_Code_Value_Product_Serial" xml:space="preserve">
+    <value>با کد، مقدار و سریال محصول</value>
+  </data>
+  <data name="APP_StringKeys_Without_Extra_Data" xml:space="preserve">
+    <value>بدون اطلاعات اضافه</value>
+  </data>
+  <data name="APP_StringKeys_Dynamic_Fields" xml:space="preserve">
+    <value>فیلدهای دینامیک</value>
+  </data>
+  <data name="APP_StringKeys_Open_Location_Settings" xml:space="preserve">
+    <value>تنظیمات مکان</value>
+  </data>
+  <data name="APP_StringKeys_Not_Entered" xml:space="preserve">
+    <value>وارد نشده</value>
+  </data>
+  <data name="APP_StringKeys_No_Register" xml:space="preserve">
+    <value>رجیستر نشده</value>
+  </data>
+  <data name="APP_StringKeys_Gathering_Data" xml:space="preserve">
+    <value>در حال جمع‌آوری داده‌ها</value>
+  </data>
+  <data name="APP_StringKeys_Are_You_Sure" xml:space="preserve">
+    <value>آیا اطمینان دارید؟</value>
+  </data>
+  <data name="APP_StringKeys_Do_You_Want_Exit" xml:space="preserve">
+    <value>می‌خواهید از برنامه خارج شوید؟</value>
+  </data>
+  <data name="APP_StringKeys_Register_Duplicates" xml:space="preserve">
+    <value>آیا تگ تکراری رجیستر شود؟</value>
+  </data>
+  <data name="APP_StringKeys_Success_Definition_Equivalent_Tag_Intend_Another" xml:space="preserve">
+    <value>تعریف تگ معادل با موفقیت انجام شد. آیا قصد تعریف تگ معادل دیگری برای این محصول دارید؟</value>
+  </data>
+  <data name="APP_StringKeys_Are_You_Sure_Filters_Will_Delete" xml:space="preserve">
+    <value>آیا اطمینان دارید؟ فیلترها حذف می‌شوند</value>
+  </data>
+  <data name="APP_StringKeys_If_Approved_Tags_And_Filters_Delete" xml:space="preserve">
+    <value>در صورت تائید تمام تگ‌ها و فیلترها پاک خواهند شد</value>
+  </data>
+  <data name="APP_StringKeys_Data_Saved_On_Sd_Card" xml:space="preserve">
+    <value>داده‌های مورد نظر در SD Card ذخیره شدند</value>
+  </data>
+  <data name="APP_StringKeys_Data_Saved_Successfully" xml:space="preserve">
+    <value>اطلاعات ذخیره شد</value>
+  </data>
+  <data name="APP_StringKeys_Entered_Data_Is_Incorrect" xml:space="preserve">
+    <value>اطلاعات وارد شده صحیح نیست</value>
+  </data>
+  <data name="APP_StringKeys_Entered_Value_More_Than_Product_Value" xml:space="preserve">
+    <value>مقدار وارد شده از مقدار کل بیشتر است</value>
+  </data>
+  <data name="APP_StringKeys_Finding_Stopped" xml:space="preserve">
+    <value>شناسایی متوقف شد</value>
+  </data>
+  <data name="APP_StringKeys_Not_Exists_Dynamic_Fields" xml:space="preserve">
+    <value>هیچ فیلد دینامیکی وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Min_Filter_1_And_Max_Filter_2" xml:space="preserve">
+    <value>حداقل فیلتر ۱ و حداکثر فیلتر ۲ عدد است</value>
+  </data>
+  <data name="APP_StringKeys_No_Data_To_Write" xml:space="preserve">
+    <value>مقداری برای نوشتن پیدا نشد</value>
+  </data>
+  <data name="APP_StringKeys_No_Permission_To_Register_Duplicate_Serial" xml:space="preserve">
+    <value>اجازه ثبت سریال تکراری وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Prev_Data_Will_Be_Delete" xml:space="preserve">
+    <value>داده‌های قبلی پاک می‌شوند</value>
+  </data>
+  <data name="APP_StringKeys_Problem_In_Saving_Data" xml:space="preserve">
+    <value>مشکلی در ذخیره اطلاعات بوجود آمده است</value>
+  </data>
+  <data name="APP_StringKeys_Product_Find" xml:space="preserve">
+    <value>کالا شناسایی شد</value>
+  </data>
+  <data name="APP_StringKeys_Registered_Successfully" xml:space="preserve">
+    <value>با موفقیت ثبت شد</value>
+  </data>
+  <data name="APP_StringKeys_Rfid_Can_Use" xml:space="preserve">
+    <value>شناسه RFID قابل استفاده است</value>
+  </data>
+  <data name="APP_StringKeys_Error_Occurred_In_Server_Information" xml:space="preserve">
+    <value>در اطلاعات دریافتی از سرور خطایی رخ داده</value>
+  </data>
+  <data name="APP_StringKeys_You_Dont_Have_Access_Permission" xml:space="preserve">
+    <value>شما اجازه دسترسی به این بخش را ندارید</value>
+  </data>
+  <data name="APP_StringKeys_You_Have_Permission_To_Transfer_Value_To_Registred_Tag" xml:space="preserve">
+    <value>شما اجازه انتقال مقدار به تگ جدید را دارید</value>
+  </data>
+  <data name="APP_StringKeys_Revoke_Filter_Apply" xml:space="preserve">
+    <value>لغو فیلتر اعمال شد</value>
+  </data>
+  <data name="APP_StringKeys_Read_Tags_Remove_If_Exit" xml:space="preserve">
+    <value>در صورت خروج تگ‌های خوانده شده پاک خواهند شد</value>
+  </data>
+  <data name="APP_StringKeys_Gps_Network_Not_Enabled" xml:space="preserve">
+    <value>مجوز مکان فعال نیست</value>
+  </data>
+  <data name="APP_StringKeys_No_Tag_Read" xml:space="preserve">
+    <value>تگی خوانده نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Wrong_Production_Salon" xml:space="preserve">
+    <value>سالن تولید به‌درستی انتخاب نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Wrong_Production_Shift" xml:space="preserve">
+    <value>شیفت تولید به‌درستی انتخاب نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Tag_Not_Register" xml:space="preserve">
+    <value>تگ خوانده شده رجیستر نشده است</value>
+  </data>
+  <data name="APP_StringKeys_There_Is_No_Filter" xml:space="preserve">
+    <value>فیلتری اعمال نشده است</value>
+  </data>
+  <data name="APP_StringKeys_Read_Inspect_Or_Freeze_Conflict" xml:space="preserve">
+    <value>محصولات فریز یا بازرسی نشده قرائت شده است</value>
+  </data>
+  <data name="APP_StringKeys_For_Start_Find_Product_Push_Key" xml:space="preserve">
+    <value>برای شروع شناسایی کالا ماشه را بفشارید</value>
+  </data>
+  <data name="APP_StringKeys_For_Stop_Find_Product_Push_Key" xml:space="preserve">
+    <value>برای پایان شناسایی کالا ماشه را بفشارید</value>
+  </data>
+  <data name="APP_StringKeys_To_Read_Tag_Press_The_Button" xml:space="preserve">
+    <value>برای خواندن تگ ماشه را بفشارید</value>
+  </data>
+  <data name="APP_StringKeys_Grant_All_Permissions" xml:space="preserve">
+    <value>برای ادامه باید تمامی مجوزها را واگذار نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enable_Location" xml:space="preserve">
+    <value>برای ادامه باید مجوز مکان را واگذار نمایید</value>
+  </data>
+  <data name="APP_StringKeys_First_Read_Tag" xml:space="preserve">
+    <value>ابتدا تگ مورد نظر را بخوانید</value>
+  </data>
+  <data name="APP_StringKeys_Hundred_Unregistered_Information" xml:space="preserve">
+    <value>اطلاعات ثبت نشده به 100 عدد رسید. برای ادامه، اطلاعات را ثبت نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Place_Equivalent_Tag_Front_Device" xml:space="preserve">
+    <value>تگ معادل را چند لحظه مقابل دستگاه قرار دهید</value>
+  </data>
+  <data name="APP_StringKeys_Update_Data" xml:space="preserve">
+    <value>لطفا اطلاعات را بروزرسانی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Check_Connection_To_Server" xml:space="preserve">
+    <value>ارتباط با سرور را بررسی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Check_Sent_Data_To_Server" xml:space="preserve">
+    <value>اطلاعات ارسالی برای سرور را بررسی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Choose_Warehouse" xml:space="preserve">
+    <value>انبار را مشخص کنید</value>
+  </data>
+  <data name="APP_StringKeys_First_Save_Data" xml:space="preserve">
+    <value>ابتدا عملیات را ذخیره کنید</value>
+  </data>
+  <data name="APP_StringKeys_First_Stop_Reading_Tag" xml:space="preserve">
+    <value>ابتدا خواندن تگ را متوقف کنید</value>
+  </data>
+  <data name="APP_StringKeys_For_Stop_Find_Product_Click_Btn" xml:space="preserve">
+    <value>برای پایان شناسایی کالا روی دکمه بلوتوث کلیک کنید</value>
+  </data>
+  <data name="APP_StringKeys_Read_Main_Tag" xml:space="preserve">
+    <value>تگ اصلی را قرائت کنید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Address" xml:space="preserve">
+    <value>آدرس را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Information" xml:space="preserve">
+    <value>اطلاعات را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Location" xml:space="preserve">
+    <value>مکان را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Description" xml:space="preserve">
+    <value>توضیحات را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Password" xml:space="preserve">
+    <value>پسورد را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Product_Code" xml:space="preserve">
+    <value>کد کالا را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Product_Document" xml:space="preserve">
+    <value>سند کالا را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Product_Value" xml:space="preserve">
+    <value>مقدار کالا را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Rows_Count_To_Get_Log" xml:space="preserve">
+    <value>تعداد لاگ را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Server_Address" xml:space="preserve">
+    <value>آدرس سرور را وارد نمایید:</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Value_For_Edit_Shipment" xml:space="preserve">
+    <value>مقدار مورد نظر برای ویرایش را وارد نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Please_Select_Operation" xml:space="preserve">
+    <value>لطفا یک عملیات را انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Production_Salon" xml:space="preserve">
+    <value>سالن تولید را انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Enter_Production_Shift" xml:space="preserve">
+    <value>شیفت تولید را انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Please_Select_Document_Code" xml:space="preserve">
+    <value>لطفا یک کد سند را انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Select_Warehouse" xml:space="preserve">
+    <value>انبار را انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Select_It" xml:space="preserve">
+    <value>انتخاب نمایید</value>
+  </data>
+  <data name="APP_StringKeys_Done" xml:space="preserve">
+    <value>انجام شد</value>
+  </data>
+  <data name="APP_StringKeys_Entry_Status" xml:space="preserve">
+    <value>وضعیت ورود</value>
+  </data>
+  <data name="APP_StringKeys_Entered" xml:space="preserve">
+    <value>وارد شده</value>
+  </data>
+  <data name="APP_StringKeys_Placed" xml:space="preserve">
+    <value>جانمایی شده</value>
+  </data>
+  <data name="APP_StringKeys_Not_Placed" xml:space="preserve">
+    <value>جانمایی نشده</value>
+  </data>
+  <data name="APP_StringKeys_Select" xml:space="preserve">
+    <value>انتخاب کنید</value>
+  </data>
+  <data name="APP_StringKeys_FromRegisterDate" xml:space="preserve">
+    <value>از تاریخ تولید</value>
+  </data>
+  <data name="APP_StringKeys_FromRegisterTime" xml:space="preserve">
+    <value>از ساعت تولید</value>
+  </data>
+  <data name="APP_StringKeys_ToRegisterDate" xml:space="preserve">
+    <value>تا تاریخ تولید</value>
+  </data>
+  <data name="APP_StringKeys_ToRegisterTime" xml:space="preserve">
+    <value>تا ساعت تولید</value>
+  </data>
+  <data name="APP_StringKeys_RegisterDate" xml:space="preserve">
+    <value>تاریخ تولید</value>
+  </data>
+  <data name="APP_StringKeys_RegisterTime" xml:space="preserve">
+    <value>ساعت تولید</value>
+  </data>
+  <data name="APP_StringKeys_Software_Map" xml:space="preserve">
+    <value>نقشه نرم افزار</value>
+  </data>
+  <data name="APP_StringKeys_A_TAG" xml:space="preserve">
+    <value>یک تگ</value>
+  </data>
+  <data name="APP_StringKeys_TAGS" xml:space="preserve">
+    <value>چند تگ</value>
+  </data>
+  <data name="APP_StringKeys_TAGS_COUNT_IN_REGISTER" xml:space="preserve">
+    <value>تعداد تگ در عملیات ثبت با کد کالا</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Enter_DocumentCode" xml:space="preserve">
+    <value>وارد کردن کد سند الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Fill_Uhf_ProductSerial" xml:space="preserve">
+    <value>فیلد سریال از جدول شناسایی تگ را به کمک جدول تگ پر کنید</value>
+  </data>
+  <data name="APP_StringKeys_Update_Uhf_Statuses" xml:space="preserve">
+    <value>وضعیت عملیات های شناسایی تگ را بروزرسانی کنید</value>
+  </data>
+  <data name="APP_StringKeys_Print_Format_NotFound" xml:space="preserve">
+    <value>فرمت مناسب برای چاپ یافت نشد</value>
+  </data>
+  <data name="APP_StringKeys_Data_Mining_Elements" xml:space="preserve">
+    <value>المان های استخراج داده</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Max_Size" xml:space="preserve">
+    <value>حداکثر سایز مجاز {0} است</value>
+  </data>
+  <data name="APP_StringKeys_File_Extention_Error" xml:space="preserve">
+    <value>فرمت فایل وارد شده غیر مجاز است</value>
+  </data>
+  <data name="APP_StringKeys_Update_Datas" xml:space="preserve">
+    <value>بروزرسانی اطلاعات</value>
+  </data>
+  <data name="APP_StringKeys_MovementAction_Submit_Form" xml:space="preserve">
+    <value>فرم ثبت عملیات جابجایی</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Quarentine" xml:space="preserve">
+    <value>انبار قرنطینه</value>
+  </data>
+  <data name="APP_StringKeys_Warehouse_Sales" xml:space="preserve">
+    <value>انبار فروش رفته</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_IsCartablePermitted" xml:space="preserve">
+    <value>اجازه تغییر در کارتابل اسناد</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_IsUpdatePermitted" xml:space="preserve">
+    <value>اجازه بروز رسانی </value>
+  </data>
+  <data name="APP_StringKeys_NoLimit" xml:space="preserve">
+    <value>بدون محدودیت</value>
+  </data>
+  <data name="APP_StringKeys_ActionControls" xml:space="preserve">
+    <value>کنترل های عملیاتی فعال</value>
+  </data>
+  <data name="APP_StringKeys_DocumentStatus_Permitted" xml:space="preserve">
+    <value>وضعیت اسناد مجاز</value>
+  </data>
+  <data name="APP_StringKeys_UploadExcel_RealityCount" xml:space="preserve">
+    <value>بارگذاری اکسل شمارش فیزیکی</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Upload_Inventory_Excels" xml:space="preserve">
+    <value>وارد کردن فیلد کد عملیات اموال گردانی برای بارگذاری فایل الزامی است</value>
+  </data>
+  <data name="APP_StringKeys_Extra" xml:space="preserve">
+    <value>اضافی</value>
+  </data>
+  <data name="APP_StringKeys_Shortage" xml:space="preserve">
+    <value>کسری</value>
+  </data>
+  <data name="APP_StringKeys_Conflicts" xml:space="preserve">
+    <value>مغایرت ها</value>
+  </data>
+  <data name="APP_StringKeys_Histories" xml:space="preserve">
+    <value>سوابق</value>
+  </data>
+  <data name="APP_StringKeys_Conflict" xml:space="preserve">
+    <value>مغایرت</value>
+  </data>
+  <data name="APP_StringKeys_Count_Reality" xml:space="preserve">
+    <value>شمارش فیزیکی</value>
+  </data>
+  <data name="APP_StringKeys_Conflict_Reality" xml:space="preserve">
+    <value>مغایرت شمارش فیزیکی</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_Count" xml:space="preserve">
+    <value>تعداد شناسایی شده</value>
+  </data>
+  <data name="APP_StringKeys_Inventory_SumCount" xml:space="preserve">
+    <value>مقدار شناسایی شده</value>
+  </data>
+  <data name="APP_StringKeys_DisplayOrder" xml:space="preserve">
+    <value>ترتیب نمایش</value>
+  </data>
+  <data name="APP_StringKeys_SectionTitle" xml:space="preserve">
+    <value>عنوان دسته</value>
+  </data>
+  <data name="APP_StringKeys_TruckCrossPresent" xml:space="preserve">
+    <value>اطلاعات پذیرش تردد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCrossEnter" xml:space="preserve">
+    <value>اطلاعات ورود تردد</value>
+  </data>
+  <data name="APP_StringKeys_TruckCrossExit" xml:space="preserve">
+    <value>اطلاعات خروج تردد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Compare_Equals" xml:space="preserve">
+    <value>مقدار فیلد {0} باید برابر با فیلد {1} باشد</value>
+  </data>
+  <data name="APP_StringKeys_Validation_Title_Uniqueness" xml:space="preserve">
+    <value>این عنوان قبلا ثبت شده است</value>
+  </data>
+  <data name="APP_StringKeys_RfidPower" xml:space="preserve">
+    <value>قدرت Rfid</value>
+  </data>
+  <data name="APP_StringKeys_ActionTypeTitle" xml:space="preserve">
+    <value>عنوان عملیات</value>
+  </data>
+  <data name="APP_StringKeys_fld_ActionTypeFromDestinationType" xml:space="preserve">
+    <value>نوع انبار مبدا</value>
+  </data>
+  <data name="APP_StringKeys_ActionTypeToTypeDestinationType" xml:space="preserve">
+    <value>نوع انبار مقصد</value>
+  </data>
+  <data name="APP_StringKeys_ActionTypePermitedDocStatus" xml:space="preserve">
+    <value>وضعیت سند مجاز</value>
+  </data>
+  <data name="APP_StringKeys_ActionTypeChangeDocStatus" xml:space="preserve">
+    <value>وضعیت تغییر سند</value>
+  </data>
+  <data name="APP_StringKeys_ParentField" xml:space="preserve">
+    <value>کد والد</value>
+  </data>
+  <data name="APP_StringKeys_SectionId" xml:space="preserve">
+    <value>قسمت</value>
+  </data>
+  <data name="APP_StringKeys_RichTextEditor" xml:space="preserve">
+    <value>RichTextEditor</value>
+  </data>
+  <data name="APP_StringKeys_Numeric" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="APP_StringKeys_Alert_Fail_Delete" xml:space="preserve">
+    <value>امکان حذف این رکورد وجود ندارد</value>
+  </data>
+  <data name="APP_StringKeys_Serial_Add_Properties" xml:space="preserve">
+    <value>مشخصات سریال</value>
+  </data>
+  <data name="APP_StringKeys_ActionStatus" xml:space="preserve">
+    <value>وضعیت عملیات</value>
+  </data>
+  <data name="APP_StringKeys_Device_Name" xml:space="preserve">
+    <value>نام ایستگاه</value>
+  </data>
+  <data name="APP_StringKeys_Retrieving_technical_information" xml:space="preserve">
+    <value>بازیابی اطلاعات فنی</value>
+  </data>
+  <data name="APP_StringKeys_Location_Serials_Report" xml:space="preserve">
+    <value>گزارش سریال های لوکیشن</value>
+  </data>
+  <data name="APP_StringKeys_Column_Duplicate" xml:space="preserve">
+    <value>ستون انتخاب شده قبلاً اضافه شده است</value>
+  </data>
+  <data name="APP_StringKeys_Variety_ProductCode" xml:space="preserve">
+    <value>تنوع کدکالا</value>
+  </data>
+</root>

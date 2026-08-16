@@ -1,0 +1,233 @@
+﻿:root {
+    --sidebar-width: 240px;
+    --sidebar-bg: #1a1d23;
+    --sidebar-hover: #2a2d35;
+    --accent: #4f8ef7;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'IRANSans', Tahoma, 'Segoe UI', sans-serif !important;
+    direction: rtl;
+}
+
+
+.sidebar {
+    width: var(--sidebar-width);
+    min-height: 100vh;
+    background: var(--sidebar-bg);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.sidebar-brand {
+    padding: 24px 20px 16px;
+    border-bottom: 1px solid #2e3240;
+}
+
+    .sidebar-brand h5 {
+        color: #fff;
+        font-weight: 700;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .sidebar-brand small {
+        color: #666;
+        font-size: 0.75rem;
+    }
+
+.sidebar-nav {
+    padding: 12px 0;
+    flex: 1;
+}
+
+.nav-item-ai {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 0;
+    transition: background .15s, color .15s;
+}
+
+    .nav-item-ai:hover, .nav-item-ai.active {
+        background: var(--sidebar-hover);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-item-ai.active {
+        border-right: 3px solid var(--accent);
+    }
+
+.sidebar-footer {
+    padding: 16px 20px;
+    border-top: 1px solid #2e3240;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.main-content {
+    margin-right: var(--sidebar-width);
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-title {
+    font-weight: 600;
+    color: #1a1d23;
+    font-size: 1rem;
+}
+
+.page-body {
+    padding: 28px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    transition: box-shadow .2s;
+}
+
+    .stat-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+
+    .stat-card .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--accent);
+    }
+
+    .stat-card .stat-label {
+        color: #6b7280;
+        font-size: 0.85rem;
+        margin-top: 4px;
+    }
+
+    .stat-card .stat-icon {
+        font-size: 2rem;
+        opacity: .15;
+    }
+
+.card-ai {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.card-ai-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-active {
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.badge-revoked {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.badge-expired {
+    background: #fef3c7;
+    color: #d97706;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.login-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1d23 0%, #2a2d35 50%, #1a1d23 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.3);
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+    .login-logo .logo-icon {
+        font-size: 3rem;
+        color: var(--accent);
+    }
+
+    .login-logo h4 {
+        margin: 8px 0 4px;
+        font-weight: 700;
+        color: #1a1d23;
+    }
+
+    .login-logo p {
+        color: #6b7280;
+        font-size: 0.875rem;
+        margin: 0;
+    }
+
+.btn-ai-primary {
+    background: var(--accent);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 100%;
+    transition: background .15s;
+}
+
+    .btn-ai-primary:hover {
+        background: #3a7be8;
+        color: #fff;
+    }
+
+    .btn-ai-primary:disabled {
+        opacity: .65;
+    }

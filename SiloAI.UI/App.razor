@@ -1,0 +1,29 @@
+﻿@using SiloAI.UI.Pages.Account
+@using SiloAI.UI.Shared
+@using Telerik.Blazor.Components
+@using SiloAI.Shared
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+                <NotAuthorized>
+                    <Login />
+                </NotAuthorized>
+                <Authorizing>
+                    <TelerikLoaderContainer LoaderPosition="@LoaderPosition.End"
+                                            LoaderType="LoaderType.InfiniteSpinner"
+                                            Text="@TextResources.APP_StringKeys_Loading"
+                                            Visible="true">
+                    </TelerikLoaderContainer>
+                </Authorizing>
+            </AuthorizeRouteView>
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">"@TextResources.APP_StringKeys_Route_Nothing"</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>

@@ -1,0 +1,126 @@
+@page "/api-keys"
+@attribute [Authorize]
+
+<PageTitle>API Keys — Silo AI Admin</PageTitle>
+
+<div class="card-ai mb-4">
+    <div class="card-ai-header">
+        <span><i class="bi bi-plus-circle me-2"></i>Create New API Key</span>
+    </div>
+    <div class="p-4">
+        @if (!string.IsNullOrEmpty(_newKeyValue))
+        {
+            <div class="alert alert-success d-flex gap-3 align-items-start">
+                <i class="bi bi-check-circle-fill fs-5 mt-1"></i>
+                <div>
+                    <strong>Key created — copy it now, it won't be shown again.</strong>
+                    <div class="mt-2 p-2 bg-light rounded font-monospace small" style="word-break:break-all;">
+                        @_newKeyValue
+                    </div>
+                    <small class="text-muted">Add this value to your API consumer's <code>X-Api-Key</code> header.</small>
+                </div>
+            </div>
+        }
+
+        @if (_errorMessage is not null)
+        {
+            <div class="alert alert-danger">@_errorMessage</div>
+        }
+
+        <div class="row g-3 align-items-end">
+            <div class="col-md-5">
+                <label class="form-label fw-semibold">Label</label>
+                <input type="text" class="form-control" placeholder="e.g. Production App" @bind="_newKeyLabel" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">Expires At</label>
+                <input type="date" class="form-control" @bind="_newKeyExpiresAt" />
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary w-100" @onclick="CreateKey" disabled="@_isLoading">
+                    @if (_isLoading)
+                    {
+                        <span class="spinner-border spinner-border-sm me-1"></span>
+                    }
+                    else
+                    {
+                        <i class="bi bi-plus-lg me-1"></i>
+                    }
+                    Create Key
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-ai">
+    <div class="card-ai-header">
+        <span><i class="bi bi-list-ul me-2"></i>All API Keys</span>
+        <span class="text-muted small">@(_keys?.Count ?? 0) total</span>
+    </div>
+    @if (_isLoading && _keys is null)
+    {
+        <div class="p-4 text-center text-muted">
+            <div class="spinner-border spinner-border-sm me-2"></div>Loading...
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Label</th>
+                        <th>Created</th>
+                        <th>Expires</th>
+                        <th>Status</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (_keys is { Count: 0 })
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center text-muted py-4">
+                                <i class="bi bi-key me-2"></i>No API keys yet.
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var key in _keys ?? [])
+                    {
+                        <tr>
+                            <td class="fw-semibold">@key.Label</td>
+                            <td class="text-muted">@key.CreatedAt.ToLocalTime().ToString("MMM dd, yyyy HH:mm")</td>
+                            <td class="text-muted">@key.ExpiresAt.ToLocalTime().ToString("MMM dd, yyyy")</td>
+                            <td>
+                                @if (key.IsRevoked)
+                                {
+                                    <span class="badge-revoked">Revoked</span>
+                                }
+                                else if (key.ExpiresAt < DateTime.UtcNow)
+                                {
+                                    <span class="badge-expired">Expired</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-active">Active</span>
+                                }
+                            </td>
+                            <td class="text-end">
+                                @if (!key.IsRevoked)
+                                {
+                                    <button class="btn btn-sm btn-outline-danger"
+                                            @onclick="() => RevokeKey(key.Id)"
+                                            disabled="@_isLoading">
+                                        <i class="bi bi-x-circle me-1"></i>Revoke
+                                    </button>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+

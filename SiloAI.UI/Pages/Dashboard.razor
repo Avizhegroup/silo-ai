@@ -1,0 +1,103 @@
+@page "/dashboard"
+@attribute [Authorize]
+
+<PageTitle>Dashboard — Silo AI Admin</PageTitle>
+
+@if (_isLoading)
+{
+    <div class="d-flex align-items-center gap-2 text-muted">
+        <div class="spinner-border spinner-border-sm"></div>
+        <span>Loading...</span>
+    </div>
+}
+else
+{
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="stat-card d-flex justify-content-between align-items-start">
+                <div>
+                    <div class="stat-value">@_activeKeys</div>
+                    <div class="stat-label">Active API Keys</div>
+                </div>
+                <i class="bi bi-key-fill stat-icon text-success"></i>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card d-flex justify-content-between align-items-start">
+                <div>
+                    <div class="stat-value">@_totalKeys</div>
+                    <div class="stat-label">Total API Keys</div>
+                </div>
+                <i class="bi bi-key stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card d-flex justify-content-between align-items-start">
+                <div>
+                    <div class="stat-value text-danger">@_revokedKeys</div>
+                    <div class="stat-label">Revoked Keys</div>
+                </div>
+                <i class="bi bi-shield-x stat-icon text-danger"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-ai">
+        <div class="card-ai-header">
+            <span><i class="bi bi-clock-history me-2"></i>Recently Created Keys</span>
+            <a href="/api-keys" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-arrow-right me-1"></i>Manage All
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Label</th>
+                        <th>Created</th>
+                        <th>Expires</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (_recentKeys is { Count: 0 })
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted py-4">
+                                <i class="bi bi-key me-2"></i>No API keys yet.
+                                <a href="/api-keys">Create one</a>
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var key in _recentKeys ?? [])
+                    {
+                        <tr>
+                            <td class="fw-semibold">@key.Label</td>
+                            <td class="text-muted">@key.CreatedAt.ToLocalTime().ToString("MMM dd, yyyy")</td>
+                            <td class="text-muted">@key.ExpiresAt.ToLocalTime().ToString("MMM dd, yyyy")</td>
+                            <td>
+                                @if (key.IsRevoked)
+                                {
+                                    <span class="badge-revoked">Revoked</span>
+                                }
+                                else if (key.ExpiresAt < DateTime.UtcNow)
+                                {
+                                    <span class="badge-expired">Expired</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-active">Active</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    @if (_errorMessage is not null)
+    {
+        <div class="alert alert-warning mt-3">@_errorMessage</div>
+    }
+}

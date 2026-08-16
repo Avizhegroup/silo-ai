@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="DocumentFormat.OpenXml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="TextResources.resx">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\Silo.Source\Silo.Source.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" SetTargetFramework="TargetFramework=netstandard2.0" />
+    </ItemGroup>
+
+</Project>

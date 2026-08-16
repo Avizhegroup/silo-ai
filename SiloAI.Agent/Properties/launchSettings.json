@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SiloAI.Agent": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GITHUB_TOKEN": "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"
+      }
+    }
+  }
+}

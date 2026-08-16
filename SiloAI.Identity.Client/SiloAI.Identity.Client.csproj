@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiloAI.Application.Shared\SiloAI.Application.Shared.csproj" />
+    <ProjectReference Include="..\SiloAI.Shared\SiloAI.Shared.csproj" />
+  </ItemGroup>
+</Project>

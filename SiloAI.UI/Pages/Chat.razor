@@ -1,0 +1,109 @@
+@page "/chat"
+@attribute [Authorize]
+
+<PageTitle>گفتگو با اسناد — پنل مدیریت هوش مصنوعی سیلو</PageTitle>
+
+<div class="card-ai mb-3">
+    <div class="card-ai-header">
+        <span><i class="bi bi-chat-dots me-2"></i>گفتگو با عامل بر اساس پایگاه دانش (RAG)</span>
+        <div class="d-flex gap-2 align-items-center">
+            <label class="text-muted small mb-0">نوع سند:</label>
+            <select class="form-select form-select-sm" style="width: 130px" @bind="_docType" disabled="@_isSending">
+                @foreach (var type in Enum.GetValues<RagDocType>())
+                {
+                    <option value="@type">@type.ToDisplay()</option>
+                }
+            </select>
+            <label class="text-muted small mb-0">کلید:</label>
+            <input type="text" class="form-control form-control-sm" style="width: 130px"
+                   placeholder="اختیاری" @bind="_key" disabled="@_isSending" />
+            <label class="text-muted small mb-0">تعداد قطعات:</label>
+            <input type="number" min="1" max="20" class="form-control form-control-sm" style="width: 70px"
+                   @bind="_topK" disabled="@_isSending" />
+            <button class="btn btn-sm btn-outline-secondary" @onclick="StartNewChat" disabled="@_isSending">
+                <i class="bi bi-plus-lg me-1"></i>گفتگوی جدید
+            </button>
+        </div>
+    </div>
+
+    <div class="chat-window">
+        @if (_messages.Count == 0)
+        {
+            <div class="chat-empty text-muted">
+                <i class="bi bi-chat-square-text" style="font-size: 2rem; opacity: .4;"></i>
+                <div class="mt-2">پرسش خود را بنویسید تا با عامل بر اساس اسناد ایندکس‌شده گفتگو کنید.</div>
+            </div>
+        }
+        else
+        {
+            @foreach (var msg in _messages)
+            {
+                <div class="chat-row @(msg.IsUser ? "chat-row-user" : "chat-row-bot")">
+                    <div class="chat-bubble @(msg.IsUser ? "chat-bubble-user" : "chat-bubble-bot")">
+                        <div class="chat-bubble-header">
+                            <i class="bi @(msg.IsUser ? "bi-person-circle" : "bi-robot") me-1"></i>
+                            <span>@(msg.IsUser ? "شما" : "دستیار")</span>
+                            <span class="chat-time">@msg.Time.ToLocalTime().ToString("HH:mm")</span>
+                        </div>
+                        <div class="chat-bubble-body">@msg.Text</div>
+                        @if (!msg.IsUser && msg.Citations is { Count: > 0 })
+                        {
+                            <div class="chat-citations">
+                                <div class="chat-citations-title">
+                                    <i class="bi bi-bookmark-star me-1"></i>منابع (@msg.Citations.Count)
+                                </div>
+                                @for (var i = 0; i < msg.Citations.Count; i++)
+                                {
+                                    var c = msg.Citations[i];
+                                    var idx = i + 1;
+                                    <div class="chat-citation">
+                                        <div class="chat-citation-meta">
+                                            <span class="chat-citation-badge">[@idx]</span>
+                                            <span class="fw-semibold">@c.FileName</span>
+                                            <span class="text-muted">— قطعه @c.ChunkIndex</span>
+                                            <span class="text-muted small">(شباهت: @c.Similarity.ToString("F3"))</span>
+                                        </div>
+                                        <div class="chat-citation-snippet">@c.Snippet</div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+            @if (_isSending)
+            {
+                <div class="chat-row chat-row-bot">
+                    <div class="chat-bubble chat-bubble-bot">
+                        <div class="chat-bubble-body text-muted">
+                            <span class="spinner-border spinner-border-sm me-2"></span>در حال پاسخ‌گویی...
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <div class="chat-input">
+        <textarea class="form-control"
+                  rows="2"
+                  placeholder="پیام خود را بنویسید... (Enter برای ارسال، Shift+Enter برای خط جدید)"
+                  @bind="_input"
+                  @bind:event="oninput"
+                  @onkeydown="OnInputKeyDown"
+                  disabled="@_isSending"></textarea>
+        <button class="btn btn-primary chat-send-btn"
+                @onclick="SendAsync"
+                disabled="@(_isSending || string.IsNullOrWhiteSpace(_input))">
+            @if (_isSending)
+            {
+                <span class="spinner-border spinner-border-sm"></span>
+            }
+            else
+            {
+                <i class="bi bi-send-fill"></i>
+            }
+        </button>
+    </div>
+</div>
+

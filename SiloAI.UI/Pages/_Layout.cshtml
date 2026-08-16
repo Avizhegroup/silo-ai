@@ -1,0 +1,24 @@
+@using Microsoft.AspNetCore.Components.Web
+@namespace SiloAI.UI.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل مدیریت هوش مصنوعی سیلو</title>
+    <base href="/" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="~/styles/Site.css" rel="stylesheet" />
+    <script src="/js/telerik/jquery.min.js"></script>
+    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js"></script>
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
+<body>
+    @RenderBody()
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

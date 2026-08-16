@@ -1,0 +1,234 @@
+@page "/customers"
+@attribute [Authorize]
+
+<PageTitle>مشتریان — پنل مدیریت هوش مصنوعی سیلو</PageTitle>
+
+@if (_showApiKeys && _selectedCustomer is not null)
+{
+    <div class="card-ai mb-4">
+        <div class="card-ai-header">
+            <span><i class="bi bi-arrow-right-circle me-2"></i>کلیدهای API مشتری: @_selectedCustomer.Name</span>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => { _showApiKeys = false; _selectedCustomer = null; }">
+                <i class="bi bi-x me-1"></i>بستن
+            </button>
+        </div>
+        <div class="p-4">
+            @if (!string.IsNullOrEmpty(_newKeyValue))
+            {
+                <div class="alert alert-success d-flex gap-3 align-items-start">
+                    <i class="bi bi-check-circle-fill fs-5 mt-1"></i>
+                    <div>
+                        <strong>کلید ایجاد شد — همین الان کپی کنید، دیگر نمایش داده نمی‌شود.</strong>
+                        <div class="mt-2 p-2 bg-light rounded font-monospace small" style="word-break:break-all;">
+                            @_newKeyValue
+                        </div>
+                        <small class="text-muted">این مقدار را در هدر <code>X-Api-Key</code> مصرف‌کننده API قرار دهید.</small>
+                    </div>
+                </div>
+            }
+
+            <div class="row g-3 align-items-end mb-4">
+                <div class="col-md-5">
+                    <label class="form-label fw-semibold">عنوان کلید</label>
+                    <input type="text" class="form-control" placeholder="مثلاً: اپلیکیشن موبایل" @bind="_newKeyLabel" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">تاریخ انقضا</label>
+                    <input type="date" class="form-control" @bind="_newKeyExpiresAt" />
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary w-100" @onclick="CreateApiKey" disabled="@_isKeyLoading">
+                        @if (_isKeyLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-1"></span>
+                        }
+                        else
+                        {
+                            <i class="bi bi-plus-lg me-1"></i>
+                        }
+                        ایجاد کلید
+                    </button>
+                </div>
+            </div>
+
+            @if (_customerKeys is { Count: 0 })
+            {
+                <div class="text-center text-muted py-4">
+                    <i class="bi bi-key me-2"></i>هیچ کلید API‌ای وجود ندارد.
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>عنوان</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>تاریخ انقضا</th>
+                                <th>وضعیت</th>
+                                <th class="text-end">عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var key in _customerKeys ?? [])
+                            {
+                                <tr>
+                                    <td class="fw-semibold">@key.Label</td>
+                                    <td class="text-muted">@key.CreatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm")</td>
+                                    <td class="text-muted">@key.ExpiresAt.ToLocalTime().ToString("yyyy/MM/dd")</td>
+                                    <td>
+                                        @if (key.IsRevoked)
+                                        {
+                                            <span class="badge-revoked">لغو شده</span>
+                                        }
+                                        else if (key.ExpiresAt < DateTime.UtcNow)
+                                        {
+                                            <span class="badge-expired">منقضی</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge-active">فعال</span>
+                                        }
+                                    </td>
+                                    <td class="text-end">
+                                        @if (!key.IsRevoked)
+                                        {
+                                            <button class="btn btn-sm btn-outline-danger"
+                                                    @onclick="() => RevokeApiKey(key.Id)"
+                                                    disabled="@_isKeyLoading">
+                                                <i class="bi bi-x-circle me-1"></i>لغو
+                                            </button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <div class="card-ai mb-4">
+        <div class="card-ai-header">
+            <span><i class="bi bi-plus-circle me-2"></i>افزودن مشتری جدید</span>
+        </div>
+        <div class="p-4">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">نام مشتری</label>
+                    <input type="text" class="form-control" placeholder="نام مشتری را وارد کنید" @bind="_newName" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-semibold">اعتبار اولیه</label>
+                    <input type="number" class="form-control" placeholder="0" @bind="_newCredit" />
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary w-100" @onclick="CreateCustomer" disabled="@_isLoading">
+                        @if (_isLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-1"></span>
+                        }
+                        else
+                        {
+                            <i class="bi bi-plus-lg me-1"></i>
+                        }
+                        ثبت مشتری
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-ai">
+        <div class="card-ai-header">
+            <span><i class="bi bi-people me-2"></i>لیست مشتریان</span>
+            <span class="text-muted small">@(_customers?.Count ?? 0) مشتری</span>
+        </div>
+        @if (_isLoading && _customers is null)
+        {
+            <div class="p-4 text-center text-muted">
+                <div class="spinner-border spinner-border-sm me-2"></div>در حال بارگذاری...
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>نام</th>
+                            <th>اعتبار باقیمانده</th>
+                            <th>تاریخ ثبت</th>
+                            <th class="text-end">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (_customers is { Count: 0 })
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">
+                                    <i class="bi bi-people me-2"></i>هیچ مشتری‌ای ثبت نشده است.
+                                </td>
+                            </tr>
+                        }
+                        @foreach (var customer in _customers ?? [])
+                        {
+                            <tr>
+                                <td class="fw-semibold">
+                                    @if (_editingId == customer.Id)
+                                    {
+                                        <input type="text" class="form-control form-control-sm" @bind="_editName" style="width:160px;display:inline-block" />
+                                    }
+                                    else
+                                    {
+                                        @customer.Name
+                                    }
+                                </td>
+                                <td>
+                                    @if (_editingId == customer.Id)
+                                    {
+                                        <input type="number" class="form-control form-control-sm" @bind="_editCredit" style="width:120px;display:inline-block" />
+                                    }
+                                    else
+                                    {
+                                        <span class="@(customer.RemainingCredit <= 0 ? "text-danger fw-bold" : "text-success fw-bold")">
+                                            @customer.RemainingCredit.ToString("N2")
+                                        </span>
+                                    }
+                                </td>
+                                <td class="text-muted">@customer.CreatedAt.ToLocalTime().ToString("yyyy/MM/dd")</td>
+                                <td class="text-end">
+                                    @if (_editingId == customer.Id)
+                                    {
+                                        <button class="btn btn-sm btn-success me-1" @onclick="() => SaveEdit(customer.Id)" disabled="@_isLoading">
+                                            <i class="bi bi-check-lg me-1"></i>ذخیره
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">
+                                            <i class="bi bi-x me-1"></i>لغو
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-sm btn-outline-primary me-1" @onclick="() => StartEdit(customer)">
+                                            <i class="bi bi-pencil me-1"></i>ویرایش
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info me-1" @onclick="() => ShowApiKeys(customer)">
+                                            <i class="bi bi-key me-1"></i>کلیدهای API
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteCustomer(customer.Id)" disabled="@_isLoading">
+                                            <i class="bi bi-trash me-1"></i>حذف
+                                        </button>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+}

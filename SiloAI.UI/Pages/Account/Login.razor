@@ -1,0 +1,50 @@
+@page "/account/login"
+@attribute [AllowAnonymous]
+
+<PageTitle>ورود — پنل مدیریت هوش مصنوعی سیلو</PageTitle>
+
+<div class="login-bg">
+    <div class="login-card">
+        <div class="login-logo">
+            <div class="logo-icon"><i class="bi bi-robot"></i></div>
+            <h4>پنل مدیریت هوش مصنوعی سیلو</h4>
+        </div>
+
+        <EditForm Model="_model" OnValidSubmit="OnLoginSubmit">
+            <DataAnnotationsValidator />
+            <div class="mb-3">
+                <label class="form-label fw-semibold">نام کاربری</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <InputText @bind-Value="_model.Username"
+                               class="form-control"
+                               autocomplete="username" />
+                </div>
+                <ValidationMessage For="() => _model.Username" class="text-danger small mt-1" />
+            </div>
+            <div class="mb-4">
+                <label class="form-label fw-semibold">رمز عبور</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <InputText @bind-Value="_model.Password"
+                               type="password"
+                               class="form-control"
+                               autocomplete="current-password" />
+                </div>
+                <ValidationMessage For="() => _model.Password" class="text-danger small mt-1" />
+            </div>
+            <button type="submit" class="btn-ai-primary" disabled="@_isLoading">
+                @if (_isLoading)
+                {
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    <span>در حال ورود...</span>
+                }
+                else
+                {
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    <span>ورود</span>
+                }
+            </button>
+        </EditForm>
+    </div>
+</div>
