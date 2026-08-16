@@ -11,13 +11,6 @@ public class RagChatSendCommandHandler(
     public async Task<RagChatResponse> Handle(RagChatSendCommand request, CancellationToken cancellationToken)
     {
         var systemPrompt = request.IsMainChat ? request.SystemPromptMainChat : request.SystemPrompt;
-        
-        agentService.InitChatAgentWithInstructions(systemPrompt, request.RagModel);
-
-        var topK = request.TopK <= 0 ? 5 : Math.Clamp(request.TopK, 1, 20);
-     
-        var hits = await search.SearchAsync(
-            request.Message, topK, request.DocType.ToString(), request.Key, cancellationToken);
 
         var instructions = await mediator.Send(new GetAllRagInstructionsQuery
         {
@@ -25,8 +18,17 @@ public class RagChatSendCommandHandler(
             IsActive = true
         }, cancellationToken);
 
+        var agentInstructions = BuildAgentInstructions(systemPrompt, instructions);
+
+        agentService.InitChatAgentWithInstructions(agentInstructions, request.RagModel);
+
+        var topK = request.TopK <= 0 ? 5 : Math.Clamp(request.TopK, 1, 20);
+     
+        var hits = await search.SearchAsync(
+            request.Message, topK, request.DocType.ToString(), request.Key, cancellationToken);
+
         var augmentedMessage = BuildAugmentedMessage(
-            request.Message, hits, instructions, request.IsMainChat, request.AugmentedMessageTemplate);
+            request.Message, hits, request.IsMainChat, request.AugmentedMessageTemplate);
 
         var query = new CopilotMessageRequest
         {
@@ -61,10 +63,21 @@ public class RagChatSendCommandHandler(
         };
     }
 
+    private static string BuildAgentInstructions(string systemPrompt, List<RagInstructionDto> instructions)
+    {
+        if (instructions is null || instructions.Count == 0)
+            return systemPrompt;
+
+        var docTypeInstructionsText = string.Join("\n---\n", instructions
+            .OrderBy(i => i.CreateDateTime)
+            .Select(i => i.Content));
+
+        return $"{systemPrompt}\n\n{docTypeInstructionsText}";
+    }
+
     private static string BuildAugmentedMessage(
         string userQuestion,
         IReadOnlyList<RagSearchHit> hits,
-        List<RagInstructionDto> instructions,
         bool isMainChat,
         string augmentedMessageTemplate)
     {
@@ -88,14 +101,8 @@ public class RagChatSendCommandHandler(
             chunksText = sb.ToString().TrimEnd();
         }
 
-        var docTypeInstructionsText = instructions is null || instructions.Count == 0
-            ? string.Empty
-            : string.Join("\n---\n", instructions
-                .OrderBy(i => i.CreateDateTime)
-                .Select(i => i.Content));
-
         return augmentedMessageTemplate
-            .Replace("{DOCTYPE_INSTRUCTIONS}", docTypeInstructionsText)
+            .Replace("{DOCTYPE_INSTRUCTIONS}", string.Empty)
             .Replace("{CHUNKS}", chunksText)
             .Replace("{QUESTION}", userQuestion);
     }
