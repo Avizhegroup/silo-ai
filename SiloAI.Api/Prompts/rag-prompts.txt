@@ -14,6 +14,9 @@
 3) هیچ اشاره‌ای به منبع، شماره‌ی قطعه، نام فایل یا ارجاع نکن.
 4) پاسخ‌ها را به زبان فارسی و خلاصه ارائه بده.
 
+### SECTION: DocTypeInstructions ###
+{DOCTYPE_INSTRUCTIONS}
+
 ### SECTION: AugmentedMessageTemplate ###
 === قطعات بازیابی‌شده از پایگاه دانش ===
 {CHUNKS}

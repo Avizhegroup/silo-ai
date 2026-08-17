@@ -5,13 +5,22 @@ namespace SiloAI.Application.Api.Features;
 
 public class RagChatSendCommandHandler(
     ChatAgentService agentService,
-    IRagSearchService search) : IRequestHandler<RagChatSendCommand, RagChatResponse>
+    IRagSearchService search,
+    IMediator mediator) : IRequestHandler<RagChatSendCommand, RagChatResponse>
 {
     public async Task<RagChatResponse> Handle(RagChatSendCommand request, CancellationToken cancellationToken)
     {
         var systemPrompt = request.IsMainChat ? request.SystemPromptMainChat : request.SystemPrompt;
-        
-        agentService.InitChatAgentWithInstructions(systemPrompt, request.RagModel);
+
+        var instructions = await mediator.Send(new GetAllRagInstructionsQuery
+        {
+            DocType = request.DocType,
+            IsActive = true
+        }, cancellationToken);
+
+        var agentInstructions = BuildAgentInstructions(systemPrompt, instructions);
+
+        agentService.InitChatAgentWithInstructions(agentInstructions, request.RagModel);
 
         var topK = request.TopK <= 0 ? 5 : Math.Clamp(request.TopK, 1, 20);
      
@@ -54,6 +63,18 @@ public class RagChatSendCommandHandler(
         };
     }
 
+    private static string BuildAgentInstructions(string systemPrompt, List<RagInstructionDto> instructions)
+    {
+        if (instructions is null || instructions.Count == 0)
+            return systemPrompt;
+
+        var docTypeInstructionsText = string.Join("\n---\n", instructions
+            .OrderBy(i => i.CreateDateTime)
+            .Select(i => i.Content));
+
+        return $"{systemPrompt}\n\n{docTypeInstructionsText}";
+    }
+
     private static string BuildAugmentedMessage(
         string userQuestion,
         IReadOnlyList<RagSearchHit> hits,
@@ -81,6 +102,7 @@ public class RagChatSendCommandHandler(
         }
 
         return augmentedMessageTemplate
+            .Replace("{DOCTYPE_INSTRUCTIONS}", string.Empty)
             .Replace("{CHUNKS}", chunksText)
             .Replace("{QUESTION}", userQuestion);
     }
