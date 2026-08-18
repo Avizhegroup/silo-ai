@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using SiloAI.Agent.Rag;
+using SiloAI.Api.Auth;
 using System.Reflection;
 using System.Text;
 
@@ -10,7 +11,8 @@ namespace SiloAI.Api.Controllers;
 
 [ApiController]
 [Route("api/rag/chat")]
-[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+[Authorize(AuthenticationSchemes =
+    $"{JwtBearerDefaults.AuthenticationScheme},{ApiKeyAuthenticationHandler.SchemeName}")]
 public class RagChatController(
     IMediator mediator,
     IOptions<OpenAIOptions> openAiOptions) : ControllerBase
