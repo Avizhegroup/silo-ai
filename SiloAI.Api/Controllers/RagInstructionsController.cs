@@ -17,6 +17,7 @@ public class RagInstructionsController(IMediator mediator) : ControllerBase
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetRagInstructionByIdQuery { Id = id }, cancellationToken);
+       
         return result is null ? NotFound() : Ok(result);
     }
 
