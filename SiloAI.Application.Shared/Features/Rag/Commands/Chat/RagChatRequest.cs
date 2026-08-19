@@ -2,7 +2,7 @@
 
 public class RagChatRequest
 {
-    public string? SessionJson { get; set; }
+    public Guid? ConversationId { get; set; }
     public string Message { get; set; }
     public int TopK { get; set; } = 5;
     public bool IsMainChat { get; set; } = false;

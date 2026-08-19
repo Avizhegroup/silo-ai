@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using SiloAI.Agent.Rag;
 using SiloAI.Api.Auth;
+using SiloAI.Application.Api;
 using System.Reflection;
+using System.Security.Claims;
 using System.Text;
 
 namespace SiloAI.Api.Controllers;
@@ -38,7 +40,8 @@ public class RagChatController(
         var result = await mediator.Send(new RagChatNewSessionCommand
         {
             SystemPrompt = _ragSystemPrompt,
-            RagModel = openAiOptions.Value.RagModel
+            RagModel = openAiOptions.Value.RagModel,
+            OwnerId = GetOwnerId()
         }, cancellationToken);
 
         return Ok(result);
@@ -50,22 +53,43 @@ public class RagChatController(
         if (request is null || string.IsNullOrWhiteSpace(request.Message))
             return BadRequest(new { error = "Message is required." });
 
-        var result = await mediator.Send(new RagChatSendCommand
+        try
         {
-            SessionJson = request.SessionJson,
-            Message = request.Message,
-            TopK = request.TopK,
-            IsMainChat = request.IsMainChat,
-            DocType = request.DocType,
-            Key = request.Key,
-            SystemPrompt = _ragSystemPrompt,
-            SystemPromptMainChat = _ragSystemPromptMainChat,
-            AugmentedMessageTemplate = _augmentedMessageTemplate,
-            RagModel = openAiOptions.Value.RagModel,
-            Username = User?.Identity?.Name ?? string.Empty
-        }, cancellationToken);
+            var result = await mediator.Send(new RagChatSendCommand
+            {
+                ConversationId = request.ConversationId,
+                Message = request.Message,
+                TopK = request.TopK,
+                IsMainChat = request.IsMainChat,
+                DocType = request.DocType,
+                Key = request.Key,
+                SystemPrompt = _ragSystemPrompt,
+                SystemPromptMainChat = _ragSystemPromptMainChat,
+                AugmentedMessageTemplate = _augmentedMessageTemplate,
+                RagModel = openAiOptions.Value.RagModel,
+                Username = User?.Identity?.Name ?? string.Empty,
+                OwnerId = GetOwnerId()
+            }, cancellationToken);
 
-        return Ok(result);
+            return Ok(result);
+        }
+        catch (ConversationNotFoundException)
+        {
+            return NotFound(new { error = "مکالمه یافت نشد یا دسترسی به آن مجاز نیست." });
+        }
+    }
+
+    private string GetOwnerId()
+    {
+        var customerId = User.Claims.FirstOrDefault(c => c.Type == "CustomerId")?.Value;
+        if (!string.IsNullOrEmpty(customerId))
+            return $"customer:{customerId}";
+
+        var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        if (!string.IsNullOrEmpty(userId))
+            return $"user:{userId}";
+
+        return User?.Identity?.Name ?? string.Empty;
     }
 
     private static Dictionary<string, string> LoadPromptSections(string resourceName)

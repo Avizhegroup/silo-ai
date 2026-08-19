@@ -14,7 +14,7 @@ public partial class Chat
 
     private readonly List<ChatMessage> _messages = new();
     private string _input = string.Empty;
-    private string? _sessionJson;
+    private Guid? _conversationId;
     private bool _isSending;
     private int _topK = 5;
     private RagDocType _docType = RagDocType.GeneralChat;
@@ -28,7 +28,7 @@ public partial class Chat
         if (_isSending) return;
 
         _messages.Clear();
-        _sessionJson = null;
+        _conversationId = null;
         _input = string.Empty;
     }
 
@@ -62,7 +62,7 @@ public partial class Chat
             var request = new RagChatRequest
             {
                 Message = text,
-                SessionJson = _sessionJson,
+                ConversationId = _conversationId,
                 TopK = _topK <= 0 ? 5 : _topK,
                 DocType = _docType,
                 Key = string.IsNullOrWhiteSpace(_key) ? null : _key.Trim()
@@ -78,7 +78,7 @@ public partial class Chat
                 return;
             }
 
-            _sessionJson = result.UpdatedSessionJson;
+            _conversationId = result.ConversationId;
 
             _messages.Add(new ChatMessage
             {

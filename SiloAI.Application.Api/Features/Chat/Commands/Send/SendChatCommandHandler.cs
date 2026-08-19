@@ -17,6 +17,22 @@ public class SendChatCommandHandler(
         if (!await HasCreditAsync(request.CustomerId, cancellationToken))
             throw new InsufficientCreditException();
 
+        var ownerKey = ChatSessionOwnerKey.ForCustomer(request.CustomerId);
+
+        AiChatSession? chatSession = null;
+        string? existingSessionJson = null;
+
+        if (request.ConversationId.HasValue)
+        {
+            chatSession = await dbContext.AiChatSessions
+                .FirstOrDefaultAsync(s => s.Id == request.ConversationId.Value, cancellationToken);
+
+            if (chatSession is null || chatSession.OwnerKey != ownerKey)
+                throw new ConversationNotFoundException();
+
+            existingSessionJson = chatSession.SessionState;
+        }
+
         await agentService.InitChatAgent(request.PromptKeys);
 
         var query = new CopilotMessageRequest
@@ -28,7 +44,7 @@ public class SendChatCommandHandler(
             Datetime = DateTime.Now
         };
 
-        var ( response, updatedSessionJson, tokenUsage) = await agentService.SendWithAgentSessionAsync(request.SessionJson, query);
+        var ( response, updatedSessionJson, tokenUsage) = await agentService.SendWithAgentSessionAsync(existingSessionJson, query);
         var priceUsage = costCalculator.Calculate(tokenUsage);
 
         var customer = await dbContext.Customers.FirstOrDefaultAsync( c => c.Id == request.CustomerId,cancellationToken);
@@ -38,6 +54,24 @@ public class SendChatCommandHandler(
 
             await dbContext.SaveChangesAsync(cancellationToken);
         }
+
+        var now = DateTime.UtcNow;
+        if (chatSession is null)
+        {
+            chatSession = new AiChatSession
+            {
+                Id = Guid.NewGuid(),
+                OwnerKey = ownerKey,
+                ChatType = "Chat",
+                CreatedAt = now
+            };
+            dbContext.AiChatSessions.Add(chatSession);
+        }
+
+        chatSession.SessionState = updatedSessionJson;
+        chatSession.UpdatedAt = now;
+
+        await dbContext.SaveChangesAsync(cancellationToken);
 
         var instructionKey = request.PromptKeys?.FirstOrDefault();
         var userAsk = request.Message;
@@ -71,7 +105,7 @@ public class SendChatCommandHandler(
         return new SendChatResponse
         {
             ResponseText = response.ResponseText,
-            UpdatedSessionJson = updatedSessionJson,
+            ConversationId = chatSession.Id,
             TokenUsage = tokenUsage,
             PriceUsage = priceUsage
         };

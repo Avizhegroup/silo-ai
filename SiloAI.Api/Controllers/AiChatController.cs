@@ -36,7 +36,7 @@ public class AiChatController(IMediator mediator) : ControllerBase
         {
             var result = await mediator.Send(new SendChatCommand
             {
-                SessionJson = request.SessionJson,
+                ConversationId = request.ConversationId,
                 Message = request.Message,
                 Username = request.Username,
                 PromptKeys = request.PromptKeys,
@@ -47,6 +47,10 @@ public class AiChatController(IMediator mediator) : ControllerBase
         catch (InsufficientCreditException)
         {
             return StatusCode(402, new { Message = "اعتبار مشتری به پایان رسیده است." });
+        }
+        catch (ConversationNotFoundException)
+        {
+            return NotFound(new { Message = "مکالمه یافت نشد یا دسترسی به آن مجاز نیست." });
         }
     }
 
