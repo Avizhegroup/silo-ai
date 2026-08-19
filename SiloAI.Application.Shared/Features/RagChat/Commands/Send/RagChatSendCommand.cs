@@ -2,7 +2,7 @@ namespace SiloAI.Application.Shared.Features;
 
 public class RagChatSendCommand : IRequest<RagChatResponse>
 {
-    public string? SessionJson { get; set; }
+    public Guid? ConversationId { get; set; }
     public string Message { get; set; }
     public int TopK { get; set; } = 5;
     public bool IsMainChat { get; set; }
@@ -13,4 +13,5 @@ public class RagChatSendCommand : IRequest<RagChatResponse>
     public string AugmentedMessageTemplate { get; set; }
     public string? RagModel { get; set; }
     public string Username { get; set; }
+    public string OwnerId { get; set; }
 }

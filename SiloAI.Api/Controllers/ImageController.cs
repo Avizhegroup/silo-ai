@@ -8,9 +8,9 @@ using SiloAI.Application.Api;
 namespace SiloAI.Api.Controllers;
 
 [ApiController]
-[Route("api/ai/agent")]
+[Route("api/image")]
 [Authorize(AuthenticationSchemes = ApiKeyAuthenticationHandler.SchemeName)]
-public class AiAgentController(IMediator mediator) : ControllerBase
+public class ImageController(IMediator mediator) : ControllerBase
 {
     [HttpPost("ocr")]
     public async Task<IActionResult> Ocr([FromForm] IFormFile imageData, [FromForm] string mediaType, [FromForm] string? promptKey)

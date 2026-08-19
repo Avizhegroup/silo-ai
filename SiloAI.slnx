@@ -3,6 +3,9 @@
     <File Path="Directory.build.props" />
     <File Path="Directory.Packages.props" />
   </Folder>
+  <Folder Name="/Solution Items/Docs/">
+    <File Path="docs/RAG-Chat-Guide.md" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/Core/" />
   <Folder Name="/src/Core/Applications/">

@@ -17,7 +17,21 @@ public class NewChatSessionCommandHandler(
         var session = await agentService.CreateNewSessionAsync();
         var sessionJson = await agentService.SerializeSessionAsync(session);
 
-        return new NewSessionResponse { SessionJson = sessionJson };
+        var now = DateTime.UtcNow;
+        var chatSession = new AiChatSession
+        {
+            Id = Guid.NewGuid(),
+            OwnerKey = ChatSessionOwnerKey.ForCustomer(request.CustomerId),
+            ChatType = "Chat",
+            SessionState = sessionJson,
+            CreatedAt = now,
+            UpdatedAt = now
+        };
+
+        dbContext.AiChatSessions.Add(chatSession);
+        await dbContext.SaveChangesAsync(cancellationToken);
+
+        return new NewSessionResponse { ConversationId = chatSession.Id };
     }
 
     private async Task<bool> HasCreditAsync(int? customerId, CancellationToken cancellationToken)

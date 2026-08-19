@@ -9,6 +9,7 @@ public class AiApiContext(DbContextOptions<AiApiContext> options) : DbContext(op
     public DbSet<RagDocument> RagDocuments { get; set; }
     public DbSet<RagDocumentChunk> RagDocumentChunks { get; set; }
     public DbSet<RagInstruction> RagInstructions { get; set; }
+    public DbSet<AiChatSession> AiChatSessions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -40,6 +41,12 @@ public class AiApiContext(DbContextOptions<AiApiContext> options) : DbContext(op
             b.Property(x => x.DocType).HasDefaultValue("GeneralChat");
             b.HasIndex(x => x.DocType).HasDatabaseName("IX_tbl_RagInstructions_fld_DocType");
             b.HasIndex(x => x.Category).HasDatabaseName("IX_tbl_RagInstructions_fld_Category");
+        });
+
+        modelBuilder.Entity<AiChatSession>(b =>
+        {
+            b.HasKey(x => x.Id);
+            b.HasIndex(x => x.OwnerKey).HasDatabaseName("IX_tbl_AiChatSessions_fld_OwnerKey");
         });
 
         modelBuilder.Entity<Customer>(entity =>

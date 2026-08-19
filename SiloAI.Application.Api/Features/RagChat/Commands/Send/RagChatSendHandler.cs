@@ -3,13 +3,30 @@ using System.Text;
 
 namespace SiloAI.Application.Api.Features;
 
-public class RagChatSendCommandHandler(
+public class RagChatSendHandler(
     ChatAgentService agentService,
     IRagSearchService search,
-    IMediator mediator) : IRequestHandler<RagChatSendCommand, RagChatResponse>
+    IMediator mediator,
+    AiApiContext dbContext) : IRequestHandler<RagChatSendCommand, RagChatResponse>
 {
     public async Task<RagChatResponse> Handle(RagChatSendCommand request, CancellationToken cancellationToken)
     {
+        var ownerKey = ChatSessionOwnerKey.ForOwnerId(request.OwnerId);
+
+        AiChatSession? chatSession = null;
+        string? existingSessionJson = null;
+
+        if (request.ConversationId.HasValue)
+        {
+            chatSession = await dbContext.AiChatSessions
+                .FirstOrDefaultAsync(s => s.Id == request.ConversationId.Value, cancellationToken);
+
+            if (chatSession is null || chatSession.OwnerKey != ownerKey)
+                throw new ConversationNotFoundException();
+
+            existingSessionJson = chatSession.SessionState;
+        }
+
         var systemPrompt = request.IsMainChat ? request.SystemPromptMainChat : request.SystemPrompt;
 
         var instructions = await mediator.Send(new GetAllRagInstructionsQuery
@@ -39,7 +56,25 @@ public class RagChatSendCommandHandler(
             Datetime = DateTime.Now
         };
 
-        var (response, updatedSessionJson, tokenUsage) = await agentService.SendWithAgentSessionAsync(request.SessionJson, query);
+        var (response, updatedSessionJson, tokenUsage) = await agentService.SendWithAgentSessionAsync(existingSessionJson, query);
+
+        var now = DateTime.UtcNow;
+        if (chatSession is null)
+        {
+            chatSession = new AiChatSession
+            {
+                Id = Guid.NewGuid(),
+                OwnerKey = ownerKey,
+                ChatType = "Rag",
+                CreatedAt = now
+            };
+            dbContext.AiChatSessions.Add(chatSession);
+        }
+
+        chatSession.SessionState = updatedSessionJson;
+        chatSession.UpdatedAt = now;
+
+        await dbContext.SaveChangesAsync(cancellationToken);
 
         var citations = request.IsMainChat
             ? new List<RagChatCitationDto>()
@@ -57,7 +92,7 @@ public class RagChatSendCommandHandler(
         return new RagChatResponse
         {
             ResponseText = response.ResponseText,
-            UpdatedSessionJson = updatedSessionJson,
+            ConversationId = chatSession.Id,
             TokenUsage = tokenUsage,
             Citations = citations
         };

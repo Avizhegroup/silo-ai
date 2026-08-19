@@ -2,5 +2,5 @@
 
 public class NewSessionResponse
 {
-    public string SessionJson { get; set; }
+    public Guid ConversationId { get; set; }
 }
