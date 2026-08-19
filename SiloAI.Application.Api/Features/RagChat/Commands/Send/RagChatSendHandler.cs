@@ -3,7 +3,7 @@ using System.Text;
 
 namespace SiloAI.Application.Api.Features;
 
-public class RagChatSendCommandHandler(
+public class RagChatSendHandler(
     ChatAgentService agentService,
     IRagSearchService search,
     IMediator mediator,
